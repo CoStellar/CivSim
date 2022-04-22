@@ -1,5 +1,7 @@
 package Project;
 
 public class main {
-    /*something*/
+    main(){
+        System.out.println("Hi");
+    }
 }
