@@ -4,7 +4,7 @@ public class main {
     main(){
         System.out.println("Hi");
 
-        /*Komentarz*/
+        /*Komentarz jebac teorie systemow*/
 
     }
 }
