@@ -5,6 +5,7 @@ public class main {
         System.out.println("Hi");
 
         /*Komentarz jebac teorie systemow*/
+        /*Prawda*/
 
     }
 }
