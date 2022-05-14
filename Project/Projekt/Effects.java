@@ -6,7 +6,6 @@ public class Effects {
     private Integer effectFinishTime;
 
     Effects(Position position){
-
     }
     void breakage(){
     }
