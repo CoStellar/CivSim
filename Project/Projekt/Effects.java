@@ -1,4 +1,4 @@
 package Project.Projekt;
 
-public class Klasa {
+public class Effects {
 }
