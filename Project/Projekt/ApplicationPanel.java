@@ -6,7 +6,15 @@ public class ApplicationPanel {
 
         ApplicationPanel(){
             JFrame frame = new JFrame();
+            frame.setSize(800,800);
+            frame.setTitle("Symulacja Cywilizacji");
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setResizable(false);
 
-            frame.setVisible(True);
+            ImageIcon image = new ImageIcon("icon.png");
+            frame.setIconImage(image.getImage());
+
+
+            frame.setVisible(true);
         }
 }
