@@ -1,8 +1,8 @@
 package Project.Projekt;
 
 public class Position {
-    Integer x;
-    Integer y;
+    public Integer x;
+    public Integer y;
 
     Position(Integer x, Integer y) {
         this.x = x;
