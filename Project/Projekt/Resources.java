@@ -1,5 +1,5 @@
 package Project.Projekt;
-import java.util.Random;
+
 public class Resources {
     Integer wood;
     Integer iron;
