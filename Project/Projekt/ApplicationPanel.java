@@ -4,6 +4,7 @@ import javax.swing.*;
 
 public class ApplicationPanel {
 
+    Civilization civilization = new Civilization();
         ApplicationPanel(){
             JFrame frame = new JFrame();
             frame.setSize(800,800);
@@ -13,8 +14,10 @@ public class ApplicationPanel {
 
             ImageIcon image = new ImageIcon("icon.png");
             frame.setIconImage(image.getImage());
-
-
             frame.setVisible(true);
+
+
+            frame.add(civilization);
+
         }
 }
