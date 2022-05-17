@@ -1,23 +1,31 @@
 package Project.Projekt;
 
-import javax.swing.JFrame;
-import javax.swing.ImageIcon;
-public class ApplicationPanel {
+import javax.swing.*;
+import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.util.Random;
 
-    Civilization civilization = new Civilization();
-        ApplicationPanel(){
-            JFrame frame = new JFrame();
-            frame.setSize(800,800);
-            frame.setTitle("Symulacja Cywilizacji");
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+public class ApplicationPanel extends JPanel{
 
-            frame.setResizable(false);
-            ImageIcon image = new ImageIcon("icon.png");
-            frame.setIconImage(image.getImage());
-            frame.setVisible(true);
+        private Random random;
+        private  BufferedImage[] img;
 
-
-            frame.add(civilization);
+        public ApplicationPanel(BufferedImage[] img)   {
+            this.img = img;
 
         }
+        public MapSize mapSize = new MapSize(25);
+        public void paintComponent(Graphics g){
+            super.paintComponent(g);
+
+            for(int y=0; y< mapSize.getMapSize(); y++){
+                for(int x=0;   x<mapSize.getMapSize(); x++){
+                        random = new Random();
+                        g.drawImage(img[random.nextInt(6)], (x * 32)+x, (y * 32)+y, null);
+                    }
+            }
+
+        }
+
+
 }

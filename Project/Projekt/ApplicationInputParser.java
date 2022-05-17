@@ -10,7 +10,7 @@ public class ApplicationInputParser {
 
         }
 
-        public MapSize getMapsize() {
+        public MapSize getMapSize() {
 
                 return mapsize;
         }
