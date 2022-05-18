@@ -14,7 +14,6 @@ public class Position {
         MapSize mapSize = new MapSize(25);
         this.x = drawRandomPosition(mapSize);
         this.y = drawRandomPosition(mapSize);
-
     }
 
     public Integer drawRandomPosition(MapSize mapSize) {

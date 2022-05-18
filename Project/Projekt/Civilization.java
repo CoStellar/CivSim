@@ -37,9 +37,7 @@ public class Civilization extends JPanel {
 
                     }*/
                 }
-
         }
-
 
     public Position drawRandomPositionAround(Position[] initialPosition) {
         Random random = new Random();
@@ -88,5 +86,12 @@ public class Civilization extends JPanel {
 
         return drawedPosition;
     }
+
+    public Position passCivPosition(){
+        return this.civFieldPosition[0];
+    }
+
+
+
 
 }
