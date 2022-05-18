@@ -9,7 +9,7 @@ import java.io.InputStream;
 import java.util.Objects;
 
 public class SymulacjaCywilizacji  extends JFrame {
-
+/*
     final Integer fieldSize = 32;
     private Integer screenWidth;
     private Integer screenHeight;
@@ -71,10 +71,10 @@ public class SymulacjaCywilizacji  extends JFrame {
         }
 
 
-    }
+    } */
 
     public static void  main(String[] args){
-        SymulacjaCywilizacji simulation = new SymulacjaCywilizacji();
+        Map simulation = new Map();
 
     }
 }
