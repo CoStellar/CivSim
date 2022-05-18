@@ -23,8 +23,6 @@ public class Map   extends JFrame {
 
     private ApplicationPanel appPanel;
     public Map(){
-        //importImg();
-
         for(int x=0;x<mapSize.getMapSize();x++){
             for(int y=0;y<mapSize.getMapSize();y++){
                 resources[x][y] = new Resources();
@@ -42,47 +40,7 @@ public class Map   extends JFrame {
         appPanel = new ApplicationPanel(img);
         add(appPanel);
         setVisible(true);
-    }/*
-    private void importImg() {
-        InputStream is = getClass().getResourceAsStream("Pliki/wood_log_filled.png");
-        try {
-            img[0] = ImageIO.read(is);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-        is = getClass().getResourceAsStream("Pliki/water_filled.png");
-        try {
-            img[1] = ImageIO.read(is);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-        is = getClass().getResourceAsStream("Pliki/cow_filled.png");
-        try {
-            img[2] = ImageIO.read(is);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-        is = getClass().getResourceAsStream("Pliki/wheat_filled.png");
-        try {
-            img[3] = ImageIO.read(is);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-        is = getClass().getResourceAsStream("Pliki/iron_filled.png");
-        try {
-            img[4] = ImageIO.read(is);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-        is = getClass().getResourceAsStream("Pliki/stone_filled.png");
-        try {
-            img[5] = ImageIO.read(is);
-        }catch(IOException e){
-            e.printStackTrace();
-        }
-*/
-
-
+    }
 
 
 }

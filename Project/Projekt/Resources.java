@@ -12,88 +12,88 @@ import java.util.Random;
 
 public class Resources {
     String resourceName;
-    Integer wood;
-    Integer iron;
-    Integer wheat;
-    Integer animals;
-    Integer stone;
-    Integer water;
-    private BufferedImage resourceImg;
+    Integer wood = 0;
+    Integer iron = 0;
+    Integer wheat = 0;
+    Integer animals = 0;
+    Integer stone = 0;
+    Integer water = 0;
+
 
 
     public Resources(){
         this.resourceName = drawResources();
-        importImg(this.resourceName);
     }
-    public void importImg(String resourceName) {
+    public BufferedImage getImg(){
         InputStream is;
         if(Objects.equals(resourceName, "wood")){
             is = getClass().getResourceAsStream("Pliki/wood_log_filled.png");
             try {
-                this.resourceImg = ImageIO.read(is);
+                return ImageIO.read(is);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }else if(Objects.equals(resourceName, "water")){
             is = getClass().getResourceAsStream("Pliki/water_filled.png");
             try {
-                this.resourceImg = ImageIO.read(is);
+                return ImageIO.read(is);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }else if(Objects.equals(resourceName, "cow")){
             is = getClass().getResourceAsStream("Pliki/cow_filled.png");
             try {
-                this.resourceImg = ImageIO.read(is);
+                return ImageIO.read(is);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }else if(Objects.equals(resourceName, "wheat")){
             is = getClass().getResourceAsStream("Pliki/wheat_filled.png");
             try {
-                this.resourceImg = ImageIO.read(is);
+                return ImageIO.read(is);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }else if(Objects.equals(resourceName, "iron")){
             is = getClass().getResourceAsStream("Pliki/iron_filled.png");
             try {
-                this.resourceImg = ImageIO.read(is);
+                return ImageIO.read(is);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }else if(Objects.equals(resourceName, "stone")){
             is = getClass().getResourceAsStream("Pliki/stone_filled.png");
             try {
-                this.resourceImg = ImageIO.read(is);
+                return ImageIO.read(is);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
-
+        return null;
     }
-    public BufferedImage getImg(){
-        return this.resourceImg;
-    }
-
 
     String drawResources(){
         int random;
         random = (int) (Math.random() * 6);
-        if(random == 0)
-                return "wood";
-        if(random == 1)
-                return "water";
-        if(random == 2)
-                return "cow";
-        if(random == 3)
-                return "wheat";
-        if(random == 4)
-                return "iron";
-        if(random == 5)
-                return "stone";
-        else
-        return null;
+        if(random == 0){
+                this.wood = 1;
+                return "wood";}
+        if(random == 1){
+                this.water = 1;
+                return "water";}
+        if(random == 2){
+                this.animals = 1;
+                return "cow";}
+        if(random == 3){
+                this.wheat = 1;
+                return "wheat";}
+        if(random == 4){
+                this.iron = 1;
+                return "iron";}
+        if (random == 5){
+                this.stone = 1;
+                return "stone";}
+        else return null;
     }
 
 }
