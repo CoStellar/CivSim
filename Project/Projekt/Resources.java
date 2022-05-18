@@ -95,5 +95,18 @@ public class Resources {
                 return "stone";}
         else return null;
     }
+    public boolean resourcesCompareVillage(Resources resources){
+        if(resources.wood >= 5 && resources.wheat >= 3 && resources.animals >= 2) {
+            return true;
+        }
+        else return false;
+    }
+    public boolean resourcesCompareCity(Resources resources){
+        if(resources.wood >= 3 && resources.stone >= 5 && resources.animals >= 2 && resources.iron >= 2) {
+            return true;
+        }
+        else return false;
+    }
+
 
 }
