@@ -33,7 +33,7 @@ public class Map extends JFrame {
             for (int y = 0; y < mapSize.getMapSize(); y++) {
                 for (int i = 0; i < 4; i++) {
                     if (civPosition[i].x == x && civPosition[i].y == y) {
-                        file = new File("./src/main/resources/com/civsim/Pliki/city.png");
+                        file = new File("./CivSim/src/main/resources/com/civsim/Pliki/city.png");
                         this.img[x][y] = ImageIO.read(file);
                     }
                 }
@@ -45,7 +45,7 @@ public class Map extends JFrame {
             getContentPane().setBackground(Color.black);
             setTitle("Symulacja Cywilizacji");
             setResizable(false);
-            file = new File("./src/main/resources/com/civsim/Pliki/icon.png");
+            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/icon.png");
             ImageIcon image = new ImageIcon(String.valueOf(file));
             setIconImage(image.getImage());
             appPanel = new ApplicationPanel(img);

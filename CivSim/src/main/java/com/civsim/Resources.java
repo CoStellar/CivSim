@@ -26,7 +26,7 @@ public class Resources {
         InputStream is;
         if(Objects.equals(this.resourceName, "wood")){
             try {
-                File file = new File("./src/main/resources/com/civsim/Pliki/wood_log_filled.png");
+                File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/wood_log_filled.png");
                 image = ImageIO.read(file);
                 return image;
 
@@ -35,7 +35,7 @@ public class Resources {
             }
         }else if(Objects.equals(this.resourceName, "water")){
             try {
-                File file = new File("./src/main/resources/com/civsim/Pliki/water_filled.png");
+                File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/water_filled.png");
                 image = ImageIO.read(file);
                 return image;
             } catch (IOException e) {
@@ -44,7 +44,7 @@ public class Resources {
         }else if(Objects.equals(this.resourceName, "cow")){
 
             try {
-                File file = new File("./src/main/resources/com/civsim/Pliki/cow_filled.png");
+                File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/cow_filled.png");
                 image = ImageIO.read(file);
                 return image;
             } catch (IOException e) {
@@ -53,7 +53,7 @@ public class Resources {
         }else if(Objects.equals(this.resourceName, "wheat")){
 
             try {
-                File file = new File("./src/main/resources/com/civsim/Pliki/wheat_filled.png");
+                File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/wheat_filled.png");
                 image = ImageIO.read(file);
                 return image;
             } catch (IOException e) {
@@ -62,7 +62,7 @@ public class Resources {
         }else if(Objects.equals(this.resourceName, "iron")){
 
             try {
-                File file = new File("./src/main/resources/com/civsim/Pliki/iron_filled.png");
+                File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/iron_filled.png");
                 image = ImageIO.read(file);
                 return image;
             } catch (IOException e) {
@@ -70,7 +70,7 @@ public class Resources {
             }
         }else if(Objects.equals(this.resourceName, "stone")){
 
-            try {File file = new File("./src/main/resources/com/civsim/Pliki/stone_filled.png");
+            try {File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/stone_filled.png");
                 image = ImageIO.read(file);
                 return image;
             } catch (IOException e) {
