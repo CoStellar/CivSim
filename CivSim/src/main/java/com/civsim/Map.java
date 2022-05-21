@@ -43,7 +43,6 @@ public class Map extends JFrame {
             this.screenHeight = (mapSize.getMapSize() * fieldSize) + (mapSize.getMapSize() + 38);
             setSize(this.screenWidth, this.screenHeight);
             getContentPane().setBackground(Color.black);
-            setTitle("Symulacja Cywilizacji");
             setResizable(false);
             file = new File("./CivSim/src/main/resources/com/civsim/Pliki/icon.png");
             ImageIcon image = new ImageIcon(String.valueOf(file));

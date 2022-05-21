@@ -10,4 +10,5 @@ public class MapSize {
   public Integer getMapSize(){
     return this.mapSize;
   }
+
 }
