@@ -7,8 +7,7 @@ import java.io.IOException;
 
 public class Credits extends JPanel {
     JFrame panel = new JFrame();
-    JLabel label = new JLabel("<html><body><center>Czcionka stworzona przez: Pix3m</center</body></html>");
-    JLabel background;
+    JLabel label = new JLabel("<html><body><center>Czcionka stworzona przez: Pix3m<br><br>Twórcy aplikacji:<br>Agata Falkowska<br>Monika Janicka<br>Patryk Wawrzacz</center></body></html>");
     Font pix3mFont;
     File file;
     Credits() throws IOException {
@@ -19,11 +18,14 @@ public class Credits extends JPanel {
             }catch (IOException | FontFormatException e){
                 System.out.println(e);
             }
-             label.setFont(pix3mFont);
-             panel.setSize(300,200);
-             panel.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-             panel.add(label);
-             panel.setVisible(true);
+            label.setFont(pix3mFont);
+            label.setBounds(50,10,200,160);
+            panel.setSize(300,300);
+
+            ImageIcon image = new ImageIcon(String.valueOf(new File("./CivSim/src/main/resources/com/civsim/Pliki/icon.png")));
+            panel.setIconImage(image.getImage());
+            panel.add(label);
+            panel.setVisible(true);
     }
 
 
