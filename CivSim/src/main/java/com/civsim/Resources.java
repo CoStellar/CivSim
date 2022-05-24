@@ -24,7 +24,8 @@ public class Resources {
     public BufferedImage getImg(){
         BufferedImage image;
         InputStream is;
-        if(Objects.equals(this.resourceName, "wood")){
+        if(Objects.equals(this.resourceName, "wood"))
+        {
             try {
                 File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/wood_log_filled.png");
                 image = ImageIO.read(file);
@@ -33,7 +34,8 @@ public class Resources {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }else if(Objects.equals(this.resourceName, "water")){
+        }else if(Objects.equals(this.resourceName, "water"))
+        {
             try {
                 File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/water_filled.png");
                 image = ImageIO.read(file);
@@ -41,7 +43,8 @@ public class Resources {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }else if(Objects.equals(this.resourceName, "cow")){
+        }else if(Objects.equals(this.resourceName, "cow"))
+        {
 
             try {
                 File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/cow_filled.png");
@@ -50,7 +53,8 @@ public class Resources {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }else if(Objects.equals(this.resourceName, "wheat")){
+        }else if(Objects.equals(this.resourceName, "wheat"))
+        {
 
             try {
                 File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/wheat_filled.png");
@@ -59,7 +63,8 @@ public class Resources {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }else if(Objects.equals(this.resourceName, "iron")){
+        }else if(Objects.equals(this.resourceName, "iron"))
+        {
 
             try {
                 File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/iron_filled.png");
@@ -68,7 +73,8 @@ public class Resources {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-        }else if(Objects.equals(this.resourceName, "stone")){
+        }else if(Objects.equals(this.resourceName, "stone"))
+        {
 
             try {File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/stone_filled.png");
                 image = ImageIO.read(file);
@@ -83,34 +89,50 @@ public class Resources {
     String drawResources(){
         int random;
         random = (int) (Math.random() * 6);
-        if(random == 0){
+        if(random == 0)
+        {
                 this.wood = 1;
-                return "wood";}
-        if(random == 1){
+                return "wood";
+        }
+        if(random == 1)
+        {
                 this.water = 1;
-                return "water";}
-        if(random == 2){
+                return "water";
+        }
+        if(random == 2)
+        {
                 this.animals = 1;
-                return "cow";}
-        if(random == 3){
+                return "cow";
+        }
+        if(random == 3)
+        {
                 this.wheat = 1;
-                return "wheat";}
-        if(random == 4){
+                return "wheat";
+        }
+        if(random == 4)
+        {
                 this.iron = 1;
-                return "iron";}
-        if (random == 5){
+                return "iron";
+        }
+        if (random == 5)
+        {
                 this.stone = 1;
-                return "stone";}
+                return "stone";
+        }
         else return null;
     }
-    public boolean resourcesCompareVillage(Resources resources){
-        if(resources.wood >= 5 && resources.wheat >= 3 && resources.animals >= 2) {
+    public boolean resourcesCompareVillage(Resources resources)
+    {
+        if(resources.wood >= 5 && resources.wheat >= 3 && resources.animals >= 2)
+        {
             return true;
         }
         else return false;
     }
-    public boolean resourcesCompareCity(Resources resources){
-        if(resources.wood >= 3 && resources.stone >= 5 && resources.animals >= 2 && resources.iron >= 2) {
+    public boolean resourcesCompareCity(Resources resources)
+    {
+        if(resources.wood >= 3 && resources.stone >= 5 && resources.animals >= 2 && resources.iron >= 2)
+        {
             return true;
         }
         else return false;

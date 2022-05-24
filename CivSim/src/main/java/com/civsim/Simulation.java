@@ -8,8 +8,6 @@ public class Simulation {
     public Position[] civPosition = new Position[4];
     Simulation() throws IOException {
         ControlPanel controlPanel = new ControlPanel();
-
-
         civilization[0] = new Civilization();
         civilization[1] = new Civilization();
         civilization[2] = new Civilization();
@@ -19,7 +17,6 @@ public class Simulation {
         civPosition[2] = civilization[2].passCivPosition();
         civPosition[3] = civilization[3].passCivPosition();
         Map simulation = new Map(getCivPosition());
-
     }
     public Position[] getCivPosition(){
         Position[] positions = new Position[4];
