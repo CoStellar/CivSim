@@ -7,9 +7,13 @@ public class Position {
     public Integer x;
     public Integer y;
     Random random;
-
+    MapSize mapSize;
     Position() {
-        MapSize mapSize = new MapSize(25);
+        this.mapSize = new MapSize(25);
+        this.x = drawRandomPosition(mapSize);
+        this.y = drawRandomPosition(mapSize);
+    }
+    Position(MapSize mapSize) {
         this.x = drawRandomPosition(mapSize);
         this.y = drawRandomPosition(mapSize);
     }

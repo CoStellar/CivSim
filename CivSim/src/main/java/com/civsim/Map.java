@@ -6,23 +6,22 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.Objects;
+
 
 public class Map extends JFrame {
 
     final Integer fieldSize = 32;
-    private Integer screenWidth;
-    private Integer screenHeight;
-    public MapSize mapSize = new MapSize(25);
+    public MapSize mapSize;
 
-    Resources[][] resources = new Resources[mapSize.getMapSize()][mapSize.getMapSize()];
+    Resources[][] resources;
 
-    public BufferedImage[][] img = new BufferedImage[mapSize.getMapSize()][mapSize.getMapSize()];
+    public BufferedImage[][] img;
 
-    private ApplicationPanel appPanel;
-    public Map(Position[] civPosition) throws IOException {
+    public Map(Position[] civPosition, MapSize mapSize, Integer civAmount) throws IOException {
+        this.mapSize = mapSize;
+        resources = new Resources[mapSize.getMapSize()][mapSize.getMapSize()];
+        img = new BufferedImage[mapSize.getMapSize()][mapSize.getMapSize()];
         File file;
-
         for (int x = 0; x < mapSize.getMapSize(); x++) {
             for (int y = 0; y < mapSize.getMapSize(); y++) {
                 resources[x][y] = new Resources();
@@ -31,7 +30,7 @@ public class Map extends JFrame {
         }
         for (int x = 0; x < mapSize.getMapSize(); x++) {
             for (int y = 0; y < mapSize.getMapSize(); y++) {
-                for (int i = 0; i < 4; i++) {
+                for (int i = 0; i < civAmount; i++) {
                     if (civPosition[i].x == x && civPosition[i].y == y) {
                         file = new File("./CivSim/src/main/resources/com/civsim/Pliki/city.png");
                         this.img[x][y] = ImageIO.read(file);
@@ -39,15 +38,15 @@ public class Map extends JFrame {
                 }
             }
 
-            this.screenWidth = (mapSize.getMapSize() * fieldSize) + (mapSize.getMapSize() + 15);
-            this.screenHeight = (mapSize.getMapSize() * fieldSize) + (mapSize.getMapSize() + 38);
-            setSize(this.screenWidth, this.screenHeight);
+            int screenWidth = (mapSize.getMapSize() * fieldSize) + (mapSize.getMapSize() + 15);
+            int screenHeight = (mapSize.getMapSize() * fieldSize) + (mapSize.getMapSize() + 38);
+            setSize(screenWidth, screenHeight);
             getContentPane().setBackground(Color.black);
             setResizable(false);
             file = new File("./CivSim/src/main/resources/com/civsim/Pliki/icon.png");
             ImageIcon image = new ImageIcon(String.valueOf(file));
             setIconImage(image.getImage());
-            appPanel = new ApplicationPanel(img);
+            ApplicationPanel appPanel = new ApplicationPanel(img, this.mapSize);
             add(appPanel);
             setVisible(true);
         }

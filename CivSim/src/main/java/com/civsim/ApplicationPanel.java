@@ -3,18 +3,19 @@ package com.civsim;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.util.Random;
+
 
 public class ApplicationPanel extends JPanel{
 
-        private Random random;
-        private  BufferedImage[][] img;
+    private final BufferedImage[][] img;//
 
-    public ApplicationPanel(BufferedImage[][] img)   {
+    public MapSize mapSize;
+    public ApplicationPanel(BufferedImage[][] img, MapSize mapSize)   {
+        this.mapSize = new MapSize(mapSize.getMapSize());
         this.img = img;
 
     }
-    public MapSize mapSize = new MapSize(25);
+
 
     public void paintComponent(Graphics g){
         super.paintComponent(g);

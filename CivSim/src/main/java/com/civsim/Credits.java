@@ -9,15 +9,12 @@ public class Credits extends JPanel {
     JFrame panel = new JFrame();
     JLabel label = new JLabel("<html><body><center>Czcionka stworzona przez: Pix3m<br><br>Twórcy aplikacji:<br>Agata Falkowska<br>Monika Janicka<br>Patryk Wawrzacz</center></body></html>");
     Font pix3mFont;
-    File file;
-    Credits() throws IOException {
-            try{
+    Credits() throws IOException, FontFormatException {
+
                 pix3mFont = Font.createFont(Font.TRUETYPE_FONT, new File("./CivSim/src/main/resources/com/civsim/Pliki/Font/bitmap_font_romulus_by_pix3m-d6aokem.ttf")).deriveFont(22f);
                 GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
                 ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("./CivSim/src/main/resources/com/civsim/Pliki/Font/bitmap_font_romulus_by_pix3m-d6aokem.ttf")));
-            }catch (IOException | FontFormatException e){
-                System.out.println(e);
-            }
+
             label.setFont(pix3mFont);
             label.setBounds(50,10,200,160);
             panel.setSize(300,300);

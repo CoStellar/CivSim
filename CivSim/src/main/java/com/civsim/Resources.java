@@ -4,9 +4,7 @@ import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.URISyntaxException;
-import java.nio.file.FileSystems;
+
 import java.util.Objects;
 
 public class Resources {
@@ -23,7 +21,6 @@ public class Resources {
     }
     public BufferedImage getImg(){
         BufferedImage image;
-        InputStream is;
         if(Objects.equals(this.resourceName, "wood"))
         {
             try {
@@ -123,19 +120,11 @@ public class Resources {
     }
     public boolean resourcesCompareVillage(Resources resources)
     {
-        if(resources.wood >= 5 && resources.wheat >= 3 && resources.animals >= 2)
-        {
-            return true;
-        }
-        else return false;
+        return resources.wood >= 5 && resources.wheat >= 3 && resources.animals >= 2;
     }
     public boolean resourcesCompareCity(Resources resources)
     {
-        if(resources.wood >= 3 && resources.stone >= 5 && resources.animals >= 2 && resources.iron >= 2)
-        {
-            return true;
-        }
-        else return false;
+        return resources.wood >= 3 && resources.stone >= 5 && resources.animals >= 2 && resources.iron >= 2;
     }
 
 

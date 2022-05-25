@@ -15,18 +15,20 @@ public class Civilization extends JPanel {
     private City[] cities;
     public Resources resourcesAmount;
     Resources resourcesForCity = new Resources();
+    MapSize mapSize;
    Position[] civFieldPosition = new Position[20];
-    public Civilization() {
+    public Civilization(MapSize mapSize) {
+        this.mapSize = mapSize;
         this.civSize = 1;
         this.villageCount = 1;
         this.cityCount = 0;
-        this.civFieldPosition[0] = new Position();
+        this.civFieldPosition[0] = new Position(this.mapSize);
     }
 
         public void civExpand(Resources resourcesAmount, Integer villageCount, Integer cityCount, Position[] civFieldPosition){
                 if(resourcesAmount.resourcesCompareVillage(resourcesAmount)){
                     if(villageCount/cityCount <= 4){
-                        this.civFieldPosition[civSize] = new Position();
+                        this.civFieldPosition[civSize] = new Position(mapSize);
                         this.civFieldPosition[civSize] = drawRandomPositionAround(civFieldPosition);
                         this.civSize++;
                         this.villageCount++;
@@ -40,11 +42,11 @@ public class Civilization extends JPanel {
     public Position drawRandomPositionAround(Position[] initialPosition) {
         Random random = new Random();
 
-        Position drawedPosition = new Position();
+        Position drawnPosition = new Position(mapSize);
         Integer[][] tab = new Integer[initialPosition.length][2];
         Integer[][] tab2 = new Integer[initialPosition.length][2];
         Integer[][] tab3 = new Integer[initialPosition.length][2];
-        Integer counter = 0, number;
+        int counter = 0, number;
         for (int i = 0; i < initialPosition.length; i++) {
             for (int o = 0; o < 2; o++) {
                 if (o == 0)
@@ -76,13 +78,13 @@ public class Civilization extends JPanel {
             }
         }
         do {
-            number = (Integer) random.nextInt(initialPosition.length);
+            number = random.nextInt(initialPosition.length);
         }while(tab3[number] == null);
 
-        drawedPosition.x = tab3[number][0];
-        drawedPosition.y = tab3[number][1];
+        drawnPosition.x = tab3[number][0];
+        drawnPosition.y = tab3[number][1];
 
-        return drawedPosition;
+        return drawnPosition;
     }
 
     public Position passCivPosition(){

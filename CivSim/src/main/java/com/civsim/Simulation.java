@@ -1,31 +1,35 @@
 package com.civsim;
 
+
 import java.io.IOException;
 
 public class Simulation {
 
-    private Civilization[] civilization = new Civilization[4];
-    public Position[] civPosition = new Position[4];
-    Simulation() throws IOException {
-        ControlPanel controlPanel = new ControlPanel();
-        civilization[0] = new Civilization();
-        civilization[1] = new Civilization();
-        civilization[2] = new Civilization();
-        civilization[3] = new Civilization();
-        civPosition[0] = civilization[0].passCivPosition();
-        civPosition[1] = civilization[1].passCivPosition();
-        civPosition[2] = civilization[2].passCivPosition();
-        civPosition[3] = civilization[3].passCivPosition();
-        Map simulation = new Map(getCivPosition());
+    private final Position[] civPosition;
+    private final Integer civAmount;
+    private Integer simRoundAmount;
+
+    Simulation(Integer civAmount, Integer simRoundAmount, MapSize mapSize) throws IOException {
+        this.civAmount = civAmount;
+        this.simRoundAmount = simRoundAmount;
+
+
+        Civilization[] civilization = new Civilization[civAmount];
+        civPosition = new Position[civAmount];
+        for(int i=0; i<this.civAmount;i++) {
+            civilization[i] = new Civilization(mapSize);
+        }
+        for(int i=0; i<this.civAmount;i++) {
+            civPosition[i] = new Position();
+            civPosition[i] = civilization[i].passCivPosition();
+        }
+
+        Map simulationMap = new Map(getCivPosition(), mapSize, this.civAmount);
     }
     public Position[] getCivPosition(){
-        Position[] positions = new Position[4];
-        positions[0] = civPosition[0];
-        positions[1] = civPosition[1];
-        positions[2] = civPosition[2];
-        positions[3] = civPosition[3];
+        Position[] positions = new Position[this.civAmount];
+        System.arraycopy(civPosition, 0, positions, 0, this.civAmount);
         return positions;
     }
-
 
 }
