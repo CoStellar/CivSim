@@ -14,22 +14,24 @@ public class Map extends JFrame {
     public MapSize mapSize;
 
     Resources[][] resources;
-
+    ApplicationPanel appPanel;
     public BufferedImage[][] img;
-
+    int civAmount;
+    File file;
     public Map(Position[] civPosition, MapSize mapSize, Integer civAmount) throws IOException {
         this.mapSize = mapSize;
-        resources = new Resources[mapSize.getMapSize()][mapSize.getMapSize()];
-        img = new BufferedImage[mapSize.getMapSize()][mapSize.getMapSize()];
-        File file;
-        for (int x = 0; x < mapSize.getMapSize(); x++) {
-            for (int y = 0; y < mapSize.getMapSize(); y++) {
+        this.civAmount = civAmount;
+        resources = new Resources[this.mapSize.getMapSize()][this.mapSize.getMapSize()];
+        img = new BufferedImage[this.mapSize.getMapSize()][this.mapSize.getMapSize()];
+
+        for (int x = 0; x < this.mapSize.getMapSize(); x++) {
+            for (int y = 0; y < this.mapSize.getMapSize(); y++) {
                 resources[x][y] = new Resources();
                 this.img[x][y] = resources[x][y].getImg();
             }
         }
-        for (int x = 0; x < mapSize.getMapSize(); x++) {
-            for (int y = 0; y < mapSize.getMapSize(); y++) {
+        for (int x = 0; x < this.mapSize.getMapSize(); x++) {
+            for (int y = 0; y < this.mapSize.getMapSize(); y++) {
                 for (int i = 0; i < civAmount; i++) {
                     if (civPosition[i].x == x && civPosition[i].y == y) {
                         file = new File("./CivSim/src/main/resources/com/civsim/Pliki/city.png");
@@ -46,10 +48,31 @@ public class Map extends JFrame {
             file = new File("./CivSim/src/main/resources/com/civsim/Pliki/icon.png");
             ImageIcon image = new ImageIcon(String.valueOf(file));
             setIconImage(image.getImage());
-            ApplicationPanel appPanel = new ApplicationPanel(img, this.mapSize);
+            appPanel = new ApplicationPanel(img, this.mapSize);
             add(appPanel);
             setVisible(true);
         }
 
     }
+
+    public void updateMap(Position[] civPosition) throws IOException {
+        for (int x = 0; x < this.mapSize.getMapSize(); x++) {
+            for (int y = 0; y < this.mapSize.getMapSize(); y++) {
+                this.img[x][y] = resources[x][y].getImg();
+            }
+        }
+        for (int x = 0; x < this.mapSize.getMapSize(); x++) {
+            for (int y = 0; y < this.mapSize.getMapSize(); y++) {
+                for (int i = 0; i < civAmount; i++) {
+                    if (civPosition[i].x == x && civPosition[i].y == y) {
+                        file = new File("./CivSim/src/main/resources/com/civsim/Pliki/city.png");
+                        this.img[x][y] = ImageIO.read(file);
+                    }
+                }
+            }
+        }
+
+        appPanel.repaint();
+    }
+
 }

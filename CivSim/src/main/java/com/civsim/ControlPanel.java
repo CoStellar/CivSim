@@ -129,6 +129,7 @@ public class ControlPanel extends JPanel {
                 mapSize = new MapSize(Integer.parseInt(firstText.getText()));           //Ustawienie mapSize na wpisaną wartość
                 civCount = Integer.parseInt(secondText.getText());                      //----||---- civCount -------||--------
                 turnAmount = Integer.parseInt(thirdText.getText());                     //----||---- turnAmount -----||--------
+
             try {
                 runSimulation();                                                        //Po ustawieniu wartości uruchomiona zostaje metoda runSimulation()
             } catch (IOException ex) {

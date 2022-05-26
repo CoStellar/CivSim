@@ -15,8 +15,6 @@ public class ApplicationPanel extends JPanel{
         this.img = img;
 
     }
-
-
     public void paintComponent(Graphics g){
         super.paintComponent(g);
         Color background = new Color(57, 99, 37);
@@ -35,8 +33,7 @@ public class ApplicationPanel extends JPanel{
 
             }
         }
-
-
+        g.dispose();
     }
 
 }
