@@ -6,6 +6,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 
 public class Map extends JFrame {
@@ -16,27 +17,38 @@ public class Map extends JFrame {
     Resources[][] resources;
     ApplicationPanel appPanel;
     public BufferedImage[][] img;
-    int civAmount;
+    int civAmount, civSize;
     File file;
-    public Map(Position[] civPosition, MapSize mapSize, Integer civAmount) throws IOException {
+    public Color[] civColor;
+    private Color[][] colorPosition;
+    private final Color background = new Color(57, 99, 37);
+    public Map(ArrayList<ArrayList<Position>> civPosition, MapSize mapSize, Integer civAmount, Color[] civColor) throws IOException {
         this.mapSize = mapSize;
         this.civAmount = civAmount;
+        this.civColor = civColor;
         resources = new Resources[this.mapSize.getMapSize()][this.mapSize.getMapSize()];
         img = new BufferedImage[this.mapSize.getMapSize()][this.mapSize.getMapSize()];
-
+        colorPosition = new Color[this.mapSize.getMapSize()][this.mapSize.getMapSize()];
         for (int x = 0; x < this.mapSize.getMapSize(); x++) {
             for (int y = 0; y < this.mapSize.getMapSize(); y++) {
                 resources[x][y] = new Resources();
                 this.img[x][y] = resources[x][y].getImg();
             }
         }
+
+
         for (int x = 0; x < this.mapSize.getMapSize(); x++) {
             for (int y = 0; y < this.mapSize.getMapSize(); y++) {
                 for (int i = 0; i < civAmount; i++) {
-                    if (civPosition[i].x == x && civPosition[i].y == y) {
-                        file = new File("./CivSim/src/main/resources/com/civsim/Pliki/city.png");
-                        this.img[x][y] = ImageIO.read(file);
+                    civSize = civPosition.get(i).size();
+                    for(int o=0; o<civSize; o++){
+                        if (civPosition.get(i).get(o).x == x && civPosition.get(i).get(o).y == y) {
+                            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/city_template.png");
+                            this.img[x][y] = ImageIO.read(file);
+                            this.colorPosition[x][y] = civColor[i];
+                        }
                     }
+
                 }
             }
 
@@ -48,25 +60,30 @@ public class Map extends JFrame {
             file = new File("./CivSim/src/main/resources/com/civsim/Pliki/icon.png");
             ImageIcon image = new ImageIcon(String.valueOf(file));
             setIconImage(image.getImage());
-            appPanel = new ApplicationPanel(img, this.mapSize);
+            appPanel = new ApplicationPanel(img, this.mapSize, colorPosition);
             add(appPanel);
             setVisible(true);
         }
 
     }
 
-    public void updateMap(Position[] civPosition) throws IOException {
+    public void updateMap(ArrayList<ArrayList<Position>> civPosition) throws IOException {
         for (int x = 0; x < this.mapSize.getMapSize(); x++) {
             for (int y = 0; y < this.mapSize.getMapSize(); y++) {
                 this.img[x][y] = resources[x][y].getImg();
+                this.colorPosition[x][y] = background;
             }
         }
         for (int x = 0; x < this.mapSize.getMapSize(); x++) {
             for (int y = 0; y < this.mapSize.getMapSize(); y++) {
                 for (int i = 0; i < civAmount; i++) {
-                    if (civPosition[i].x == x && civPosition[i].y == y) {
-                        file = new File("./CivSim/src/main/resources/com/civsim/Pliki/city.png");
-                        this.img[x][y] = ImageIO.read(file);
+                    civSize = civPosition.get(i).size();
+                    for(int o=0; o<civSize; o++){
+                        if (civPosition.get(i).get(o).x == x && civPosition.get(i).get(o).y == y) {
+                            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/city_template.png");
+                            this.img[x][y] = ImageIO.read(file);
+                            this.colorPosition[x][y] = civColor[i];
+                        }
                     }
                 }
             }
@@ -74,5 +91,7 @@ public class Map extends JFrame {
 
         appPanel.repaint();
     }
+
+
 
 }

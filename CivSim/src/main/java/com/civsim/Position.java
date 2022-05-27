@@ -6,8 +6,8 @@ public class Position {
 
     public Integer x;
     public Integer y;
-    Random random;
-    MapSize mapSize;
+    private Random random;
+    private MapSize mapSize;
     Position() {
         this.mapSize = new MapSize(25);
         this.x = drawRandomPosition(mapSize);

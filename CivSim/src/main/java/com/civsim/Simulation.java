@@ -1,45 +1,42 @@
 package com.civsim;
 
+import java.awt.*;
 import java.io.IOException;
-import java.util.Objects;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class Simulation implements Runnable {
-
-    private final Position[] civPosition;
-    private final Integer civAmount;
+    private final int civAmount;
     private final Integer simRoundAmount;
-    Map simulationMap;
+    private final Map simulationMap;
+    private MapSize mapSize;
     Thread simThread;
-    MapSize mapSize;
-    Civilization[] civilization;
+    private final ArrayList<ArrayList<Position>> civPosition = new ArrayList<>();
 
+    private final ArrayList<Civilization> civilization = new ArrayList<>();
+    Color[] civColor;
     Simulation(Integer civAmount, Integer simRoundAmount, MapSize mapSize) throws IOException {
         this.civAmount = civAmount;
         this.simRoundAmount = simRoundAmount;
         this.mapSize = mapSize;
-        civilization = new Civilization[civAmount];
-        civPosition = new Position[civAmount];
+        this.civColor = new Color[civAmount];
         for (int i = 0; i < this.civAmount; i++) {
-            civilization[i] = new Civilization(mapSize);
-            civPosition[i] = new Position();
-            civPosition[i] = civilization[i].passCivPosition();
-            for (int o = 0; o < i; o++) {
-                while (Objects.equals(civPosition[o].x, civPosition[i].x) && Objects.equals(civPosition[o].y, civPosition[i].y)) {
-                    civilization[i] = new Civilization(mapSize);
-                    civPosition[i] = civilization[i].passCivPosition();
-                }
-            }
+            assert false;
+            civilization.add(new Civilization(mapSize));
+         //   civilization.get(i).civExpand( civilization.get(i).resourcesAmount,1,0,civilization.get(i).civFieldPosition);
+            civColor[i] = new Color(civilization.get(i).civColor.getRGB());
+            civPosition.add(new ArrayList<>());
+            civPosition.get(i).add(new Position(mapSize));
+            civPosition.set(i, civilization.get(i).civFieldPosition);
+
         }
 
-        simulationMap = new Map(getCivPosition(), this.mapSize, this.civAmount);
+        simulationMap = new Map(civPosition, mapSize, this.civAmount, civColor);
         startSimThread();
     }
 
-    public Position[] getCivPosition() {
-        Position[] positions = new Position[this.civAmount];
-        System.arraycopy(civPosition, 0, positions, 0, this.civAmount);
-        return positions;
+    public ArrayList<ArrayList<Position>> getCivPosition() {
+        return this.civPosition;
     }
 
     public void startSimThread() {
@@ -51,23 +48,32 @@ public class Simulation implements Runnable {
     public void run() {
         int counter = 1;
         while (simThread != null && counter <= simRoundAmount) {
-            for (int i = this.civAmount - 1; i >= 0; i--) {
-                civPosition[i] = new Position();
+            try {
+                TimeUnit.SECONDS.sleep(1);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+
+            for (int i = 0; i < this.civAmount; i++) {
+                ArrayList <Position> swapOut = new ArrayList<Position>();
+                for(int o=0; o<civilization.get(i).getCivSize(); o++) {
+                    swapOut.add(new Position());
+                    swapOut.set(o, new Position(mapSize));
+                }
+                civPosition.set(i, swapOut);
+            }
 
                 try {
-                    simulationMap.updateMap(civPosition);
+
+                   simulationMap.updateMap(civPosition);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
                 long currentTime = System.currentTimeMillis();
-                try {
-                    TimeUnit.SECONDS.sleep(1);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
+
                 System.out.println(currentTime);
                 counter++;
             }
+
         }
     }
-}

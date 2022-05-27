@@ -20,7 +20,7 @@ public class ControlPanel extends JPanel {
     private Integer turnAmount;
 
     private MapSize mapSize;
-
+    public JFrame panel;
     ControlPanel() throws IOException, FontFormatException {
 
                                                                                 //dodanie nowej czcionki do programu TWÓRCA: pix3m
@@ -29,7 +29,7 @@ public class ControlPanel extends JPanel {
         ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("./CivSim/src/main/resources/com/civsim/Pliki/Font/bitmap_font_romulus_by_pix3m-d6aokem.ttf")));
 
                                                                                 //stworzenie panelu(okna) które będzie się wyświetlało
-        JFrame panel = new JFrame();
+        panel = new JFrame();
         panel.setLayout(new FlowLayout());
                                                                                 //ustawienie odpowiednich tekstów, które będą wypisane w programie
         JLabel label1 = new JLabel("<html><body><center>Symulacja<br>Cywilizacji</center</body></html>");
@@ -135,7 +135,7 @@ public class ControlPanel extends JPanel {
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
             }
-
+            panel.setState(Frame.ICONIFIED);
         }
         );
 
