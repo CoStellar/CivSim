@@ -11,11 +11,11 @@ public class Civilization extends JPanel {
 
 
     private Integer civSize;
-    private Integer villageCount=1;
+    private Integer villageCount=0;
     private Integer cityCount=0;
     private Integer populationCount;
     private Integer mobileUnitsAmount;
-    private Village[] villages;
+    private ArrayList<Village> villages = new ArrayList<>();
     private City[] cities;
     public Resources resourcesAmount = new Resources();
     public Color civColor;
@@ -26,20 +26,21 @@ public class Civilization extends JPanel {
         this.civColor = new Color((int)(Math.random() * 0x1000000));
         this.mapSize = mapSize;
         this.civSize = 1;
-        this.villageCount = 1;
-        this.cityCount = 0;
         this.civFieldPosition.add(new Position(this.mapSize));
+        villages.add(new Village(civFieldPosition.get(villageCount)));
+        this.villageCount++;
+        this.cityCount = 0;
         this.resourcesAmount.wood = 5;
         this.resourcesAmount.wheat = 5;
         this.resourcesAmount.animals = 5;
 
     }
 
-        public void civExpand(Resources resourcesAmount, Integer villageCount, Integer cityCount, ArrayList<Position> civFieldPosition){
+        public void civExpand(){
                 if(resourcesAmount.resourcesCompareVillage(resourcesAmount)){
                     if(cityCount == 0 || villageCount/cityCount <= 4){
-                        this.civFieldPosition.add(new Position(mapSize));
                         this.civFieldPosition.add(drawRandomPositionAround(civFieldPosition));
+                        this.villages.add(new Village(civFieldPosition.get(civSize)));
                         this.civSize++;
                         this.villageCount++;
                     }
@@ -73,16 +74,20 @@ public class Civilization extends JPanel {
                     number = random.nextInt(3);
                 } while (number == 1);
                 number = number - 1;
-                tab2[i][0] = tab2[i][0] + number;
-                do {
-                    number = random.nextInt(3);
-                } while (number == 1);
-                number = number - 1;
-                tab2[i][1] = tab2[i][1] + number;
-            }while(tab2[i][1] == -1 || tab2[i][1] == 26 || tab2[i][0] == -1 || tab2[i][0] == 26 );
+
+                if(random.nextInt(2)==1){
+                    tab2[i][0] = tab[i][0] + number;
+                    tab2[i][1] = tab[i][1];
+                }else {
+                    tab2[i][0] = tab[i][0];
+                    tab2[i][1] = tab[i][1] + number;
+                }
+
+
+            }while(tab2[i][1] == -1 || tab2[i][1] == mapSize.getMapSize()+1 || tab2[i][0] == -1 || tab2[i][0] == mapSize.getMapSize()+1 );
         }
         for(int i=0;i< initialPosition.size();i++){
-            if(!Objects.equals(tab[i][0], tab2[i][0]) && !Objects.equals(tab[i][1], tab2[i][1])){
+            if(!Objects.equals(tab[i][0], tab2[i][0]) || !Objects.equals(tab[i][1], tab2[i][1])){
                 tab3[i][0] = tab2[i][0];
                 tab3[i][1] = tab2[i][1];
             }

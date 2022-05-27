@@ -24,17 +24,16 @@ public class ApplicationPanel extends JPanel{
         Color background = new Color(57, 99, 37);
         for(int y=0; y< mapSize.getMapSize(); y++){
             for(int x=0;x<mapSize.getMapSize(); x++){
-                if(colorPosition[x][y]== null) {
-                    g.setColor(background);
-                    g.fillRect((x * 32)+x-1, (y * 32)+y-1, 33,33);
-
-                }
-                else {
+                 g.setColor(background);
+                 g.fillRect((x * 32)+x-1, (y * 32)+y-1, 34,34);
+        }}
+        for(int y=0; y< mapSize.getMapSize(); y++){
+            for(int x=0;x<mapSize.getMapSize(); x++){
+                if(colorPosition[x][y]!= null) {
                     g.setColor(colorPosition[y][x]);
                     g.fillRect((x * 32)+x, (y * 32)+y, 32,32);
                 }
                 g.drawImage(img[y][x], (x * 32)+x, (y * 32)+y, null);
-
             }
         }
         g.dispose();

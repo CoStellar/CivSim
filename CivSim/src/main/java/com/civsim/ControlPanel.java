@@ -10,10 +10,9 @@ import java.io.IOException;
 
 public class ControlPanel extends JPanel {
 
-    final private String blank = "1";//sta
-    private final JTextField firstText = new JTextField(blank,1);
-    private final JTextField secondText = new JTextField(blank,1);
-    private final JTextField thirdText = new JTextField(blank,1);
+    private final JTextField firstText = new JTextField("25",1);
+    private final JTextField secondText = new JTextField("10",1);
+    private final JTextField thirdText = new JTextField("5",1);
 
 
     private Integer civCount;

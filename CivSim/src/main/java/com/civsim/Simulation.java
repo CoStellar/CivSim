@@ -23,10 +23,8 @@ public class Simulation implements Runnable {
         for (int i = 0; i < this.civAmount; i++) {
             assert false;
             civilization.add(new Civilization(mapSize));
-         //   civilization.get(i).civExpand( civilization.get(i).resourcesAmount,1,0,civilization.get(i).civFieldPosition);
             civColor[i] = new Color(civilization.get(i).civColor.getRGB());
             civPosition.add(new ArrayList<>());
-            civPosition.get(i).add(new Position(mapSize));
             civPosition.set(i, civilization.get(i).civFieldPosition);
 
         }
@@ -53,22 +51,15 @@ public class Simulation implements Runnable {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-
-            for (int i = 0; i < this.civAmount; i++) {
-                ArrayList <Position> swapOut = new ArrayList<Position>();
-                for(int o=0; o<civilization.get(i).getCivSize(); o++) {
-                    swapOut.add(new Position());
-                    swapOut.set(o, new Position(mapSize));
-                }
-                civPosition.set(i, swapOut);
+            for(int i = 0 ; i<civilization.size(); i++) {
+                civilization.get(i).civExpand();
             }
-
                 try {
-
                    simulationMap.updateMap(civPosition);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
+
                 long currentTime = System.currentTimeMillis();
 
                 System.out.println(currentTime);

@@ -29,23 +29,24 @@ public class Map extends JFrame {
         resources = new Resources[this.mapSize.getMapSize()][this.mapSize.getMapSize()];
         img = new BufferedImage[this.mapSize.getMapSize()][this.mapSize.getMapSize()];
         colorPosition = new Color[this.mapSize.getMapSize()][this.mapSize.getMapSize()];
+
+
         for (int x = 0; x < this.mapSize.getMapSize(); x++) {
             for (int y = 0; y < this.mapSize.getMapSize(); y++) {
                 resources[x][y] = new Resources();
                 this.img[x][y] = resources[x][y].getImg();
             }
         }
-
-
         for (int x = 0; x < this.mapSize.getMapSize(); x++) {
             for (int y = 0; y < this.mapSize.getMapSize(); y++) {
+                this.colorPosition[x][y] = new Color(57, 99, 37);
                 for (int i = 0; i < civAmount; i++) {
                     civSize = civPosition.get(i).size();
                     for(int o=0; o<civSize; o++){
                         if (civPosition.get(i).get(o).x == x && civPosition.get(i).get(o).y == y) {
                             file = new File("./CivSim/src/main/resources/com/civsim/Pliki/city_template.png");
                             this.img[x][y] = ImageIO.read(file);
-                            this.colorPosition[x][y] = civColor[i];
+                            this.colorPosition[x][y] = this.civColor[i];
                         }
                     }
 
@@ -68,10 +69,11 @@ public class Map extends JFrame {
     }
 
     public void updateMap(ArrayList<ArrayList<Position>> civPosition) throws IOException {
+
         for (int x = 0; x < this.mapSize.getMapSize(); x++) {
             for (int y = 0; y < this.mapSize.getMapSize(); y++) {
                 this.img[x][y] = resources[x][y].getImg();
-                this.colorPosition[x][y] = background;
+                this.colorPosition[x][y] =  new Color(57, 99, 37);
             }
         }
         for (int x = 0; x < this.mapSize.getMapSize(); x++) {
@@ -88,7 +90,6 @@ public class Map extends JFrame {
                 }
             }
         }
-
         appPanel.repaint();
     }
 
