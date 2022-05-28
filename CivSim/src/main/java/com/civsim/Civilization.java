@@ -16,7 +16,7 @@ public class Civilization extends JPanel {
     private Integer populationCount;
     private Integer mobileUnitsAmount;
     private ArrayList<Village> villages = new ArrayList<>();
-    private City[] cities;
+    private ArrayList<City> cities;
     public Resources resourcesAmount = new Resources();
     public Color civColor;
     Resources resourcesForCity = new Resources();
@@ -30,9 +30,9 @@ public class Civilization extends JPanel {
         villages.add(new Village(civFieldPosition.get(villageCount)));
         this.villageCount++;
         this.cityCount = 0;
-        this.resourcesAmount.wood = 5;
-        this.resourcesAmount.wheat = 5;
-        this.resourcesAmount.animals = 5;
+        this.resourcesAmount.setWood(5);
+        this.resourcesAmount.setWheat(5);
+        this.resourcesAmount.setAnimals(5);
 
     }
 
@@ -44,10 +44,14 @@ public class Civilization extends JPanel {
                         this.civSize++;
                         this.villageCount++;
                     }
-                    /*else if(resourcesAmount.resourcesCompareCity(resourcesAmount)){
 
-                    }*/
-                }
+                }else if(resourcesAmount.resourcesCompareCity(resourcesAmount)){
+                    this.civFieldPosition.add(drawRandomPositionAround(civFieldPosition));
+                    this.cities.add(new City(civFieldPosition.get(civSize)));
+                    this.civSize++;
+                    this.cityCount++;
+                    }
+
         }
 
     public Position drawRandomPositionAround(ArrayList<Position> initialPosition) {
@@ -57,6 +61,7 @@ public class Civilization extends JPanel {
         Integer[][] tab = new Integer[initialPosition.size()][2];
         Integer[][] tab2 = new Integer[initialPosition.size()][2];
         Integer[][] tab3 = new Integer[initialPosition.size()][2];
+
         int counter = 0, number;
         for (int i = 0; i < initialPosition.size(); i++) {
             for (int o = 0; o < 2; o++) {
@@ -84,16 +89,18 @@ public class Civilization extends JPanel {
                 }
 
 
-            }while(tab2[i][1] == -1 || tab2[i][1] == mapSize.getMapSize()+1 || tab2[i][0] == -1 || tab2[i][0] == mapSize.getMapSize()+1 );
+            }while(tab2[i][1] == -1 || Objects.equals(tab2[i][1], mapSize.getMapSize()) || tab2[i][0] == -1 || Objects.equals(tab2[i][0], mapSize.getMapSize()));
         }
-        for(int i=0;i< initialPosition.size();i++){
-            if(!Objects.equals(tab[i][0], tab2[i][0]) || !Objects.equals(tab[i][1], tab2[i][1])){
-                tab3[i][0] = tab2[i][0];
-                tab3[i][1] = tab2[i][1];
+        counter = 0;
+        for(int l=0;l< initialPosition.size();l++){
+            if(Objects.equals(tab[l][0], tab2[l][0]) || Objects.equals(tab[l][1], tab2[l][1])){
+                tab3[counter][0] = tab2[l][0];
+                tab3[counter][1] = tab2[l][1];
             }
+            counter++;
         }
         do {
-            number = random.nextInt(initialPosition.size());
+            number = random.nextInt(counter);
         }while(tab3[number] == null);
 
         drawnPosition.x = tab3[number][0];

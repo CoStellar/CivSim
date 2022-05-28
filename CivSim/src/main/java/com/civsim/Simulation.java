@@ -19,17 +19,15 @@ public class Simulation implements Runnable {
         this.civAmount = civAmount;
         this.simRoundAmount = simRoundAmount;
         this.mapSize = mapSize;
-        this.civColor = new Color[civAmount];
+        this.civColor = new Color[this.civAmount];
         for (int i = 0; i < this.civAmount; i++) {
             assert false;
-            civilization.add(new Civilization(mapSize));
+            civilization.add(new Civilization(this.mapSize));
             civColor[i] = new Color(civilization.get(i).civColor.getRGB());
             civPosition.add(new ArrayList<>());
             civPosition.set(i, civilization.get(i).civFieldPosition);
-
         }
-
-        simulationMap = new Map(civPosition, mapSize, this.civAmount, civColor);
+        simulationMap = new Map(civPosition, this.mapSize, this.civAmount, civColor);
         startSimThread();
     }
 

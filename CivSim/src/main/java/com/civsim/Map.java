@@ -7,6 +7,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Objects;
 
 
 public class Map extends JFrame {
@@ -44,9 +45,8 @@ public class Map extends JFrame {
                     civSize = civPosition.get(i).size();
                     for(int o=0; o<civSize; o++){
                         if (civPosition.get(i).get(o).x == x && civPosition.get(i).get(o).y == y) {
-                            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/city_template.png");
-                            this.img[x][y] = ImageIO.read(file);
-                            this.colorPosition[x][y] = this.civColor[i];
+                            this.img[x][y] = setImg(resources[x][y].getResourceName());
+                            this.colorPosition[x][y] = civColor[i];
                         }
                     }
 
@@ -82,8 +82,7 @@ public class Map extends JFrame {
                     civSize = civPosition.get(i).size();
                     for(int o=0; o<civSize; o++){
                         if (civPosition.get(i).get(o).x == x && civPosition.get(i).get(o).y == y) {
-                            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/city_template.png");
-                            this.img[x][y] = ImageIO.read(file);
+                            this.img[x][y] = setImg(resources[x][y].getResourceName());
                             this.colorPosition[x][y] = civColor[i];
                         }
                     }
@@ -94,5 +93,38 @@ public class Map extends JFrame {
     }
 
 
-
+    public BufferedImage setImg(String tileName) throws IOException {
+        BufferedImage tileImg = null;
+        if(Objects.equals(tileName, "wood"))
+        {
+            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/wood_log.png");
+            tileImg = ImageIO.read(file);
+        }
+        if(Objects.equals(tileName, "stone"))
+        {
+            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/stone.png");
+            tileImg = ImageIO.read(file);
+        }
+        if(Objects.equals(tileName, "water"))
+        {
+            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/water.png");
+            tileImg = ImageIO.read(file);
+        }
+        if(Objects.equals(tileName, "wheat"))
+        {
+            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/wheat.png");
+            tileImg = ImageIO.read(file);
+        }
+        if(Objects.equals(tileName, "iron"))
+        {
+            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/iron.png");
+            tileImg = ImageIO.read(file);
+        }
+        if(Objects.equals(tileName, "cow"))
+        {
+            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/cow.png");
+            tileImg = ImageIO.read(file);
+        }
+        return tileImg;
+    }
 }

@@ -8,13 +8,13 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class Resources {
-    String resourceName;
-    Integer wood = 0;
-    Integer iron = 0;
-    Integer wheat = 0;
-    Integer animals = 0;
-    Integer stone = 0;
-    Integer water = 0;
+    private String resourceName;
+    private Integer wood = 0;
+    private Integer iron = 0;
+    private Integer wheat = 0;
+    private Integer animals = 0;
+    private Integer stone = 0;
+    private Integer water = 0;
 
     public Resources(){
         this.resourceName = drawResources();
@@ -127,5 +127,55 @@ public class Resources {
         return resources.wood >= 3 && resources.stone >= 5 && resources.animals >= 2 && resources.iron >= 2;
     }
 
+    public String getResourceName() {
+        return resourceName;
+    }
 
+    public Integer getWood() {
+        return wood;
+    }
+
+    public Integer getIron() {
+        return iron;
+    }
+
+    public Integer getWheat() {
+        return wheat;
+    }
+
+    public Integer getAnimals() {
+        return animals;
+    }
+
+    public Integer getStone() {
+        return stone;
+    }
+
+    public Integer getWater() {
+        return water;
+    }
+
+    public void setWood(Integer wood) {
+        this.wood = wood;
+    }
+
+    public void setIron(Integer iron) {
+        this.iron = iron;
+    }
+
+    public void setWheat(Integer wheat) {
+        this.wheat = wheat;
+    }
+
+    public void setAnimals(Integer animals) {
+        this.animals = animals;
+    }
+
+    public void setStone(Integer stone) {
+        this.stone = stone;
+    }
+
+    public void setWater(Integer water) {
+        this.water = water;
+    }
 }
