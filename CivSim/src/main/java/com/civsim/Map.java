@@ -21,7 +21,7 @@ public class Map extends JFrame {
     int civAmount, civSize;
     File file;
     public Color[] civColor;
-    private Color[][] colorPosition;
+    private final Color[][] colorPosition;
     private final Color background = new Color(57, 99, 37);
     ArrayList<ArrayList<Position>> civPosition;
     ArrayList<ArrayList<Position>> cityPosition;

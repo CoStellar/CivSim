@@ -81,52 +81,51 @@ public class Civilization extends JPanel {
         Position drawnPosition = new Position(mapSize);
         Integer[][] tab = new Integer[initialPosition.size()][2];
         Integer[][] tab2 = new Integer[initialPosition.size()][2];
-        Integer[][] tab3 = new Integer[initialPosition.size()][2];
-
-        int counter = 0, number;
-        for (int i = 0; i < initialPosition.size(); i++) {
-            for (int o = 0; o < 2; o++) {
-                if (o == 0)
-                    tab[i][o] = initialPosition.get(counter).x;
-                if (o == 1)
-                    tab[i][o] = initialPosition.get(counter).y;
-            }
-            counter++;
-        }
-        for (int i = 0; i < initialPosition.size(); i++) {
-            random = new Random();
-            do {
-                do {
-                    number = random.nextInt(3);
-                } while (number == 1);
-                number = number - 1;
-
-                if(random.nextInt(2)==1){
-                    tab2[i][0] = tab[i][0] + number;
-                    tab2[i][1] = tab[i][1];
-                }else {
-                    tab2[i][0] = tab[i][0];
-                    tab2[i][1] = tab[i][1] + number;
-                }
-
-
-            }while(tab2[i][1] == -1 || Objects.equals(tab2[i][1], mapSize.getMapSize()) || tab2[i][0] == -1 || Objects.equals(tab2[i][0], mapSize.getMapSize()));
-        }
-        counter = 0;
-        for(int l=0;l< initialPosition.size();l++){
-            if(Objects.equals(tab[l][0], tab2[l][0]) || Objects.equals(tab[l][1], tab2[l][1])){
-                tab3[counter][0] = tab2[l][0];
-                tab3[counter][1] = tab2[l][1];
-            }
-            counter++;
-        }
+        ArrayList<Position> tab3 = new ArrayList<>();
+        ArrayList<Position> checkPosition = new ArrayList<>();
         do {
-            number = random.nextInt(counter);
-        }while(tab3[number] == null);
+            tab3.clear();
+            checkPosition.clear();
+            int counter = 0, number;
+            for (int i = 0; i < initialPosition.size(); i++) {
+                for (int o = 0; o < 2; o++) {
+                    if (o == 0)
+                        tab[i][o] = initialPosition.get(counter).x;
+                    if (o == 1)
+                        tab[i][o] = initialPosition.get(counter).y;
+                }
+                counter++;
+            }
+            for (int i = 0; i < initialPosition.size(); i++) {
+                random = new Random();
+                do {
+                    do {
+                        number = random.nextInt(3);
+                    } while (number == 1);
+                    number = number - 1;
 
-        drawnPosition.x = tab3[number][0];
-        drawnPosition.y = tab3[number][1];
-
+                    if (random.nextInt(2) == 1) {
+                        tab2[i][0] = tab[i][0] + number;
+                        tab2[i][1] = tab[i][1];
+                    } else {
+                        tab2[i][0] = tab[i][0];
+                        tab2[i][1] = tab[i][1] + number;
+                    }
+                } while (tab2[i][1] == -1 || Objects.equals(tab2[i][1], mapSize.getMapSize()) || tab2[i][0] == -1 || Objects.equals(tab2[i][0], mapSize.getMapSize()));
+            }
+            counter = 0;
+            for (int l = 0; l < initialPosition.size(); l++) {
+                tab3.add(new Position(tab2[l][0], tab2[l][1]));
+                counter++;
+            }
+            for (int i=0;i<initialPosition.size(); i++) {
+                if (!initialPosition.contains(tab3.get(i))) {
+                    checkPosition.add(tab3.get(i));
+                }
+            }
+            number = random.nextInt(checkPosition.size());
+            drawnPosition = checkPosition.get(number);
+        }while(initialPosition.contains(drawnPosition));
         return drawnPosition;
     }
 

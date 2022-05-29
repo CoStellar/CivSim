@@ -1,7 +1,10 @@
 package com.civsim;
 
 import java.awt.*;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 
@@ -29,6 +32,8 @@ public class Simulation implements Runnable {
             civPosition.set(i, civilization.get(i).civFieldPosition);
             cityPositions.add(civilization.get(i).citiesPositions());
         }
+
+
         simulationMap = new Map(civPosition, this.mapSize, this.civAmount, civColor, this.cityPositions);
         startSimThread();
     }
@@ -40,6 +45,10 @@ public class Simulation implements Runnable {
     public void startSimThread() {
         simThread = new Thread(this);
         simThread.start();
+    }
+
+    public void openInfoMenu() throws IOException, FontFormatException {
+        new Information(this.civilization);
     }
 
     @Override
@@ -67,5 +76,23 @@ public class Simulation implements Runnable {
                 counter++;
             }
 
-        }
+    }
+        public void createPositionsFile() throws IOException {
+                File positionsFile = new File("./CivSim/src/main/resources/com/civsim/Pliki/Settings/positions.txt");
+           // ArrayList<>
+                if(positionsFile.createNewFile()){
+                    System.out.println("File Created");
+                }else{
+                    if(positionsFile.delete()){
+                        if(positionsFile.createNewFile()){
+                            System.out.println("File Created");
+                        }
+                    }
+                }
+            FileWriter fileWriter = new FileWriter("./CivSim/src/main/resources/com/civsim/Pliki/Settings/positions.txt");
+            PrintWriter printWriter = new PrintWriter(fileWriter);
+            for(int i=0; i<((mapSize.getMapSize()*mapSize.getMapSize())/civAmount); i++) {
+
+            }
+        }//printWriter.printf()
     }
