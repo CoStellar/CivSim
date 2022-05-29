@@ -134,7 +134,6 @@ public class ControlPanel extends JPanel {
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
             }
-            panel.setState(Frame.ICONIFIED);
         }
         );
 

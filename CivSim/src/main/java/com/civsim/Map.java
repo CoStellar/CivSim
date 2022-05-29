@@ -23,36 +23,49 @@ public class Map extends JFrame {
     public Color[] civColor;
     private Color[][] colorPosition;
     private final Color background = new Color(57, 99, 37);
-    public Map(ArrayList<ArrayList<Position>> civPosition, MapSize mapSize, Integer civAmount, Color[] civColor) throws IOException {
+    ArrayList<ArrayList<Position>> civPosition;
+    ArrayList<ArrayList<Position>> cityPosition;
+    public Map(ArrayList<ArrayList<Position>> civPosition, MapSize mapSize, Integer civAmount, Color[] civColor, ArrayList<ArrayList<Position>> cityPosition) throws IOException {
         this.mapSize = mapSize;
         this.civAmount = civAmount;
         this.civColor = civColor;
         resources = new Resources[this.mapSize.getMapSize()][this.mapSize.getMapSize()];
         img = new BufferedImage[this.mapSize.getMapSize()][this.mapSize.getMapSize()];
         colorPosition = new Color[this.mapSize.getMapSize()][this.mapSize.getMapSize()];
-
+        this.civPosition = civPosition;
+        this.cityPosition = cityPosition;
 
         for (int x = 0; x < this.mapSize.getMapSize(); x++) {
             for (int y = 0; y < this.mapSize.getMapSize(); y++) {
                 resources[x][y] = new Resources();
                 this.img[x][y] = resources[x][y].getImg();
+                this.colorPosition[x][y] = new Color(57, 99, 37);
             }
         }
         for (int x = 0; x < this.mapSize.getMapSize(); x++) {
             for (int y = 0; y < this.mapSize.getMapSize(); y++) {
-                this.colorPosition[x][y] = new Color(57, 99, 37);
                 for (int i = 0; i < civAmount; i++) {
-                    civSize = civPosition.get(i).size();
-                    for(int o=0; o<civSize; o++){
+                    for(int o=0; o<civPosition.get(i).size(); o++){
                         if (civPosition.get(i).get(o).x == x && civPosition.get(i).get(o).y == y) {
                             this.img[x][y] = setImg(resources[x][y].getResourceName());
                             this.colorPosition[x][y] = civColor[i];
                         }
                     }
-
                 }
             }
-
+        }
+        for (int x = 0; x < this.mapSize.getMapSize(); x++) {
+            for (int y = 0; y < this.mapSize.getMapSize(); y++) {
+                for (int i = 0; i < civAmount; i++) {
+                    for (int o = 0; o < cityPosition.get(i).size(); o++) {
+                        if (cityPosition.get(i).get(o).x == x && cityPosition.get(i).get(o).y == y) {
+                            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/city_template.png");
+                            this.img[x][y] = ImageIO.read(file);
+                        }
+                    }
+                }
+            }
+        }
             int screenWidth = (mapSize.getMapSize() * fieldSize) + (mapSize.getMapSize() + 15);
             int screenHeight = (mapSize.getMapSize() * fieldSize) + (mapSize.getMapSize() + 38);
             setSize(screenWidth, screenHeight);
@@ -64,26 +77,32 @@ public class Map extends JFrame {
             appPanel = new ApplicationPanel(img, this.mapSize, colorPosition);
             add(appPanel);
             setVisible(true);
-        }
-
     }
 
-    public void updateMap(ArrayList<ArrayList<Position>> civPosition) throws IOException {
 
+
+    public void updateMap(ArrayList<ArrayList<Position>> civPosition, ArrayList<ArrayList<Position>> cityPosition) throws IOException {
+        this.civPosition = civPosition;
+        this.cityPosition = cityPosition;
         for (int x = 0; x < this.mapSize.getMapSize(); x++) {
             for (int y = 0; y < this.mapSize.getMapSize(); y++) {
-                this.img[x][y] = resources[x][y].getImg();
-                this.colorPosition[x][y] =  new Color(57, 99, 37);
+                for (int i = 0; i < civAmount; i++) {
+                    for(int o=0; o<civPosition.get(i).size(); o++){
+                        if (civPosition.get(i).get(o).x == x && civPosition.get(i).get(o).y == y) {
+                            this.img[x][y] = setImg(resources[x][y].getResourceName());
+                            this.colorPosition[x][y] = civColor[i];
+                        }
+                    }
+                }
             }
         }
         for (int x = 0; x < this.mapSize.getMapSize(); x++) {
             for (int y = 0; y < this.mapSize.getMapSize(); y++) {
                 for (int i = 0; i < civAmount; i++) {
-                    civSize = civPosition.get(i).size();
-                    for(int o=0; o<civSize; o++){
-                        if (civPosition.get(i).get(o).x == x && civPosition.get(i).get(o).y == y) {
-                            this.img[x][y] = setImg(resources[x][y].getResourceName());
-                            this.colorPosition[x][y] = civColor[i];
+                    for (int o = 0; o < cityPosition.get(i).size(); o++) {
+                        if (cityPosition.get(i).get(o).x == x && cityPosition.get(i).get(o).y == y) {
+                            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/city_template.png");
+                            this.img[x][y] = ImageIO.read(file);
                         }
                     }
                 }

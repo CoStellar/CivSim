@@ -16,7 +16,7 @@ public class Civilization extends JPanel {
     private Integer populationCount;
     private Integer mobileUnitsAmount;
     private ArrayList<Village> villages = new ArrayList<>();
-    private ArrayList<City> cities;
+    private ArrayList<City> cities = new ArrayList<>();
     public Resources resourcesAmount = new Resources();
     public Color civColor;
     Resources resourcesForCity = new Resources();
@@ -30,26 +30,47 @@ public class Civilization extends JPanel {
         villages.add(new Village(civFieldPosition.get(villageCount)));
         this.villageCount++;
         this.cityCount = 0;
-        this.resourcesAmount.setWood(5);
-        this.resourcesAmount.setWheat(5);
-        this.resourcesAmount.setAnimals(5);
+        this.resourcesAmount.setWood(200);
+        this.resourcesAmount.setWheat(200);
+        this.resourcesAmount.setAnimals(200);
+        this.resourcesAmount.setWater(200);
+        this.resourcesAmount.setStone(200);
+        this.resourcesAmount.setIron(200);
 
     }
 
         public void civExpand(){
+        Random random = new Random();
+        int number;
                 if(resourcesAmount.resourcesCompareVillage(resourcesAmount)){
-                    if(cityCount == 0 || villageCount/cityCount <= 4){
+                    if(villageCount/(cityCount+1) <= 4){
                         this.civFieldPosition.add(drawRandomPositionAround(civFieldPosition));
                         this.villages.add(new Village(civFieldPosition.get(civSize)));
                         this.civSize++;
                         this.villageCount++;
+                        this.resourcesAmount.setWood(resourcesAmount.getWood()-5);
+                        this.resourcesAmount.setWheat(resourcesAmount.getWheat()-2);
+                        this.resourcesAmount.setAnimals(resourcesAmount.getAnimals()-2);
+                    }else if(resourcesAmount.resourcesCompareCity(resourcesAmount)){
+                        number=random.nextInt(villageCount);
+                        this.cities.add(new City(civFieldPosition.get(number)));
+                        this.villages.remove(number);
+                        this.villageCount--;
+                        this.cityCount++;
+                        this.resourcesAmount.setAnimals(resourcesAmount.getAnimals()-2);
+                        this.resourcesAmount.setStone(resourcesAmount.getStone()-5);
+                        this.resourcesAmount.setIron(resourcesAmount.getIron()-2);
                     }
 
                 }else if(resourcesAmount.resourcesCompareCity(resourcesAmount)){
-                    this.civFieldPosition.add(drawRandomPositionAround(civFieldPosition));
-                    this.cities.add(new City(civFieldPosition.get(civSize)));
-                    this.civSize++;
+                    number  = random.nextInt(villageCount);
+                    this.cities.add(new City(civFieldPosition.get(number)));
+                    this.villages.remove(number);
+                    this.villageCount--;
                     this.cityCount++;
+                    this.resourcesAmount.setAnimals(resourcesAmount.getAnimals()-2);
+                    this.resourcesAmount.setStone(resourcesAmount.getStone()-5);
+                    this.resourcesAmount.setIron(resourcesAmount.getIron()-2);
                     }
 
         }
@@ -115,6 +136,13 @@ public class Civilization extends JPanel {
 
     public Integer getCivSize() {
         return civSize;
+    }
+    public ArrayList<Position> citiesPositions(){
+        ArrayList<Position> positionsToReturn = new ArrayList<>();
+        for(int i = 0; i<cityCount; i++){
+            positionsToReturn.add(cities.get(i).getCityPosition());
+        }
+        return positionsToReturn;
     }
 
 

@@ -124,7 +124,7 @@ public class Resources {
     }
     public boolean resourcesCompareCity(Resources resources)
     {
-        return resources.wood >= 3 && resources.stone >= 5 && resources.animals >= 2 && resources.iron >= 2;
+        return resources.stone >= 5 && resources.animals >= 2 && resources.iron >= 2;
     }
 
     public String getResourceName() {
