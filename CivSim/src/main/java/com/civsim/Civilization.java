@@ -30,12 +30,12 @@ public class Civilization extends JPanel {
         villages.add(new Village(civFieldPosition.get(villageCount)));
         this.villageCount++;
         this.cityCount = 0;
-        this.resourcesAmount.setWood(200);
-        this.resourcesAmount.setWheat(200);
-        this.resourcesAmount.setAnimals(200);
-        this.resourcesAmount.setWater(200);
-        this.resourcesAmount.setStone(200);
-        this.resourcesAmount.setIron(200);
+        this.resourcesAmount.setWood(2000);
+        this.resourcesAmount.setWheat(2000);
+        this.resourcesAmount.setAnimals(2000);
+        this.resourcesAmount.setWater(2000);
+        this.resourcesAmount.setStone(2000);
+        this.resourcesAmount.setIron(2000);
 
     }
 
@@ -81,6 +81,7 @@ public class Civilization extends JPanel {
         Position drawnPosition = new Position(mapSize);
         Integer[][] tab = new Integer[initialPosition.size()][2];
         Integer[][] tab2 = new Integer[initialPosition.size()][2];
+        Integer[][] tab4 = new Integer[initialPosition.size()][2];
         ArrayList<Position> tab3 = new ArrayList<>();
         ArrayList<Position> checkPosition = new ArrayList<>();
         do {
@@ -105,23 +106,29 @@ public class Civilization extends JPanel {
                     number = number - 1;
 
                     if (random.nextInt(2) == 1) {
-                        tab2[i][0] = tab[i][0] + number;
-                        tab2[i][1] = tab[i][1];
+                        tab2[i][0] = initialPosition.get(i).x + number;
+                        tab2[i][1] = initialPosition.get(i).y;
+                        tab4[i][0] = initialPosition.get(i).x - number;
+                        tab4[i][1] = initialPosition.get(i).y;
                     } else {
-                        tab2[i][0] = tab[i][0];
-                        tab2[i][1] = tab[i][1] + number;
+                        tab2[i][0] = initialPosition.get(i).x;
+                        tab2[i][1] = initialPosition.get(i).y + number;
+                        tab4[i][0] = initialPosition.get(i).x;
+                        tab4[i][1] = initialPosition.get(i).y- number;
                     }
-                } while (tab2[i][1] == -1 || Objects.equals(tab2[i][1], mapSize.getMapSize()) || tab2[i][0] == -1 || Objects.equals(tab2[i][0], mapSize.getMapSize()));
+                } while (tab2[i][1] == -1 || Objects.equals(tab2[i][1], mapSize.getMapSize()) || tab2[i][0] == -1 || Objects.equals(tab2[i][0], mapSize.getMapSize()) || tab4[i][1] == -1 || Objects.equals(tab4[i][1], mapSize.getMapSize()) || tab4[i][0] == -1 || Objects.equals(tab4[i][0], mapSize.getMapSize()));
             }
             counter = 0;
             for (int l = 0; l < initialPosition.size(); l++) {
                 tab3.add(new Position(tab2[l][0], tab2[l][1]));
+                tab3.add(new Position(tab4[l][0], tab4[l][1]));
                 counter++;
             }
-            for (int i=0;i<initialPosition.size(); i++) {
+            for (int i=0;i<tab3.size(); i++) {
                 if (!initialPosition.contains(tab3.get(i))) {
                     checkPosition.add(tab3.get(i));
                 }
+
             }
             number = random.nextInt(checkPosition.size());
             drawnPosition = checkPosition.get(number);
