@@ -8,7 +8,7 @@ public class Position {
     public Integer y;
 
     Position() throws IOException {
-        Scanner scanner = new Scanner(new File("./CivSim/src/main/resources/com/civsim/Pliki/Settings/positions.txt"));
+        Scanner scanner = new Scanner(new File("./CivSim/src/main/resources/com/civsim/Pliki/positions.txt"));
         ArrayList<String> line = new ArrayList<>();
         Random random = new Random();
         Integer[] positions = new Integer[2];
@@ -23,7 +23,7 @@ public class Position {
         this.x = positions[0];
         this.y = positions[1];
         line.remove(number);
-        File positionsFile = new File("./CivSim/src/main/resources/com/civsim/Pliki/Settings/positions.txt");
+        File positionsFile = new File("./CivSim/src/main/resources/com/civsim/Pliki/positions.txt");
         if(positionsFile.createNewFile()){
             System.out.println("File Created");
         }else{
@@ -33,7 +33,7 @@ public class Position {
                 }
             }
         }
-        FileWriter fileWriter = new FileWriter("./CivSim/src/main/resources/com/civsim/Pliki/Settings/positions.txt");
+        FileWriter fileWriter = new FileWriter("./CivSim/src/main/resources/com/civsim/Pliki/positions.txt");
         PrintWriter printWriter = new PrintWriter(fileWriter);
         for(String i: line) {
             printWriter.println(i);

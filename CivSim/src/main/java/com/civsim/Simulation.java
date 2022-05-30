@@ -84,7 +84,7 @@ public class Simulation implements Runnable {
         }*/
     }
         public void createPositionsFile() throws IOException {
-                File positionsFile = new File("./CivSim/src/main/resources/com/civsim/Pliki/Settings/positions.txt");
+                File positionsFile = new File("./CivSim/src/main/resources/com/civsim/Pliki/positions.txt");
                 HashSet<Position> goodPositions = new HashSet<>();
                 for(int i = 0; i<mapSize.getMapSize()*mapSize.getMapSize()/(2*civAmount)+civAmount; i++){
                     goodPositions.add(new Position(mapSize));
@@ -98,7 +98,7 @@ public class Simulation implements Runnable {
                         }
                     }
                 }
-            FileWriter fileWriter = new FileWriter("./CivSim/src/main/resources/com/civsim/Pliki/Settings/positions.txt");
+            FileWriter fileWriter = new FileWriter("./CivSim/src/main/resources/com/civsim/Pliki/positions.txt");
             PrintWriter printWriter = new PrintWriter(fileWriter);
             for(Position i: goodPositions) {
                     printWriter.println(i.getX()+" "+i.getY());
