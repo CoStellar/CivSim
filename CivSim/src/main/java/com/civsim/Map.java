@@ -23,6 +23,8 @@ public class Map extends JFrame {
     private final Color[][] colorPosition;
     public ArrayList<ArrayList<Position>> civPosition;
     public ArrayList<ArrayList<Position>> cityPosition;
+
+    public ArrayList<Position> mobileUnitPosition;
     public Map(ArrayList<ArrayList<Position>> civPosition, MapSize mapSize, Integer civAmount, Color[] civColor, ArrayList<ArrayList<Position>> cityPosition) throws IOException {
         this.mapSize = mapSize;
         this.civAmount = civAmount;
@@ -90,7 +92,7 @@ public class Map extends JFrame {
             add(appPanel);
             setVisible(true);
     }
-    public void updateMap(ArrayList<ArrayList<Position>> civPosition, ArrayList<ArrayList<Position>> cityPosition) throws IOException
+    public void updateMap(ArrayList<ArrayList<Position>> civPosition, ArrayList<ArrayList<Position>> cityPosition,ArrayList<Position> mobileUnitPosition) throws IOException
     {
         this.civPosition = civPosition;
         this.cityPosition = cityPosition;

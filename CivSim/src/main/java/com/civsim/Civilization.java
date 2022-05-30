@@ -19,6 +19,8 @@ public class Civilization extends JPanel {
     public Resources resourcesAmount = new Resources();
     public Color civColor;
     MapSize mapSize;
+
+    public MobileUnits mobileUnits;
     public ArrayList<Position> civFieldPosition = new ArrayList<>();
     public Civilization(MapSize mapSize) throws IOException {
         this.civColor = new Color((int)(Math.random() * 0x1000000));
@@ -70,6 +72,13 @@ public class Civilization extends JPanel {
                     this.resourcesAmount.setStone(resourcesAmount.getStone()-5);
                     this.resourcesAmount.setIron(resourcesAmount.getIron()-2);
                     }
+                if(resourcesAmount.resourcesCompareMobileUnit(resourcesAmount) && cityCount > 0){
+                    this.resourcesAmount.setAnimals(resourcesAmount.getAnimals()-10);
+                    this.resourcesAmount.setStone(resourcesAmount.getStone()-10);
+                    this.resourcesAmount.setIron(resourcesAmount.getIron()-10);
+                    this.mobileUnits = new MobileUnits(citiesPositions().get(random.nextInt(cityCount)),this.civColor,this.mapSize);
+
+                }
 
         }
 

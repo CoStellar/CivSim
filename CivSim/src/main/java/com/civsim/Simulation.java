@@ -16,6 +16,7 @@ public class Simulation implements Runnable {
     Thread simThread;
     private final ArrayList<ArrayList<Position>> civPosition = new ArrayList<>();
 
+    private final ArrayList<Position> mobileUnitPosition = new ArrayList<>();
     private final ArrayList<Civilization> civilization = new ArrayList<>();
     private final ArrayList<ArrayList<Position>> cityPositions = new ArrayList<>();
     Color[] civColor;
@@ -32,6 +33,7 @@ public class Simulation implements Runnable {
             civPosition.add(new ArrayList<>());
             civPosition.set(i, civilization.get(i).civFieldPosition);
             cityPositions.add(civilization.get(i).citiesPositions());
+            mobileUnitPosition.add(new Position(true));
         }
         simulationMap = new Map(civPosition, this.mapSize, this.civAmount, civColor, this.cityPositions);
         startSimThread();
@@ -65,9 +67,12 @@ public class Simulation implements Runnable {
                 civilization.get(i).civExpand();
                 civilization.get(i).updatePopulationCount();
                 this.cityPositions.set(i, civilization.get(i).citiesPositions());
+
+                civilization.get(i).mobileUnits.updatePostion();
+                mobileUnitPosition.set(i,civilization.get(i).mobileUnits.getUnitPosition());
             }
                 try {
-                   simulationMap.updateMap(civPosition, this.cityPositions);
+                   simulationMap.updateMap(civPosition, this.cityPositions, mobileUnitPosition);
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }

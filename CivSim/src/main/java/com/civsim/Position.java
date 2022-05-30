@@ -48,6 +48,10 @@ public class Position {
         this.x = x;
         this.y = y;
     }
+
+    Position(boolean xd) {
+
+    }
     public Integer drawRandomPosition(MapSize mapSize) {
         Random random;
         random = new Random();
