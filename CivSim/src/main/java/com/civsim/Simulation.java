@@ -1,5 +1,7 @@
 package com.civsim;
 
+import javafx.geometry.Pos;
+
 import java.awt.*;
 import java.io.File;
 import java.io.FileWriter;
@@ -32,8 +34,6 @@ public class Simulation implements Runnable {
             civPosition.set(i, civilization.get(i).civFieldPosition);
             cityPositions.add(civilization.get(i).citiesPositions());
         }
-
-
         simulationMap = new Map(civPosition, this.mapSize, this.civAmount, civColor, this.cityPositions);
         startSimThread();
     }
@@ -54,6 +54,11 @@ public class Simulation implements Runnable {
     @Override
     public void run() {
         int counter = 1;
+        try {
+            createPositionsFile();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
         while (simThread != null && counter <= simRoundAmount) {
             try {
                 TimeUnit.SECONDS.sleep(1);
@@ -61,6 +66,7 @@ public class Simulation implements Runnable {
                 throw new RuntimeException(e);
             }
             for(int i = 0 ; i<civilization.size(); i++) {
+                civilization.get(i).getResources(simulationMap.getResources());
                 civilization.get(i).civExpand();
                 this.cityPositions.set(i, civilization.get(i).citiesPositions());
             }
@@ -75,11 +81,18 @@ public class Simulation implements Runnable {
                 System.out.println(currentTime);
                 counter++;
             }
-
+      /*  try {
+            openInfoMenu();
+        } catch (IOException | FontFormatException e) {
+            throw new RuntimeException(e);
+        }*/
     }
         public void createPositionsFile() throws IOException {
                 File positionsFile = new File("./CivSim/src/main/resources/com/civsim/Pliki/Settings/positions.txt");
-           // ArrayList<>
+                HashSet<Position> goodPositions = new HashSet<>();
+                for(int i = 0; i<mapSize.getMapSize()*mapSize.getMapSize()/(2*civAmount)+civAmount; i++){
+                    goodPositions.add(new Position(mapSize));
+                }
                 if(positionsFile.createNewFile()){
                     System.out.println("File Created");
                 }else{
@@ -91,8 +104,9 @@ public class Simulation implements Runnable {
                 }
             FileWriter fileWriter = new FileWriter("./CivSim/src/main/resources/com/civsim/Pliki/Settings/positions.txt");
             PrintWriter printWriter = new PrintWriter(fileWriter);
-            for(int i=0; i<((mapSize.getMapSize()*mapSize.getMapSize())/civAmount); i++) {
-
+            for(Position i: goodPositions) {
+                    printWriter.println(i.getX()+" "+i.getY());
             }
-        }//printWriter.printf()
+            printWriter.close();
+        }
     }

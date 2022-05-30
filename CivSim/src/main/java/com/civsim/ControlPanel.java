@@ -58,14 +58,14 @@ public class ControlPanel extends JPanel {
         panel.add(label5);
 
                                                                                     //pobranie pliku tła oraz użycie go
-        File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/background.png");
+        File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/control_panel/background.png");
         ImageIcon image = new ImageIcon(String.valueOf(file));
         JLabel background = new JLabel(image);
         background.setSize(350, 500);
         panel.add(background);
 
                                                                                     //pobranie pliku ikony aplikacji i ustawienie jej
-        file = new File("./CivSim/src/main/resources/com/civsim/Pliki/icon.png");
+        file = new File("./CivSim/src/main/resources/com/civsim/Pliki/control_panel/icon.png");
         image = new ImageIcon(String.valueOf(file));
         panel.setIconImage(image.getImage());
 

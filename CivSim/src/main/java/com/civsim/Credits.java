@@ -19,7 +19,7 @@ public class Credits extends JPanel {
             label.setBounds(50,10,200,160);
             panel.setSize(300,300);
 
-            ImageIcon image = new ImageIcon(String.valueOf(new File("./CivSim/src/main/resources/com/civsim/Pliki/icon.png")));
+            ImageIcon image = new ImageIcon(String.valueOf(new File("./CivSim/src/main/resources/com/civsim/Pliki/control_panel/icon.png")));
             panel.setIconImage(image.getImage());
             panel.add(label);
             panel.setVisible(true);

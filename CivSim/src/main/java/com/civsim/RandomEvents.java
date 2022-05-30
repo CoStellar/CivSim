@@ -1,5 +1,7 @@
 package com.civsim;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.Random;
 
 public class RandomEvents {
@@ -11,7 +13,7 @@ public class RandomEvents {
     private Integer[] randomEventFieldAmount;
     private Position position;
     Random random;
-    public void eventPicker(Integer simRoundCount){
+    public void eventPicker(Integer simRoundCount) throws IOException {
 
         int x, y = randomEventGlobalCounter, z = simRoundCount;
         if(simRoundCount%5==0){
@@ -40,31 +42,31 @@ public class RandomEvents {
 
         }
     }
-    public Position fireEvent(){
+    public Position fireEvent() throws IOException {
         position = new Position();
         return position;
     }
-    public Position diseaseEvent(){
+    public Position diseaseEvent() throws IOException {
         position = new Position();
         return position;
     }
-    public Position floodEvent(){
+    public Position floodEvent() throws IOException {
         position = new Position();
         return position;
     }
-    public Position monsoonEvent(){
+    public Position monsoonEvent() throws IOException {
         position = new Position();
         return position;
     }
-    public Position droughtEvent(){
+    public Position droughtEvent() throws IOException {
         position = new Position();
         return position;
     }
-    public Position meteorShowerEvent(){
+    public Position meteorShowerEvent() throws IOException {
         position = new Position();
         return position;
     }
-    public Position tornadoEvent(){
+    public Position tornadoEvent() throws IOException {
         position = new Position();
         return position;
     }

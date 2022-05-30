@@ -19,12 +19,14 @@ public class Resources {
     public Resources(){
         this.resourceName = drawResources();
     }
+    public Resources(Boolean empty){
+    }
     public BufferedImage getImg(){
         BufferedImage image;
         if(Objects.equals(this.resourceName, "wood"))
         {
             try {
-                File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/wood_log_filled.png");
+                File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/map_visuals/wood_log_filled.png");
                 image = ImageIO.read(file);
                 return image;
 
@@ -34,7 +36,7 @@ public class Resources {
         }else if(Objects.equals(this.resourceName, "water"))
         {
             try {
-                File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/water_filled.png");
+                File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/map_visuals/water_filled.png");
                 image = ImageIO.read(file);
                 return image;
             } catch (IOException e) {
@@ -44,7 +46,7 @@ public class Resources {
         {
 
             try {
-                File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/cow_filled.png");
+                File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/map_visuals/cow_filled.png");
                 image = ImageIO.read(file);
                 return image;
             } catch (IOException e) {
@@ -54,7 +56,7 @@ public class Resources {
         {
 
             try {
-                File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/wheat_filled.png");
+                File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/map_visuals/wheat_filled.png");
                 image = ImageIO.read(file);
                 return image;
             } catch (IOException e) {
@@ -64,7 +66,7 @@ public class Resources {
         {
 
             try {
-                File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/iron_filled.png");
+                File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/map_visuals/iron_filled.png");
                 image = ImageIO.read(file);
                 return image;
             } catch (IOException e) {
@@ -73,7 +75,7 @@ public class Resources {
         }else if(Objects.equals(this.resourceName, "stone"))
         {
 
-            try {File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/stone_filled.png");
+            try {File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/map_visuals/stone_filled.png");
                 image = ImageIO.read(file);
                 return image;
             } catch (IOException e) {
@@ -178,4 +180,14 @@ public class Resources {
     public void setWater(Integer water) {
         this.water = water;
     }
+
+    public void udpateResources(Resources resources){
+        setIron(this.getIron()+resources.getIron());
+        setWood(this.getWood()+resources.getWood());
+        setStone(this.getStone()+resources.getStone());
+        setWater(this.getWater()+resources.getWater());
+        setAnimals(this.getAnimals()+resources.getAnimals());
+        setWheat(this.getWheat()+resources.getWheat());
+    }
+
 }
