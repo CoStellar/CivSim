@@ -4,8 +4,8 @@ import java.util.*;
 
 public class Position {
 
-    public Integer x;
-    public Integer y;
+    private Integer x;
+    private Integer y;
 
     Position() throws IOException {
         Scanner scanner = new Scanner(new File("./CivSim/src/main/resources/com/civsim/Pliki/positions.txt"));

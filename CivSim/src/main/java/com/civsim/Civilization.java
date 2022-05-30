@@ -13,7 +13,7 @@ public class Civilization extends JPanel {
     private Integer villageCount=0;
     private Integer cityCount;
     private Integer populationCount=0;
-    private Integer mobileUnitsAmount;
+    private Integer mobileUnitsAmount=0;
     private final ArrayList<Village> villages = new ArrayList<>();
     private final ArrayList<City> cities = new ArrayList<>();
     public Resources resourcesAmount = new Resources();
@@ -72,12 +72,12 @@ public class Civilization extends JPanel {
                     this.resourcesAmount.setStone(resourcesAmount.getStone()-5);
                     this.resourcesAmount.setIron(resourcesAmount.getIron()-2);
                     }
-                if(resourcesAmount.resourcesCompareMobileUnit(resourcesAmount) && cityCount > 0){
+                if(resourcesAmount.resourcesCompareMobileUnit(resourcesAmount) && cityCount > 0 && mobileUnitsAmount==0){
                     this.resourcesAmount.setAnimals(resourcesAmount.getAnimals()-10);
                     this.resourcesAmount.setStone(resourcesAmount.getStone()-10);
                     this.resourcesAmount.setIron(resourcesAmount.getIron()-10);
                     this.mobileUnits = new MobileUnits(citiesPositions().get(random.nextInt(cityCount)),this.civColor,this.mapSize);
-
+                    this.mobileUnitsAmount++;
                 }
 
         }
@@ -102,15 +102,15 @@ public class Civilization extends JPanel {
                     number = number - 1;
 
                     if (random.nextInt(2) == 1) {
-                        tab1[i][0] = initialPosition.get(i).x + number;
-                        tab1[i][1] = initialPosition.get(i).y;
-                        tab2[i][0] = initialPosition.get(i).x - number;
-                        tab2[i][1] = initialPosition.get(i).y;
+                        tab1[i][0] = initialPosition.get(i).getX() + number;
+                        tab1[i][1] = initialPosition.get(i).getY();
+                        tab2[i][0] = initialPosition.get(i).getX() - number;
+                        tab2[i][1] = initialPosition.get(i).getY();
                     } else {
-                        tab1[i][0] = initialPosition.get(i).x;
-                        tab1[i][1] = initialPosition.get(i).y + number;
-                        tab2[i][0] = initialPosition.get(i).x;
-                        tab2[i][1] = initialPosition.get(i).y- number;
+                        tab1[i][0] = initialPosition.get(i).getX();
+                        tab1[i][1] = initialPosition.get(i).getY() + number;
+                        tab2[i][0] = initialPosition.get(i).getX();
+                        tab2[i][1] = initialPosition.get(i).getY()- number;
                     }
             }
             for (int l = 0; l < initialPosition.size(); l++) {
@@ -169,15 +169,15 @@ public class Civilization extends JPanel {
                     } while (number == 1);
                     number = number - 1;
                     if (random.nextInt(2) == 1) {
-                        tab2[i][0] = civFieldPosition.get(i).x + number;
-                        tab2[i][1] = civFieldPosition.get(i).y;
-                        tab4[i][0] = civFieldPosition.get(i).x - number;
-                        tab4[i][1] = civFieldPosition.get(i).y;
+                        tab2[i][0] = civFieldPosition.get(i).getX() + number;
+                        tab2[i][1] = civFieldPosition.get(i).getY();
+                        tab4[i][0] = civFieldPosition.get(i).getX() - number;
+                        tab4[i][1] = civFieldPosition.get(i).getY();
                     } else {
-                        tab2[i][0] = civFieldPosition.get(i).x;
-                        tab2[i][1] = civFieldPosition.get(i).y + number;
-                        tab4[i][0] = civFieldPosition.get(i).x;
-                        tab4[i][1] = civFieldPosition.get(i).y - number;
+                        tab2[i][0] = civFieldPosition.get(i).getX();
+                        tab2[i][1] = civFieldPosition.get(i).getY() + number;
+                        tab4[i][0] = civFieldPosition.get(i).getX();
+                        tab4[i][1] = civFieldPosition.get(i).getY() - number;
                     }
                 } while (tab2[i][1] == -1 || Objects.equals(tab2[i][1], mapSize.getMapSize()) || tab2[i][0] == -1 || Objects.equals(tab2[i][0], mapSize.getMapSize()) || tab4[i][1] == -1 || Objects.equals(tab4[i][1], mapSize.getMapSize()) || tab4[i][0] == -1 || Objects.equals(tab4[i][0], mapSize.getMapSize()));
             }
@@ -227,6 +227,9 @@ public class Civilization extends JPanel {
         }
     }
 
+    public Integer getMobileUnitsAmount() {
+        return mobileUnitsAmount;
+    }
 }
 
 

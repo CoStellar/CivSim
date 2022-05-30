@@ -67,9 +67,9 @@ public class Simulation implements Runnable {
                 civilization.get(i).civExpand();
                 civilization.get(i).updatePopulationCount();
                 this.cityPositions.set(i, civilization.get(i).citiesPositions());
-
+                if(civilization.get(i).getMobileUnitsAmount()>0){
                 civilization.get(i).mobileUnits.updatePostion();
-                mobileUnitPosition.set(i,civilization.get(i).mobileUnits.getUnitPosition());
+                mobileUnitPosition.set(i,civilization.get(i).mobileUnits.getUnitPosition());}
             }
                 try {
                    simulationMap.updateMap(civPosition, this.cityPositions, mobileUnitPosition);
