@@ -1,7 +1,5 @@
 package com.civsim;
 
-import javafx.geometry.Pos;
-
 import java.awt.*;
 import java.io.File;
 import java.io.FileWriter;
@@ -14,18 +12,19 @@ public class Simulation implements Runnable {
     private final int civAmount;
     private final Integer simRoundAmount;
     private final Map simulationMap;
-    private MapSize mapSize;
+    private final MapSize mapSize;
     Thread simThread;
     private final ArrayList<ArrayList<Position>> civPosition = new ArrayList<>();
 
     private final ArrayList<Civilization> civilization = new ArrayList<>();
-    private ArrayList<ArrayList<Position>> cityPositions = new ArrayList<>();
+    private final ArrayList<ArrayList<Position>> cityPositions = new ArrayList<>();
     Color[] civColor;
     Simulation(Integer civAmount, Integer simRoundAmount, MapSize mapSize) throws IOException {
         this.civAmount = civAmount;
         this.simRoundAmount = simRoundAmount;
         this.mapSize = mapSize;
         this.civColor = new Color[this.civAmount];
+        createPositionsFile();
         for (int i = 0; i < this.civAmount; i++) {
             assert false;
             civilization.add(new Civilization(this.mapSize));
@@ -54,11 +53,7 @@ public class Simulation implements Runnable {
     @Override
     public void run() {
         int counter = 1;
-        try {
-            createPositionsFile();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+
         while (simThread != null && counter <= simRoundAmount) {
             try {
                 TimeUnit.SECONDS.sleep(1);
@@ -68,6 +63,7 @@ public class Simulation implements Runnable {
             for(int i = 0 ; i<civilization.size(); i++) {
                 civilization.get(i).getResources(simulationMap.getResources());
                 civilization.get(i).civExpand();
+                civilization.get(i).updatePopulationCount();
                 this.cityPositions.set(i, civilization.get(i).citiesPositions());
             }
                 try {

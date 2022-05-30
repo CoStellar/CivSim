@@ -122,11 +122,18 @@ public class Resources {
     }
     public boolean resourcesCompareVillage(Resources resources)
     {
-        return resources.wood >= 5 && resources.wheat >= 3 && resources.animals >= 2;
+        if(resources.wood >= 5 && resources.wheat >= 3 && resources.animals >= 2) {
+            return true;
+        }
+        return resources.wood >= 10 || resources.wheat >= 10 || resources.animals >= 10;
     }
     public boolean resourcesCompareCity(Resources resources)
     {
-        return resources.stone >= 5 && resources.animals >= 2 && resources.iron >= 2;
+        if(resources.stone >= 5 && resources.animals >= 2 && resources.iron >= 2) {
+        return true;
+        }
+        return resources.stone >= 10 || resources.animals >= 10 || resources.iron >= 10;
+
     }
 
     public String getResourceName() {

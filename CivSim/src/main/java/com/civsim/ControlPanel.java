@@ -12,7 +12,7 @@ public class ControlPanel extends JPanel {
 
     private final JTextField firstText = new JTextField("25",1);
     private final JTextField secondText = new JTextField("10",1);
-    private final JTextField thirdText = new JTextField("5",1);
+    private final JTextField thirdText = new JTextField("20",1);
 
 
     private Integer civCount;
