@@ -10,17 +10,16 @@ import java.io.IOException;
 
 public class ControlPanel extends JPanel {
 
-    final private String blank = "1";//sta
-    private final JTextField firstText = new JTextField(blank,1);
-    private final JTextField secondText = new JTextField(blank,1);
-    private final JTextField thirdText = new JTextField(blank,1);
+    private final JTextField firstText = new JTextField("25",1);
+    private final JTextField secondText = new JTextField("10",1);
+    private final JTextField thirdText = new JTextField("20",1);
 
 
     private Integer civCount;
     private Integer turnAmount;
 
     private MapSize mapSize;
-
+    public JFrame panel;
     ControlPanel() throws IOException, FontFormatException {
 
                                                                                 //dodanie nowej czcionki do programu TWÓRCA: pix3m
@@ -29,7 +28,7 @@ public class ControlPanel extends JPanel {
         ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("./CivSim/src/main/resources/com/civsim/Pliki/Font/bitmap_font_romulus_by_pix3m-d6aokem.ttf")));
 
                                                                                 //stworzenie panelu(okna) które będzie się wyświetlało
-        JFrame panel = new JFrame();
+        panel = new JFrame();
         panel.setLayout(new FlowLayout());
                                                                                 //ustawienie odpowiednich tekstów, które będą wypisane w programie
         JLabel label1 = new JLabel("<html><body><center>Symulacja<br>Cywilizacji</center</body></html>");
@@ -59,14 +58,14 @@ public class ControlPanel extends JPanel {
         panel.add(label5);
 
                                                                                     //pobranie pliku tła oraz użycie go
-        File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/background.png");
+        File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/control_panel/background.png");
         ImageIcon image = new ImageIcon(String.valueOf(file));
         JLabel background = new JLabel(image);
         background.setSize(350, 500);
         panel.add(background);
 
                                                                                     //pobranie pliku ikony aplikacji i ustawienie jej
-        file = new File("./CivSim/src/main/resources/com/civsim/Pliki/icon.png");
+        file = new File("./CivSim/src/main/resources/com/civsim/Pliki/control_panel/icon.png");
         image = new ImageIcon(String.valueOf(file));
         panel.setIconImage(image.getImage());
 
@@ -129,12 +128,12 @@ public class ControlPanel extends JPanel {
                 mapSize = new MapSize(Integer.parseInt(firstText.getText()));           //Ustawienie mapSize na wpisaną wartość
                 civCount = Integer.parseInt(secondText.getText());                      //----||---- civCount -------||--------
                 turnAmount = Integer.parseInt(thirdText.getText());                     //----||---- turnAmount -----||--------
+
             try {
                 runSimulation();                                                        //Po ustawieniu wartości uruchomiona zostaje metoda runSimulation()
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
             }
-
         }
         );
 

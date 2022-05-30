@@ -2,21 +2,18 @@ package com.civsim;
 
 public class Village {
 
-    private Integer villagersCount;
+    private final int villagersCount;
     private Position villagePosition;
     private Boolean villageStatus;
-
-        public Village(int villagersCount) {
-
-            this.villagersCount = villagersCount;
-        }
-
         public Village(Position villagePosition) {
-        this.villagePosition = villagePosition;
+            this.villagePosition = villagePosition;
+            this.villagersCount = (int) (Math.random() * 10);
+            this.villageStatus = true;
         }
 
-        public Village(boolean villageStatus) {
+    public int getVillagersCount() {
+        return villagersCount;
+    }
 
-            this.villageStatus = villageStatus;
-        }
+
 }
