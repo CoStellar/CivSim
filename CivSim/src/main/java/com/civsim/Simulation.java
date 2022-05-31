@@ -55,10 +55,12 @@ public class Simulation implements Runnable {
     @Override
     public void run() {
         int counter = 1;
-
         while (simThread != null && counter <= simRoundAmount) {
             try {
-                TimeUnit.SECONDS.sleep(1);
+                long currentTime = System.currentTimeMillis();
+                System.out.println(currentTime);
+                TimeUnit.MILLISECONDS.sleep(1000);
+                System.out.println(counter);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
@@ -76,10 +78,6 @@ public class Simulation implements Runnable {
                 } catch (IOException e) {
                     throw new RuntimeException(e);
                 }
-
-                long currentTime = System.currentTimeMillis();
-
-                System.out.println(currentTime);
                 counter++;
             }
       /*  try {

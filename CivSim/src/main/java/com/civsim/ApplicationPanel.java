@@ -91,7 +91,6 @@ public class ApplicationPanel extends JPanel{
                     } catch (IOException e) {
                         throw new RuntimeException(e);
                     }
-                    System.out.println((mapSize.getMapSize()*32));
                     g.drawImage(tileImg, (mapSize.getMapSize()*32)+ mapSize.getMapSize() - 24, 0, null);
                 }
                 if(y==mapSize.getMapSize()-1 && x==mapSize.getMapSize()-1)

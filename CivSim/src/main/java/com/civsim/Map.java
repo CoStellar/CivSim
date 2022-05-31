@@ -80,8 +80,6 @@ public class Map extends JFrame {
         }
             int screenWidth = (mapSize.getMapSize() * fieldSize) + (mapSize.getMapSize() + 31);
             int screenHeight = (mapSize.getMapSize() * fieldSize) + (mapSize.getMapSize() + 54);
-            System.out.println(screenWidth);
-            System.out.println(screenWidth);
             setSize(screenWidth, screenHeight);
             getContentPane().setBackground(Color.black);
             setResizable(false);
@@ -146,7 +144,7 @@ public class Map extends JFrame {
                     for (int i=0; i < this.mobileUnitPosition.size() ;i++) {
                         if(!mobileUnitPosition.get(i).equals(new Position(true))){
                         if (mobileUnitPosition.get(i).getX() == x && mobileUnitPosition.get(i).getY() == y) {
-                            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/mobile_units/military_unit_temlate.png");
+                            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/mobile_units/military_unit_transparent.png");
                             this.img[x][y] = ImageIO.read(file);
                             this.colorPosition[x][y] = civColor[i];
                         }}
