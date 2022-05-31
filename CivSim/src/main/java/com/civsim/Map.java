@@ -146,7 +146,7 @@ public class Map extends JFrame {
                     for (int i=0; i < this.mobileUnitPosition.size() ;i++) {
                         if(!mobileUnitPosition.get(i).equals(new Position(true))){
                         if (mobileUnitPosition.get(i).getX() == x && mobileUnitPosition.get(i).getY() == y) {
-                            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/mobile_units/military_unit.png");
+                            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/mobile_units/military_unit_temlate.png");
                             this.img[x][y] = ImageIO.read(file);
                             this.colorPosition[x][y] = civColor[i];
                         }}
