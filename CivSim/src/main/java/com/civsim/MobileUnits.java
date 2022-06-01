@@ -7,6 +7,7 @@ import java.util.Random;
 public class MobileUnits {
 
     private Position unitPosition;
+
     private int unitHealth;
     private String unitOwner;
     private Color color;

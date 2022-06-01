@@ -19,6 +19,8 @@ public class Civilization extends JPanel {
     private Integer cityCount;
     private Integer populationCount=0;
     private Integer mobileUnitsAmount=0;
+    private Integer traderUnitsAmount =0;
+    private Integer militaryUnitsAmount =0;
     private final ArrayList<Village> villages = new ArrayList<>();
     private final ArrayList<City> cities = new ArrayList<>();
     public Resources resourcesAmount = new Resources();
@@ -26,6 +28,8 @@ public class Civilization extends JPanel {
     MapSize mapSize;
 
     public MilitaryUnit militaryUnit;
+
+    public TraderUnit traderUnit;
     public ArrayList<Position> civFieldPosition = new ArrayList<>();
     public Civilization(MapSize mapSize) throws IOException {
         this.civColor = new Color((int)(Math.random() * 0x1000000));
@@ -44,7 +48,15 @@ public class Civilization extends JPanel {
         updatePopulationCount();
     }
 
-        public void civExpand(){
+    public Integer getTraderUnitsAmount() {
+        return traderUnitsAmount;
+    }
+
+    public Integer getMilitaryUnitsAmount() {
+        return militaryUnitsAmount;
+    }
+
+    public void civExpand(){
         Random random = new Random();
         int number;
                 if(resourcesAmount.resourcesCompareVillage(resourcesAmount)){
@@ -82,7 +94,11 @@ public class Civilization extends JPanel {
                     this.resourcesAmount.setStone(resourcesAmount.getStone()-15);
                     this.resourcesAmount.setIron(resourcesAmount.getIron()-15);
                     this.militaryUnit = new MilitaryUnit(citiesPositions().get(random.nextInt(cityCount)),this.civColor,this.mapSize);
+                    this.traderUnit = new TraderUnit(citiesPositions().get(random.nextInt(cityCount)),this.civColor,this.mapSize);
                     this.mobileUnitsAmount++;
+                    this.mobileUnitsAmount++;
+                    this.militaryUnitsAmount++;
+                    this.traderUnitsAmount++;
                 }
 
         }

@@ -40,6 +40,7 @@ public class Simulation implements Runnable {
             civPosition.set(i, civilization.get(i).civFieldPosition);
             cityPositions.add(civilization.get(i).citiesPositions());
             militaryUnitPosition.add(new Position(true));
+            traderUnitPosition.add(new Position(true));
             militaryUnits.add(new ArrayList<>());
             traderUnits.add(new ArrayList<>());
         }
@@ -79,12 +80,22 @@ public class Simulation implements Runnable {
                 civilization.get(i).civExpand();
                 civilization.get(i).updatePopulationCount();
                 this.cityPositions.set(i, civilization.get(i).citiesPositions());
-                if (civilization.get(i).getMobileUnitsAmount() > 0) {
-                    civilization.get(i).militaryUnit.updatePostion();
-                    militaryUnits.add(new ArrayList<>());
-                    militaryUnits.get(i).add(civilization.get(i).militaryUnit);
-                    militaryUnitPosition.set(i, civilization.get(i).militaryUnit.getUnitPosition());
-                }
+                        if (civilization.get(i).getMobileUnitsAmount() > 0) {
+                            if (civilization.get(i).getMilitaryUnitsAmount() > 0){
+                                civilization.get(i).militaryUnit.updatePostion();
+                                militaryUnits.add(new ArrayList<>());
+                                militaryUnits.get(i).add(civilization.get(i).militaryUnit);
+                                militaryUnitPosition.set(i, civilization.get(i).militaryUnit.getUnitPosition());
+                            }
+                            if (civilization.get(i).getTraderUnitsAmount() > 0){
+                                civilization.get(i).traderUnit.updatePostion();
+                                traderUnits.add(new ArrayList<>());
+                                traderUnits.get(i).add(civilization.get(i).traderUnit);
+                                traderUnitPosition.set(i, civilization.get(i).traderUnit.getUnitPosition());
+                            }
+                        }
+
+
             }
             civUnits.updateCivUnits(traderUnits,militaryUnits);
             civUnits.combat();
@@ -112,7 +123,7 @@ public class Simulation implements Runnable {
             militaryUnits = swap;
 
             try {
-                simulationMap.updateMap(civPosition, this.cityPositions, militaryUnitPosition);
+                simulationMap.updateMap(civPosition, this.cityPositions, militaryUnitPosition, traderUnitPosition);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
