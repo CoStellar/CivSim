@@ -135,6 +135,12 @@ public class Resources {
         return resources.stone >= 10 || resources.animals >= 10 || resources.iron >= 10;
 
     }
+    public boolean resourcesCompareMobileUnit(Resources resources)
+    {
+
+        return resources.stone >= 10 && resources.animals >= 10 && resources.iron >= 10;
+
+    }
 
     public String getResourceName() {
         return resourceName;

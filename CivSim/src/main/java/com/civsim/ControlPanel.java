@@ -15,12 +15,13 @@ public class ControlPanel extends JPanel {
     private final JTextField thirdText = new JTextField("20",1);
 
 
+
     private Integer civCount;
     private Integer turnAmount;
 
     private MapSize mapSize;
     public JFrame panel;
-    ControlPanel() throws IOException, FontFormatException {
+    public ControlPanel() throws IOException, FontFormatException {
 
                                                                                 //dodanie nowej czcionki do programu TWÓRCA: pix3m
         Font pix3mFont = Font.createFont(Font.TRUETYPE_FONT, new File("./CivSim/src/main/resources/com/civsim/Pliki/Font/bitmap_font_romulus_by_pix3m-d6aokem.ttf"));
@@ -41,6 +42,7 @@ public class ControlPanel extends JPanel {
         label2.setFont(pix3mFont.deriveFont(14.4f));
         label2.setBounds(145,178,93,32);
         panel.add(label2);
+
 
         JLabel label3 = new JLabel("<html><body><center>Wielkość Mapy</center</body></html>");
         label3.setFont(pix3mFont.deriveFont(13f));
@@ -125,16 +127,15 @@ public class ControlPanel extends JPanel {
 
                                                                                         //Działanie przycisku
         startButton.addActionListener(e -> {
-                mapSize = new MapSize(Integer.parseInt(firstText.getText()));           //Ustawienie mapSize na wpisaną wartość
-                civCount = Integer.parseInt(secondText.getText());                      //----||---- civCount -------||--------
-                turnAmount = Integer.parseInt(thirdText.getText());                     //----||---- turnAmount -----||--------
-
-            try {
-                runSimulation();                                                        //Po ustawieniu wartości uruchomiona zostaje metoda runSimulation()
-            } catch (IOException ex) {
-                throw new RuntimeException(ex);
-            }
-        }
+                    mapSize = new MapSize(Integer.parseInt(firstText.getText()));           //Ustawienie mapSize na wpisaną wartość
+                    civCount = Integer.parseInt(secondText.getText());                      //----||---- civCount -------||--------
+                    turnAmount = Integer.parseInt(thirdText.getText());                     //----||---- turnAmount -----||--------
+                    try {
+                        runSimulation();                                                        //Po ustawieniu wartości uruchomiona zostaje metoda runSimulation()
+                    } catch (IOException ex) {
+                        throw new RuntimeException(ex);
+                    }
+                }
         );
 
         panel.add(startButton);

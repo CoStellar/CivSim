@@ -24,7 +24,7 @@ public class Information extends JPanel {
             for(int o=0;o < civilizations.size(); o++ ){
                 for(int p = 0; p<positionsOfCivilizations.get(o).size();p++){
                     assert tekst != null;
-                    tekst.append(positionsOfCivilizations.get(o).get(p).x.toString()).append(",").append(positionsOfCivilizations.get(o).get(p).y.toString()).append(" ");
+                    tekst.append(positionsOfCivilizations.get(o).get(p).getX().toString()).append(",").append(positionsOfCivilizations.get(o).get(p).getY().toString()).append(" ");
                 }
              info.add(new JLabel("<html><body><center>Cywilizacja "+o+"<br>Pozycje Cywilizacji:<br>"+tekst+"</center></body></html>"));
              info.get(o).setBounds(15,o*20,200,20);

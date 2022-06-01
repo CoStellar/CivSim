@@ -4,8 +4,8 @@ import java.util.*;
 
 public class Position {
 
-    public Integer x;
-    public Integer y;
+    private Integer x;
+    private Integer y;
 
     Position() throws IOException {
         Scanner scanner = new Scanner(new File("./CivSim/src/main/resources/com/civsim/Pliki/positions.txt"));
@@ -48,6 +48,10 @@ public class Position {
         this.x = x;
         this.y = y;
     }
+
+    Position(boolean xd) {
+
+    }
     public Integer drawRandomPosition(MapSize mapSize) {
         Random random;
         random = new Random();
@@ -62,20 +66,21 @@ public class Position {
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        Position other = (Position) obj;
-        if (!Objects.equals(x, other.x))
-            return false;
-        return Objects.equals(y, other.y);
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Position position = (Position) o;
+        return Objects.equals(x, position.x) && Objects.equals(y, position.y);
     }
 
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y);
+    }
 
+    public Position getPosition(){
+        return this;
+    }
 
 }
 
