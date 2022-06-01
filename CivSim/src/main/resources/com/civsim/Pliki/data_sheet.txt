@@ -1,0 +1,80 @@
+Current Turn: 1
+ 
+Time: 1654106616924
+ 
+Current Events:  
+ 
+ 
+ 
+Current Turn: 2
+ 
+Time: 1654106618046
+ 
+Current Events:  
+ 
+ 
+ 
+Current Turn: 3
+ 
+Time: 1654106619173
+ 
+Current Events:  
+ 
+ 
+ 
+Current Turn: 4
+ 
+Time: 1654106620292
+ 
+Current Events:  
+ 
+ 
+ 
+Current Turn: 5
+ 
+Time: 1654106621413
+ 
+Current Events: flood  
+ 
+ 
+ 
+Current Turn: 6
+ 
+Time: 1654106622521
+ 
+Current Events: flood  
+ 
+ 
+ 
+Current Turn: 7
+ 
+Time: 1654106623637
+ 
+Current Events: flood  
+ 
+ 
+ 
+Current Turn: 8
+ 
+Time: 1654106624746
+ 
+Current Events: flood  
+ 
+ 
+ 
+Current Turn: 9
+ 
+Time: 1654106625858
+ 
+Current Events: flood  
+ 
+ 
+ 
+Current Turn: 10
+ 
+Time: 1654106626975
+ 
+Current Events: flood meteor shower  
+ 
+ 
+ 

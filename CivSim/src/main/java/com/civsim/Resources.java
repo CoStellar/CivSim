@@ -7,7 +7,8 @@ import java.io.IOException;
 
 import java.util.Objects;
 
-public class Resources {
+public class Resources
+{
     private String resourceName;
     private Integer wood = 0;
     private Integer iron = 0;
@@ -21,7 +22,8 @@ public class Resources {
     }
     public Resources(Boolean empty){
     }
-    public BufferedImage getImg(){
+    public BufferedImage getImg()
+    {
         BufferedImage image;
         if(Objects.equals(this.resourceName, "wood"))
         {
@@ -122,14 +124,16 @@ public class Resources {
     }
     public boolean resourcesCompareVillage(Resources resources)
     {
-        if(resources.wood >= 5 && resources.wheat >= 3 && resources.animals >= 2) {
+        if(resources.wood >= 5 && resources.wheat >= 3 && resources.animals >= 2)
+        {
             return true;
         }
         return resources.wood >= 10 || resources.wheat >= 10 || resources.animals >= 10;
     }
     public boolean resourcesCompareCity(Resources resources)
     {
-        if(resources.stone >= 5 && resources.animals >= 2 && resources.iron >= 2) {
+        if(resources.stone >= 5 && resources.animals >= 2 && resources.iron >= 2)
+        {
         return true;
         }
         return resources.stone >= 10 || resources.animals >= 10 || resources.iron >= 10;

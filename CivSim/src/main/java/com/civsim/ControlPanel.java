@@ -21,7 +21,8 @@ public class ControlPanel extends JPanel {
 
     private MapSize mapSize;
     public JFrame panel;
-    public ControlPanel() throws IOException, FontFormatException {
+    public ControlPanel() throws IOException, FontFormatException
+    {
 
                                                                                 //dodanie nowej czcionki do programu TWÓRCA: pix3m
         Font pix3mFont = Font.createFont(Font.TRUETYPE_FONT, new File("./CivSim/src/main/resources/com/civsim/Pliki/Font/bitmap_font_romulus_by_pix3m-d6aokem.ttf"));

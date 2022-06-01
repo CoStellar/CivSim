@@ -21,11 +21,10 @@ public class Simulation implements Runnable {
     private final ArrayList<Civilization> civilization = new ArrayList<>();
     private final ArrayList<ArrayList<Position>> cityPositions = new ArrayList<>();
     private ArrayList<ArrayList<MilitaryUnit>> militaryUnits = new ArrayList<>();
-    private ArrayList<ArrayList<TraderUnit>> traderUnits = new ArrayList<>();
-    private CivilizationUnits civUnits;
+    private final ArrayList<ArrayList<TraderUnit>> traderUnits = new ArrayList<>();
+    private final CivilizationUnits civUnits;
     Color[] civColor;
-    Random random;
-    private RandomEvents randomEvents;
+    private final RandomEvents randomEvents;
     Simulation(Integer civAmount, Integer simRoundAmount, MapSize mapSize) throws IOException {
         this.civAmount = civAmount;
         this.simRoundAmount = simRoundAmount;
@@ -48,11 +47,9 @@ public class Simulation implements Runnable {
         randomEvents = new RandomEvents(simRoundAmount, mapSize);
 
         simulationMap = new Map(civPosition, this.mapSize, this.civAmount, civColor, this.cityPositions);
+        createDataSheet();
         startSimThread();
-    }
 
-    public ArrayList<ArrayList<Position>> getCivPosition() {
-        return this.civPosition;
     }
 
     public void startSimThread() {
@@ -60,31 +57,45 @@ public class Simulation implements Runnable {
         simThread.start();
     }
 
-    public void openInfoMenu() throws IOException, FontFormatException {
-        new Information(this.civilization);
+    public void openInfoMenu() throws IOException, FontFormatException
+    {
+        new Information();
     }
 
     @Override
     public void run() {
+        FileWriter fileWriter;
+        PrintWriter printWriter;
         int counter = 1;
-        while (simThread != null && counter <= simRoundAmount) {
+        while (simThread != null && counter <= simRoundAmount)
+        {
             try {
-                long currentTime = System.currentTimeMillis();
-                System.out.println(currentTime);
+                fileWriter = new FileWriter("./CivSim/src/main/resources/com/civsim/Pliki/data_sheet.txt",true);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            printWriter= new PrintWriter(fileWriter);
+            printWriter.println("Current Turn: "+counter);
+            printWriter.println(" ");
+            long currentTime = System.currentTimeMillis();
+            printWriter.println("Time: "+currentTime);
+            printWriter.println(" ");
+            try {
                 TimeUnit.MILLISECONDS.sleep(1000);
-                System.out.println(counter);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
             try {
                 randomEvents.eventPicker(counter, cityPositions);
                 randomEvents.eventDeactivator(counter);
+                printWriter.print("Current Events: ");
                 for(int i=0;i<randomEvents.getEventName().size();i++)
                 {
                     if(randomEvents.getRandomEventActive().get(i))
-                        System.out.print(randomEvents.getEventName().get(i)+" ");
+                        printWriter.print(randomEvents.getEventName().get(i)+" ");
                 }
-                System.out.println(" ");
+                printWriter.println(" ");
+                printWriter.println(" ");
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -141,11 +152,28 @@ public class Simulation implements Runnable {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-            checkHealth();
-            counter++;
-            }
+            for(int i=0;i<civAmount;i++) {
+                if (civilization.get(i).getMobileUnitsAmount() > 0) {
+                    for(int o=0;o<militaryUnits.get(i).size();o++) {
+                        if(militaryUnits.get(i).size() > 0 && militaryUnits.get(i).get(o)!=null ){
+                            printWriter.println("Unit Owner: ("+militaryUnits.get(i).get(0).getUnitColor().getRed()+", "+militaryUnits.get(i).get(0).getUnitColor().getGreen()+", "+militaryUnits.get(i).get(0).getUnitColor().getBlue()+") "+"Unit Position: ["+militaryUnits.get(i).get(o).getUnitPosition().getX()+", "+militaryUnits.get(i).get(o).getUnitPosition().getY()+"] Health: "+militaryUnits.get(i).get(o).getHealth());
 
+                        }
+                    }
+                }}
+            counter++;
+            printWriter.println(" ");
+            printWriter.println(" ");
+            printWriter.close();
         }
+        try {
+            openInfoMenu();
+        } catch (IOException | FontFormatException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+
 
       /*  try {
             openInfoMenu();
@@ -175,17 +203,21 @@ public class Simulation implements Runnable {
             }
             printWriter.close();
         }
-
-        public void checkHealth(){
-            for(int i=0;i<civAmount;i++) {
-                if (civilization.get(i).getMobileUnitsAmount() > 0) {
-                for(int o=0;o<militaryUnits.get(i).size();o++) {
-                    if(militaryUnits.get(i).size() > 0 && militaryUnits.get(i).get(o)!=null ){
-                        System.out.println(militaryUnits.get(i).get(o).getUnitPosition().getX()+", "+militaryUnits.get(i).get(o).getUnitPosition().getY()+" Health: "+militaryUnits.get(i).get(o).getHealth());
-
-                    }
+    public void createDataSheet() throws IOException {
+        File positionsFile = new File("./CivSim/src/main/resources/com/civsim/Pliki/data_sheet.txt");
+        ArrayList<String> text = new ArrayList<>();
+        if(positionsFile.createNewFile()){
+            System.out.println("File Created");
+        }else{
+            if(positionsFile.delete()){
+                if(positionsFile.createNewFile()){
+                    System.out.println("File Created");
                 }
-            }}
+            }
         }
+    }
+
+
+
 
     }

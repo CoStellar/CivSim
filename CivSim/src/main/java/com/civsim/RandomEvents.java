@@ -23,54 +23,63 @@ public class RandomEvents {
     private Position position;
     private Random random = new Random();
     private final MapSize mapSize;
-    public RandomEvents(int simRoundAmount, MapSize mapSize){
+    public RandomEvents(int simRoundAmount, MapSize mapSize)
+    {
             this.simRoundAmount = simRoundAmount;
             this.mapSize = mapSize;
     }
 
-    public void eventPicker(Integer simRoundCount, ArrayList<ArrayList<Position>> cityPositions) throws IOException {
+    public void eventPicker(Integer simRoundCount, ArrayList<ArrayList<Position>> cityPositions) throws IOException
+    {
         ArrayList<Position> allPositions = new ArrayList<>();
-        for(int i = 0; i< cityPositions.size();i++){
-            for(int o = 0;o<cityPositions.get(i).size(); o++){
-                allPositions.add(cityPositions.get(i).get(o));
-            }
+        for (ArrayList<Position> cityPosition : cityPositions)
+        {
+            allPositions.addAll(cityPosition);
         }
         int x, z = randomEventGlobalCounter;
 
         if(simRoundCount%5==0){
             x = random.nextInt(8)+1;
-            if(x == 1){
+            if(x == 1)
+            {
                 randomEventPosition.add(new ArrayList<>());
                 randomEventPosition.get(z).add(fireEvent(simRoundCount));
             }
-            if(x == 2 && allPositions.size()>0){
+            if(x == 2 && allPositions.size()>0)
+            {
                 randomEventPosition.add(new ArrayList<>());
                 randomEventPosition.get(z).add(diseaseEvent(simRoundCount, allPositions));
             }
-            if(x == 3){
+            if(x == 3)
+            {
                 randomEventPosition.add(new ArrayList<>());
                 randomEventPosition.get(z).add(floodEvent(simRoundCount));
             }
-            if(x == 4){
+            if(x == 4)
+            {
                 randomEventPosition.add(new ArrayList<>());
                 randomEventPosition.get(z).add(monsoonEvent(simRoundCount));
             }
-            if(x == 5){
+            if(x == 5)
+            {
                 randomEventPosition.add(new ArrayList<>());
                 randomEventPosition.get(z).add(droughtEvent(simRoundCount));
             }
-            if(x == 6){
+            if(x == 6)
+            {
                 randomEventPosition.add(new ArrayList<>());
                 randomEventPosition.get(z).add(meteorShowerEvent(simRoundCount));
             }
-            if(x == 7){
+            if(x == 7)
+            {
                 randomEventPosition.add(new ArrayList<>());
                 randomEventPosition.get(z).add(tornadoEvent(simRoundCount));
             }
 
         }
     }
-    public Position fireEvent(int simRoundCount){
+    public Position fireEvent(int simRoundCount)
+    {
         position = new Position(mapSize);
         randomEventGlobalCounter++;
         this.randomEventOrder.add("fire");
@@ -78,8 +87,8 @@ public class RandomEvents {
         this.randomEventFinishTime.add(simRoundCount+4);
         return position;
     }
-    public Position diseaseEvent(int simRoundCount, ArrayList<Position> cityPositions){
-
+    public Position diseaseEvent(int simRoundCount, ArrayList<Position> cityPositions)
+    {
         Random random = new Random();
         position = cityPositions.get(random.nextInt(cityPositions.size()));
         randomEventGlobalCounter++;
@@ -88,7 +97,8 @@ public class RandomEvents {
         this.randomEventFinishTime.add(simRoundCount+8);
         return position;
     }
-    public Position floodEvent(int simRoundCount){
+    public Position floodEvent(int simRoundCount)
+    {
         position = new Position(mapSize);
         randomEventGlobalCounter++;
         this.randomEventOrder.add("flood");
@@ -96,7 +106,8 @@ public class RandomEvents {
         this.randomEventFinishTime.add(simRoundCount+8);
         return position;
     }
-    public Position monsoonEvent(int simRoundCount){
+    public Position monsoonEvent(int simRoundCount)
+    {
         position = new Position(mapSize);
         randomEventGlobalCounter++;
         this.randomEventOrder.add("monsoon");
@@ -104,7 +115,8 @@ public class RandomEvents {
         this.randomEventFinishTime.add(simRoundCount+5);
         return position;
     }
-    public Position droughtEvent(int simRoundCount){
+    public Position droughtEvent(int simRoundCount)
+    {
         position = new Position(mapSize);
         randomEventGlobalCounter++;
         this.randomEventOrder.add("drought");
@@ -112,7 +124,8 @@ public class RandomEvents {
         this.randomEventFinishTime.add(simRoundCount+10);
         return position;
     }
-    public Position meteorShowerEvent(int simRoundCount){
+    public Position meteorShowerEvent(int simRoundCount)
+    {
         position = new Position(mapSize);
         randomEventGlobalCounter++;
         this.randomEventOrder.add("meteor shower");
@@ -120,7 +133,8 @@ public class RandomEvents {
         this.randomEventFinishTime.add(simRoundCount+4);
         return position;
     }
-    public Position tornadoEvent(int simRoundCount){
+    public Position tornadoEvent(int simRoundCount)
+    {
         position = new Position(mapSize);
         randomEventGlobalCounter++;
         this.randomEventOrder.add("tornado");
@@ -128,20 +142,25 @@ public class RandomEvents {
         this.randomEventFinishTime.add(simRoundCount+4);
         return position;
     }
-    public void eventDeactivator(Integer simRoundCount){
-        for(int i= 0; i< randomEventFinishTime.size(); i++){
-            if(Objects.equals(randomEventFinishTime.get(i), simRoundCount)){
+    public void eventDeactivator(Integer simRoundCount)
+    {
+        for(int i= 0; i< randomEventFinishTime.size(); i++)
+        {
+            if(Objects.equals(randomEventFinishTime.get(i), simRoundCount))
+            {
                 randomEventActive.set(i, false);
             }
         }
     }
-    public ArrayList<String> getEventName(){
+    public ArrayList<String> getEventName()
+    {
         ArrayList<String> eventNames = new ArrayList<>();
-        for(int i= 0; i< randomEventFinishTime.size(); i++){
+        for(int i= 0; i< randomEventFinishTime.size(); i++)
+        {
             eventNames.add(i, randomEventOrder.get(i));
-            }
-        return  eventNames;
         }
+        return  eventNames;
+    }
 
 
 }

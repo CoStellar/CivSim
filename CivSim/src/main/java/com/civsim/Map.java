@@ -1,5 +1,4 @@
 package com.civsim;
-
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -8,10 +7,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Objects;
-
-
 public class Map extends JFrame {
-
     final Integer fieldSize = 32;
     private final MapSize mapSize;
     private final Resources[][] resources;
@@ -24,13 +20,11 @@ public class Map extends JFrame {
     private final Color[][] colorPosition;
     public ArrayList<ArrayList<Position>> civPosition;
     public ArrayList<ArrayList<Position>> cityPosition;
-    private ArrayList<ArrayList<Position>> randomEventPosition;
-    private ArrayList<String> randomEventNames;
     public ArrayList<Position> mobileUnitPosition;
-
     public ArrayList<Position> militaryUnitPosition;
     public  ArrayList <Position> traderUnitPosition;
-    public Map(ArrayList<ArrayList<Position>> civPosition, MapSize mapSize, Integer civAmount, Color[] civColor, ArrayList<ArrayList<Position>> cityPosition) throws IOException {
+    public Map(ArrayList<ArrayList<Position>> civPosition, MapSize mapSize, Integer civAmount, Color[] civColor, ArrayList<ArrayList<Position>> cityPosition) throws IOException
+    {
         this.mapSize = mapSize;
         this.civAmount = civAmount;
         this.civColor = civColor;
@@ -106,12 +100,11 @@ public class Map extends JFrame {
                 this.colorPosition[x][y] = new Color(57, 99, 37);
             }
         }
-
         this.civPosition = civPosition;
         this.cityPosition = cityPosition;
         this.mobileUnitPosition = mobileUnitPosition;
-        this.randomEventPosition = randomEvents.getRandomEventPosition();
-        this.randomEventNames = randomEvents.getEventName();
+        ArrayList<ArrayList<Position>> randomEventPosition = randomEvents.getRandomEventPosition();
+        ArrayList<String> randomEventNames = randomEvents.getEventName();
         this.militaryUnitPosition = militaryUnitPosition;
         this.traderUnitPosition = traderUnitPosition;
         for (int x = 0; x < this.mapSize.getMapSize(); x++)
@@ -153,10 +146,14 @@ public class Map extends JFrame {
         {
             for (int y = 0; y < this.mapSize.getMapSize(); y++)
             {
-                for (int i=0; i < this.mobileUnitPosition.size() ;i++) {
-                    if(mobileUnitPosition.get(i)!=null){
-                        if(!mobileUnitPosition.get(i).equals(new Position(true))){
-                            if (mobileUnitPosition.get(i).getX() == x && mobileUnitPosition.get(i).getY() == y) {
+                for (int i=0; i < this.mobileUnitPosition.size() ;i++)
+                {
+                    if(mobileUnitPosition.get(i)!=null)
+                    {
+                        if(!mobileUnitPosition.get(i).equals(new Position(true)))
+                        {
+                            if (mobileUnitPosition.get(i).getX() == x && mobileUnitPosition.get(i).getY() == y)
+                            {
                                 file = new File("./CivSim/src/main/resources/com/civsim/Pliki/mobile_units/military_unit_transparent.png");
                                 this.img[x][y] = ImageIO.read(file);
                                 this.colorPosition[x][y] = civColor[i];
@@ -167,15 +164,13 @@ public class Map extends JFrame {
                 }
             }
         }
-
-
         for (int x = 0; x < this.mapSize.getMapSize(); x++)
         {
             for (int y = 0; y < this.mapSize.getMapSize(); y++)
             {
                 for (int i = 0; i < randomEventPosition.size(); i++)
                 {
-                    for(int o=0; o<randomEventPosition.get(i).size(); o++)
+                    for(int o = 0; o< randomEventPosition.get(i).size(); o++)
                     {
                         if (randomEventPosition.get(i).get(o).getX() == x && randomEventPosition.get(i).get(o).getY() == y)
                         {
@@ -192,14 +187,19 @@ public class Map extends JFrame {
         {
             for (int y = 0; y < this.mapSize.getMapSize(); y++)
             {
-                for (int i = 0; i < this.traderUnitPosition.size() ; i++) {
+                for (int i = 0; i < this.traderUnitPosition.size() ; i++)
+                {
                     if(traderUnitPosition.get(i)!=null){
-                        if(!traderUnitPosition.get(i).equals(new Position(true))){
-                            if (traderUnitPosition.get(i).getX() == x && traderUnitPosition.get(i).getY() == y) {
+                        if(!traderUnitPosition.get(i).equals(new Position(true)))
+                        {
+                            if (traderUnitPosition.get(i).getX() == x && traderUnitPosition.get(i).getY() == y)
+                            {
                                 file = new File("./CivSim/src/main/resources/com/civsim/Pliki/mobile_units/trader_unit_transparent.png");
                                 this.img[x][y] = ImageIO.read(file);
                                 this.colorPosition[x][y] = civColor[i];
-                            }}}
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -243,7 +243,8 @@ public class Map extends JFrame {
 
         return tileImg;
     }
-    public BufferedImage setEvent(String eventName) throws IOException {
+    public BufferedImage setEvent(String eventName) throws IOException
+    {
         BufferedImage tileImg = null;
         if(Objects.equals(eventName, "disease"))
         {
