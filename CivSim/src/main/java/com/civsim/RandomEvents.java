@@ -13,6 +13,9 @@ public class RandomEvents {
     private Integer[] randomEventFieldAmount;
     private Position position;
     Random random;
+    public RandomEvents(){
+
+    }
     public void eventPicker(Integer simRoundCount) throws IOException {
 
         int x, y = randomEventGlobalCounter, z = simRoundCount;

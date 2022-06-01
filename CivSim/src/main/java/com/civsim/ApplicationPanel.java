@@ -6,7 +6,6 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
-import java.util.Objects;
 
 
 public class ApplicationPanel extends JPanel{
@@ -29,7 +28,8 @@ public class ApplicationPanel extends JPanel{
             for(int x=0;x<mapSize.getMapSize(); x++){
                  g.setColor(background);
                  g.fillRect((x * 32)+x+7, (y * 32)+y+7, 34,34);
-        }}
+            }
+        }
         for(int y=0; y< mapSize.getMapSize(); y++){
             for(int x=0;x<mapSize.getMapSize(); x++){
                 if(colorPosition[x][y]!= null) {
@@ -134,8 +134,6 @@ public class ApplicationPanel extends JPanel{
                 g.drawImage(img[y][x], (x * 32)+x+8, (y * 32)+y+8, null);
             }
         }
-
-
         g.dispose();
     }
 

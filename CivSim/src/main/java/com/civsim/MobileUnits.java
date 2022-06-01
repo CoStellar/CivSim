@@ -7,7 +7,7 @@ import java.util.Random;
 public class MobileUnits {
 
     private Position unitPosition;
-    private Integer unitHealth;
+    private int unitHealth;
     private String unitOwner;
     private Color color;
     private MapSize border;
@@ -17,11 +17,9 @@ public class MobileUnits {
     }
 
     public MobileUnits(Position unitPosition, Color unitColor, MapSize mapSize) {
-
         this.color = unitColor;
         this.unitPosition = unitPosition;
         this.unitHealth = 10;
-
         this.border = mapSize;
 
     }
@@ -52,7 +50,6 @@ public class MobileUnits {
                tab1[i][1] = unitPosition.getY()-1;
            }
        }
-
         for(int i = 0; i < 4; i++){
             tab2.add(new Position(tab1[i][0],tab1[i][1]));
         }
@@ -60,5 +57,8 @@ public class MobileUnits {
         tab2.removeIf(position -> position.getX() < 0 || position.getX() >= border.getMapSize() || position.getY() < 0 || position.getY() >= border.getMapSize());
         number = random.nextInt(tab2.size());
         unitPosition = tab2.get(number);
+    }
+    public void updateHealth(int dmgRecieved){
+        this.unitHealth = this.unitHealth - dmgRecieved;
     }
 }

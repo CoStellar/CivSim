@@ -16,15 +16,21 @@ public class Simulation implements Runnable {
     Thread simThread;
     private final ArrayList<ArrayList<Position>> civPosition = new ArrayList<>();
 
-    private final ArrayList<Position> mobileUnitPosition = new ArrayList<>();
+    private final ArrayList<Position> militaryUnitPosition = new ArrayList<>();
+    private final ArrayList<Position> traderUnitPosition = new ArrayList<>();
     private final ArrayList<Civilization> civilization = new ArrayList<>();
     private final ArrayList<ArrayList<Position>> cityPositions = new ArrayList<>();
+    private ArrayList<ArrayList<MilitaryUnit>> militaryUnits = new ArrayList<>();
+    private ArrayList<ArrayList<TraderUnit>> traderUnits = new ArrayList<>();
+    private CivilizationUnits civUnits;
     Color[] civColor;
+    Random random;
     Simulation(Integer civAmount, Integer simRoundAmount, MapSize mapSize) throws IOException {
         this.civAmount = civAmount;
         this.simRoundAmount = simRoundAmount;
         this.mapSize = mapSize;
         this.civColor = new Color[this.civAmount];
+        civUnits = new CivilizationUnits(mapSize);
         createPositionsFile();
         for (int i = 0; i < this.civAmount; i++) {
             assert false;
@@ -33,8 +39,12 @@ public class Simulation implements Runnable {
             civPosition.add(new ArrayList<>());
             civPosition.set(i, civilization.get(i).civFieldPosition);
             cityPositions.add(civilization.get(i).citiesPositions());
-            mobileUnitPosition.add(new Position(true));
+            militaryUnitPosition.add(new Position(true));
+            militaryUnits.add(new ArrayList<>());
+            traderUnits.add(new ArrayList<>());
         }
+
+
         simulationMap = new Map(civPosition, this.mapSize, this.civAmount, civColor, this.cityPositions);
         startSimThread();
     }
@@ -64,28 +74,60 @@ public class Simulation implements Runnable {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
-            for(int i = 0 ; i<civilization.size(); i++) {
+            for (int i = 0; i < civilization.size(); i++) {
                 civilization.get(i).getResources(simulationMap.getResources());
                 civilization.get(i).civExpand();
                 civilization.get(i).updatePopulationCount();
                 this.cityPositions.set(i, civilization.get(i).citiesPositions());
-                if(civilization.get(i).getMobileUnitsAmount()>0){
-                civilization.get(i).mobileUnits.updatePostion();
-                mobileUnitPosition.set(i,civilization.get(i).mobileUnits.getUnitPosition());}
-            }
-                try {
-                   simulationMap.updateMap(civPosition, this.cityPositions, mobileUnitPosition);
-                } catch (IOException e) {
-                    throw new RuntimeException(e);
+                if (civilization.get(i).getMobileUnitsAmount() > 0) {
+                    civilization.get(i).militaryUnit.updatePostion();
+                    militaryUnits.add(new ArrayList<>());
+                    militaryUnits.get(i).add(civilization.get(i).militaryUnit);
+                    militaryUnitPosition.set(i, civilization.get(i).militaryUnit.getUnitPosition());
                 }
-                counter++;
             }
+            civUnits.updateCivUnits(traderUnits,militaryUnits);
+            civUnits.combat();
+            militaryUnits = civUnits.getMilitaryUnits();
+
+                for (int i = 0; i < civilization.size(); i++) {
+                    if (civilization.get(i).getMobileUnitsAmount() > 0)
+                    {
+                        if(militaryUnits.get(i).get(0).getHealth()<=0)
+                        {
+                            civilization.get(i).unitKiller();
+                            militaryUnitPosition.set(i,null);
+                            militaryUnits.get(i).set(0,null);
+                        }
+                    }
+                }
+            ArrayList<ArrayList<MilitaryUnit>> swap = new ArrayList<>();
+            for (int i = 0; i < civilization.size(); i++) {
+                swap.add(new ArrayList<>());
+                if (civilization.get(i).getMobileUnitsAmount() > 0) {
+                if(militaryUnits.get(i).get(0)!=null) {
+                    swap.get(i).add(militaryUnits.get(i).get(0));
+                }}
+            }
+            militaryUnits = swap;
+
+            try {
+                simulationMap.updateMap(civPosition, this.cityPositions, militaryUnitPosition);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            checkHealth();
+            counter++;
+            }
+
+        }
+
       /*  try {
             openInfoMenu();
         } catch (IOException | FontFormatException e) {
             throw new RuntimeException(e);
         }*/
-    }
+
         public void createPositionsFile() throws IOException {
                 File positionsFile = new File("./CivSim/src/main/resources/com/civsim/Pliki/positions.txt");
                 HashSet<Position> goodPositions = new HashSet<>();
@@ -108,4 +150,17 @@ public class Simulation implements Runnable {
             }
             printWriter.close();
         }
+
+        public void checkHealth(){
+            for(int i=0;i<civAmount;i++) {
+                if (civilization.get(i).getMobileUnitsAmount() > 0) {
+                for(int o=0;o<militaryUnits.get(i).size();o++) {
+                    if(militaryUnits.get(i).size() > 0 && militaryUnits.get(i).get(o)!=null ){
+                        System.out.println(militaryUnits.get(i).get(o).getUnitPosition().getX()+", "+militaryUnits.get(i).get(o).getUnitPosition().getY()+" Health: "+militaryUnits.get(i).get(o).getHealth());
+
+                    }
+                }
+            }}
+        }
+
     }
