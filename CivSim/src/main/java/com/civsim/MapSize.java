@@ -1,6 +1,7 @@
 package com.civsim;
 
-public class MapSize {
+public class MapSize
+{
   public Integer mapSize;
 
   public MapSize(Integer mapSize) {

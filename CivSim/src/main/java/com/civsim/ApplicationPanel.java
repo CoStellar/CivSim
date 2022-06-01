@@ -8,32 +8,40 @@ import java.io.File;
 import java.io.IOException;
 
 
-public class ApplicationPanel extends JPanel{
+public class ApplicationPanel extends JPanel
+{
 
-    private final BufferedImage[][] img;//
-    private final BufferedImage[][] img2;//
+    private final BufferedImage[][] img;
+    private final BufferedImage[][] img2;
     private final MapSize mapSize;
 
     private final Color[][]  colorPosition;
-    public ApplicationPanel(BufferedImage[][] img, BufferedImage[][] img2, MapSize mapSize, Color[][]  civColor){
+    public ApplicationPanel(BufferedImage[][] img, BufferedImage[][] img2, MapSize mapSize, Color[][]  civColor)
+    {
         this.mapSize = new MapSize(mapSize.getMapSize());
         this.img = img;
         this.colorPosition = civColor;
         this.img2 = img2;
     }
-    public void paintComponent(Graphics g){
+    public void paintComponent(Graphics g)
+    {
         super.paintComponent(g);
         g.setColor(Color.getColor("#335821"));
         Color background = new Color(57, 99, 37);
-        for(int y=0; y< mapSize.getMapSize(); y++){
-            for(int x=0;x<mapSize.getMapSize(); x++){
+        for(int y=0; y< mapSize.getMapSize(); y++)
+        {
+            for(int x=0;x<mapSize.getMapSize(); x++)
+            {
                  g.setColor(background);
                  g.fillRect((x * 32)+x+7, (y * 32)+y+7, 34,34);
             }
         }
-        for(int y=0; y< mapSize.getMapSize(); y++){
-            for(int x=0;x<mapSize.getMapSize(); x++){
-                if(colorPosition[x][y]!= null) {
+        for(int y=0; y< mapSize.getMapSize(); y++)
+        {
+            for(int x=0;x<mapSize.getMapSize(); x++)
+            {
+                if(colorPosition[x][y]!= null)
+                {
                     g.setColor(colorPosition[y][x]);
                     g.fillRect((x * 32)+x+8, (y * 32)+y+8, 32,32);
                 }
@@ -42,9 +50,12 @@ public class ApplicationPanel extends JPanel{
         }
         File file;
         BufferedImage tileImg;
-        for(int y=0; y< mapSize.getMapSize(); y++){
-            for(int x=0;x<mapSize.getMapSize(); x++){
-                if(y==0) {
+        for(int y=0; y< mapSize.getMapSize(); y++)
+        {
+            for(int x=0;x<mapSize.getMapSize(); x++)
+            {
+                if(y==0)
+                {
                     file = new File("./CivSim/src/main/resources/com/civsim/Pliki/map_visuals/top_pane.png");
                     try {
                         tileImg = ImageIO.read(file);
@@ -126,17 +137,22 @@ public class ApplicationPanel extends JPanel{
 
             }
         }
-        for(int y=0; y< mapSize.getMapSize(); y++){
-            for(int x=0;x<mapSize.getMapSize(); x++){
-                if(colorPosition[x][y]!= null) {
+        for(int y=0; y< mapSize.getMapSize(); y++)
+        {
+            for(int x=0;x<mapSize.getMapSize(); x++)
+            {
+                if(colorPosition[x][y]!= null)
+                {
                     g.setColor(colorPosition[y][x]);
                     g.fillRect((x * 32)+x+8, (y * 32)+y+8, 32,32);
                 }
                 g.drawImage(img[y][x], (x * 32)+x+8, (y * 32)+y+8, null);
             }
         }
-        for(int y=0; y< mapSize.getMapSize(); y++){
-            for(int x=0;x<mapSize.getMapSize(); x++){
+        for(int y=0; y< mapSize.getMapSize(); y++)
+        {
+            for(int x=0;x<mapSize.getMapSize(); x++)
+            {
                 g.drawImage(img2[y][x], (x * 32)+x+8, (y * 32)+y+8, null);
             }
         }

@@ -2,17 +2,19 @@ package com.civsim;
 import java.io.*;
 import java.util.*;
 
-public class Position {
-
+public class Position
+{
     private Integer x;
     private Integer y;
 
-    Position() throws IOException {
+    Position() throws IOException
+    {
         Scanner scanner = new Scanner(new File("./CivSim/src/main/resources/com/civsim/Pliki/positions.txt"));
         ArrayList<String> line = new ArrayList<>();
         Random random = new Random();
         Integer[] positions = new Integer[2];
-        while (scanner.hasNextLine()) {
+        while (scanner.hasNextLine())
+        {
              line.add(scanner.nextLine());
         }
         scanner.close();
@@ -24,35 +26,41 @@ public class Position {
         this.y = positions[1];
         line.remove(number);
         File positionsFile = new File("./CivSim/src/main/resources/com/civsim/Pliki/positions.txt");
-        if(positionsFile.createNewFile()){
+        if(positionsFile.createNewFile())
+        {
             System.out.println("File Created");
-        }else{
-            if(positionsFile.delete()){
-                if(positionsFile.createNewFile()){
+        }
+        else{
+            if(positionsFile.delete())
+            {
+                if(positionsFile.createNewFile())
+                {
                     System.out.println("File Created");
                 }
             }
         }
         FileWriter fileWriter = new FileWriter("./CivSim/src/main/resources/com/civsim/Pliki/positions.txt");
         PrintWriter printWriter = new PrintWriter(fileWriter);
-        for(String i: line) {
+        for(String i: line)
+        {
             printWriter.println(i);
         }
         printWriter.close();
     }
-    Position(MapSize mapSize) {
+    Position(MapSize mapSize)
+    {
         this.x = drawRandomPosition(mapSize);
         this.y = drawRandomPosition(mapSize);
     }
-    Position(int x, int y) {
+    Position(int x, int y)
+    {
         this.x = x;
         this.y = y;
     }
-
-    Position(boolean xd) {
-
+    Position(boolean empty) {
     }
-    public Integer drawRandomPosition(MapSize mapSize) {
+    public Integer drawRandomPosition(MapSize mapSize)
+    {
         Random random;
         random = new Random();
         return random.nextInt(mapSize.getMapSize());
@@ -66,7 +74,8 @@ public class Position {
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o)
+    {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Position position = (Position) o;
