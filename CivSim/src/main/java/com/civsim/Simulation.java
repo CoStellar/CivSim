@@ -25,6 +25,7 @@ public class Simulation implements Runnable {
     private CivilizationUnits civUnits;
     Color[] civColor;
     Random random;
+    private RandomEvents randomEvents;
     Simulation(Integer civAmount, Integer simRoundAmount, MapSize mapSize) throws IOException {
         this.civAmount = civAmount;
         this.simRoundAmount = simRoundAmount;
@@ -43,7 +44,7 @@ public class Simulation implements Runnable {
             militaryUnits.add(new ArrayList<>());
             traderUnits.add(new ArrayList<>());
         }
-
+        randomEvents = new RandomEvents(simRoundAmount, mapSize);
 
         simulationMap = new Map(civPosition, this.mapSize, this.civAmount, civColor, this.cityPositions);
         startSimThread();
@@ -74,8 +75,21 @@ public class Simulation implements Runnable {
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }
+            try {
+                randomEvents.eventPicker(counter, cityPositions);
+                randomEvents.eventDeactivator(counter);
+                for(int i=0;i<randomEvents.getEventName().size();i++)
+                {
+                    if(randomEvents.getRandomEventActive().get(i))
+                        System.out.print(randomEvents.getEventName().get(i)+" ");
+                }
+                System.out.println(" ");
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+
             for (int i = 0; i < civilization.size(); i++) {
-                civilization.get(i).getResources(simulationMap.getResources());
+                civilization.get(i).getResources(simulationMap.getResources(), randomEvents);
                 civilization.get(i).civExpand();
                 civilization.get(i).updatePopulationCount();
                 this.cityPositions.set(i, civilization.get(i).citiesPositions());
@@ -112,7 +126,7 @@ public class Simulation implements Runnable {
             militaryUnits = swap;
 
             try {
-                simulationMap.updateMap(civPosition, this.cityPositions, militaryUnitPosition);
+                simulationMap.updateMap(civPosition, cityPositions, militaryUnitPosition, randomEvents);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }

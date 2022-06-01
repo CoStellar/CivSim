@@ -11,14 +11,15 @@ import java.io.IOException;
 public class ApplicationPanel extends JPanel{
 
     private final BufferedImage[][] img;//
-
+    private final BufferedImage[][] img2;//
     private final MapSize mapSize;
 
     private final Color[][]  colorPosition;
-    public ApplicationPanel(BufferedImage[][] img, MapSize mapSize, Color[][]  civColor){
+    public ApplicationPanel(BufferedImage[][] img, BufferedImage[][] img2, MapSize mapSize, Color[][]  civColor){
         this.mapSize = new MapSize(mapSize.getMapSize());
         this.img = img;
         this.colorPosition = civColor;
+        this.img2 = img2;
     }
     public void paintComponent(Graphics g){
         super.paintComponent(g);
@@ -132,6 +133,11 @@ public class ApplicationPanel extends JPanel{
                     g.fillRect((x * 32)+x+8, (y * 32)+y+8, 32,32);
                 }
                 g.drawImage(img[y][x], (x * 32)+x+8, (y * 32)+y+8, null);
+            }
+        }
+        for(int y=0; y< mapSize.getMapSize(); y++){
+            for(int x=0;x<mapSize.getMapSize(); x++){
+                g.drawImage(img2[y][x], (x * 32)+x+8, (y * 32)+y+8, null);
             }
         }
         g.dispose();

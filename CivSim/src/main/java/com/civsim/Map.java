@@ -17,13 +17,15 @@ public class Map extends JFrame {
     private final Resources[][] resources;
     private final ApplicationPanel appPanel;
     public BufferedImage[][] img;
+    public BufferedImage[][] img2;
     private final int civAmount;
     private File file;
     private final Color[] civColor;
     private final Color[][] colorPosition;
     public ArrayList<ArrayList<Position>> civPosition;
     public ArrayList<ArrayList<Position>> cityPosition;
-
+    private ArrayList<ArrayList<Position>> randomEventPosition;
+    private ArrayList<String> randomEventNames;
     public ArrayList<Position> mobileUnitPosition;
     public Map(ArrayList<ArrayList<Position>> civPosition, MapSize mapSize, Integer civAmount, Color[] civColor, ArrayList<ArrayList<Position>> cityPosition) throws IOException {
         this.mapSize = mapSize;
@@ -31,6 +33,7 @@ public class Map extends JFrame {
         this.civColor = civColor;
         resources = new Resources[this.mapSize.getMapSize()][this.mapSize.getMapSize()];
         img = new BufferedImage[this.mapSize.getMapSize()][this.mapSize.getMapSize()];
+        img2 = new BufferedImage[this.mapSize.getMapSize()][this.mapSize.getMapSize()];
         colorPosition = new Color[this.mapSize.getMapSize()][this.mapSize.getMapSize()];
         this.civPosition = civPosition;
         this.cityPosition = cityPosition;
@@ -61,23 +64,23 @@ public class Map extends JFrame {
                 }
             }
         }
-        for (int x = 0; x < this.mapSize.getMapSize(); x++)
-        {
-            for (int y = 0; y < this.mapSize.getMapSize(); y++)
+            for (int x = 0; x < this.mapSize.getMapSize(); x++)
             {
-                for (int i = 0; i < civAmount; i++)
+                for (int y = 0; y < this.mapSize.getMapSize(); y++)
                 {
-                    for (int o = 0; o < cityPosition.get(i).size(); o++)
+                    for (int i = 0; i < civAmount; i++)
                     {
-                        if (cityPosition.get(i).get(o).getX() == x && cityPosition.get(i).get(o).getY() == y)
+                        for (int o = 0; o < cityPosition.get(i).size(); o++)
                         {
-                            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/map_visuals/city_template.png");
-                            this.img[x][y] = ImageIO.read(file);
+                            if (cityPosition.get(i).get(o).getX() == x && cityPosition.get(i).get(o).getY() == y)
+                            {
+                                file = new File("./CivSim/src/main/resources/com/civsim/Pliki/map_visuals/city_template.png");
+                                this.img[x][y] = ImageIO.read(file);
+                            }
                         }
                     }
                 }
             }
-        }
             int screenWidth = (mapSize.getMapSize() * fieldSize) + (mapSize.getMapSize() + 31);
             int screenHeight = (mapSize.getMapSize() * fieldSize) + (mapSize.getMapSize() + 54);
             setSize(screenWidth, screenHeight);
@@ -86,11 +89,11 @@ public class Map extends JFrame {
             file = new File("./CivSim/src/main/resources/com/civsim/Pliki/control_panel/icon.png");
             ImageIcon image = new ImageIcon(String.valueOf(file));
             setIconImage(image.getImage());
-            appPanel = new ApplicationPanel(img, this.mapSize, colorPosition);
+            appPanel = new ApplicationPanel(img, img2, this.mapSize, colorPosition);
             add(appPanel);
             setVisible(true);
     }
-    public void updateMap(ArrayList<ArrayList<Position>> civPosition, ArrayList<ArrayList<Position>> cityPosition,ArrayList<Position> mobileUnitPosition) throws IOException
+    public void updateMap(ArrayList<ArrayList<Position>> civPosition, ArrayList<ArrayList<Position>> cityPosition,ArrayList<Position> mobileUnitPosition, RandomEvents randomEvents) throws IOException
     {
         for (int x = 0; x < this.mapSize.getMapSize(); x++)
         {
@@ -100,9 +103,12 @@ public class Map extends JFrame {
                 this.colorPosition[x][y] = new Color(57, 99, 37);
             }
         }
+
         this.civPosition = civPosition;
         this.cityPosition = cityPosition;
         this.mobileUnitPosition = mobileUnitPosition;
+        this.randomEventPosition = randomEvents.getRandomEventPosition();
+        this.randomEventNames = randomEvents.getEventName();
         for (int x = 0; x < this.mapSize.getMapSize(); x++)
         {
             for (int y = 0; y < this.mapSize.getMapSize(); y++)
@@ -115,6 +121,7 @@ public class Map extends JFrame {
                         {
                             this.img[x][y] = setImg(resources[x][y].getResourceName());
                             this.colorPosition[x][y] = civColor[i];
+
                         }
                     }
                 }
@@ -141,17 +148,42 @@ public class Map extends JFrame {
         {
             for (int y = 0; y < this.mapSize.getMapSize(); y++)
             {
-                    for (int i=0; i < this.mobileUnitPosition.size() ;i++) {
-                        if(mobileUnitPosition.get(i)!=null){
+                for (int i=0; i < this.mobileUnitPosition.size() ;i++) {
+                    if(mobileUnitPosition.get(i)!=null){
                         if(!mobileUnitPosition.get(i).equals(new Position(true))){
-                        if (mobileUnitPosition.get(i).getX() == x && mobileUnitPosition.get(i).getY() == y) {
-                            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/mobile_units/military_unit_transparent.png");
-                            this.img[x][y] = ImageIO.read(file);
-                            this.colorPosition[x][y] = civColor[i];
-                        }}}
+                            if (mobileUnitPosition.get(i).getX() == x && mobileUnitPosition.get(i).getY() == y) {
+                                file = new File("./CivSim/src/main/resources/com/civsim/Pliki/mobile_units/military_unit_transparent.png");
+                                this.img[x][y] = ImageIO.read(file);
+                                this.colorPosition[x][y] = civColor[i];
+
+                            }
+                        }
                     }
+                }
             }
         }
+
+
+        for (int x = 0; x < this.mapSize.getMapSize(); x++)
+        {
+            for (int y = 0; y < this.mapSize.getMapSize(); y++)
+            {
+                for (int i = 0; i < randomEventPosition.size(); i++)
+                {
+                    for(int o=0; o<randomEventPosition.get(i).size(); o++)
+                    {
+                        if (randomEventPosition.get(i).get(o).getX() == x && randomEventPosition.get(i).get(o).getY() == y)
+                        {
+                            if(randomEvents.getRandomEventActive().get(i))
+                                this.img2[x][y] = setEvent(randomEventNames.get(i));
+                            if(!randomEvents.getRandomEventActive().get(i))
+                                this.img2[x][y] = null;
+                        }
+                    }
+                }
+            }
+        }
+
         appPanel.repaint();
     }
 
@@ -190,6 +222,45 @@ public class Map extends JFrame {
             tileImg = ImageIO.read(file);
         }
 
+        return tileImg;
+    }
+    public BufferedImage setEvent(String eventName) throws IOException {
+        BufferedImage tileImg = null;
+        if(Objects.equals(eventName, "disease"))
+        {
+            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/effects/disease.png");
+            tileImg = ImageIO.read(file);
+        }
+        if(Objects.equals(eventName, "drought"))
+        {
+            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/effects/drought_plus.png");
+            tileImg = ImageIO.read(file);
+        }
+        if(Objects.equals(eventName, "fire"))
+        {
+            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/effects/fire.png");
+            tileImg = ImageIO.read(file);
+        }
+        if(Objects.equals(eventName, "flood"))
+        {
+            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/effects/flood.png");
+            tileImg = ImageIO.read(file);
+        }
+        if(Objects.equals(eventName, "meteor shower"))
+        {
+            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/effects/meteor.png");
+            tileImg = ImageIO.read(file);
+        }
+        if(Objects.equals(eventName, "monsoon"))
+        {
+            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/effects/monsoon.png");
+            tileImg = ImageIO.read(file);
+        }
+        if(Objects.equals(eventName, "tornado"))
+        {
+            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/effects/tornado.png");
+            tileImg = ImageIO.read(file);
+        }
         return tileImg;
     }
     public Resources[][] getResources() {

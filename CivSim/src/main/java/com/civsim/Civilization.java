@@ -1,4 +1,6 @@
 package com.civsim;
+import javafx.geometry.Pos;
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.IOException;
@@ -141,8 +143,9 @@ public class Civilization extends JPanel {
         }
         return positionsToReturn;
     }
-    public void getResources(Resources[][] getResources){
+    public void getResources(Resources[][] getResources, RandomEvents randomEvents){
         ArrayList<Position> cityPositions = new ArrayList<>();
+        ArrayList<ArrayList<Position>> eventPositions = randomEvents.getRandomEventPosition();
 
         for (City city : cities) {
             cityPositions.add(city.getCityPosition());
@@ -154,27 +157,20 @@ public class Civilization extends JPanel {
         HashSet<Position> harvestPositions = new HashSet<>();
         Random random;
         int number;
-
             for (int i = 0; i < civFieldPosition.size(); i++) {
                 random = new Random();
-
                     do {
                         number = random.nextInt(3);
                     } while (number == 1);
                     number = number - 1;
-
                         tab2[i][0] = civFieldPosition.get(i).getX() + number;
                         tab2[i][1] = civFieldPosition.get(i).getY();
-
                         tab4[i][0] = civFieldPosition.get(i).getX() - number;
                         tab4[i][1] = civFieldPosition.get(i).getY();
-
                         tab1[i][0] = civFieldPosition.get(i).getX();
                         tab1[i][1] = civFieldPosition.get(i).getY() + number;
-
                         tab5[i][0] = civFieldPosition.get(i).getX();
                         tab5[i][1] = civFieldPosition.get(i).getY() - number;
-
                 }
             for (int l = 0; l < civFieldPosition.size(); l++) {
                 harvestPositions.add(new Position(tab2[l][0], tab2[l][1]));
@@ -188,9 +184,9 @@ public class Civilization extends JPanel {
         }
         harvestPositions.removeIf(i -> Objects.equals(i.getX() , -1) || Objects.equals(i.getX(), mapSize.getMapSize()) || Objects.equals(i.getY() , -1) || Objects.equals(i.getY(), mapSize.getMapSize()));
         Resources dumpResources = new Resources(true);
-        for(Position i : harvestPositions){
-            dumpResources.udpateResources(getResources[i.getX()][i.getY()]);
-            }
+
+
+
         this.resourcesAmount.udpateResources(dumpResources);
     }
     public void updatePopulationCount(){
