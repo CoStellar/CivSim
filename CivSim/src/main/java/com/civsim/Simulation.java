@@ -13,15 +13,14 @@ public class Simulation implements Runnable {
     private final Integer simRoundAmount;
     private final Map simulationMap;
     private final MapSize mapSize;
-    Thread simThread;
+    private Thread simThread;
     private final ArrayList<ArrayList<Position>> civPosition = new ArrayList<>();
-
     private final ArrayList<Position> militaryUnitPosition = new ArrayList<>();
     private final ArrayList<Position> traderUnitPosition = new ArrayList<>();
     private final ArrayList<Civilization> civilization = new ArrayList<>();
     private final ArrayList<ArrayList<Position>> cityPositions = new ArrayList<>();
     private ArrayList<ArrayList<MilitaryUnit>> militaryUnits = new ArrayList<>();
-    private final ArrayList<ArrayList<TraderUnit>> traderUnits = new ArrayList<>();
+    private ArrayList<ArrayList<TraderUnit>> traderUnits = new ArrayList<>();
     private final CivilizationUnits civUnits;
     Color[] civColor;
     private final RandomEvents randomEvents;
@@ -48,56 +47,66 @@ public class Simulation implements Runnable {
 
         simulationMap = new Map(civPosition, this.mapSize, this.civAmount, civColor, this.cityPositions);
         createDataSheet();
+        createPopulationSheet();
         startSimThread();
-
     }
-
     public void startSimThread() {
         simThread = new Thread(this);
         simThread.start();
     }
-
     public void openInfoMenu() throws IOException, FontFormatException
     {
         new Information();
     }
-
     @Override
     public void run() {
-        FileWriter fileWriter;
-        PrintWriter printWriter;
+        ArrayList<Integer[]> trade;
+        ArrayList<ArrayList<Position>> civilizationsPositions = new ArrayList<>();
+        FileWriter fileWriter, fileWriter1;
+        PrintWriter printWriter, printWriter1;
         int counter = 1;
-        while (simThread != null && counter <= simRoundAmount)
-        {
+        double timeStart = System.currentTimeMillis();
+        double currentTime;
+        long timeStartRound;
+        ArrayList<Integer> maxedMap = new ArrayList<>();
+        while (simThread != null && counter <= simRoundAmount && !maxedMap.contains(mapSize.getMapSize()* mapSize.getMapSize())) {
+            timeStartRound = System.currentTimeMillis();
             try {
-                fileWriter = new FileWriter("./CivSim/src/main/resources/com/civsim/Pliki/data_sheet.txt",true);
+                fileWriter = new FileWriter("./CivSim/src/main/resources/com/civsim/Pliki/data_sheet.txt", true);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-            printWriter= new PrintWriter(fileWriter);
-            printWriter.println("Current Turn: "+counter);
-            printWriter.println(" ");
-            long currentTime = System.currentTimeMillis();
-            printWriter.println("Time: "+currentTime);
-            printWriter.println(" ");
             try {
-                TimeUnit.MILLISECONDS.sleep(1000);
-            } catch (InterruptedException e) {
+                fileWriter1 = new FileWriter("./CivSim/src/main/resources/com/civsim/Pliki/population_sheet.txt", true);
+            } catch (IOException e) {
                 throw new RuntimeException(e);
             }
+
+            printWriter = new PrintWriter(fileWriter);
+            printWriter1 = new PrintWriter(fileWriter1);
+            printWriter.println("Current Turn: " + counter);
+            printWriter1.println("Current Turn: " + counter);
+            printWriter.println(" ");
+            printWriter1.println(" ");
+            currentTime = (System.currentTimeMillis() - timeStart) / 1000;
+            printWriter.println("Time: " + (currentTime) + " s");
+            printWriter1.println("Time: " + (currentTime) + " s");
+            printWriter.println(" ");
             try {
                 randomEvents.eventPicker(counter, cityPositions);
                 randomEvents.eventDeactivator(counter);
                 printWriter.print("Current Events: ");
-                for(int i=0;i<randomEvents.getEventName().size();i++)
-                {
-                    if(randomEvents.getRandomEventActive().get(i))
-                        printWriter.print(randomEvents.getEventName().get(i)+" ");
+                for (int i = 0; i < randomEvents.getEventName().size(); i++) {
+                    if (randomEvents.getRandomEventActive().get(i))
+                        printWriter.print(randomEvents.getEventName().get(i)+", ");
                 }
                 printWriter.println(" ");
                 printWriter.println(" ");
             } catch (IOException e) {
                 throw new RuntimeException(e);
+            }
+            for (Civilization item : civilization) {
+                civilizationsPositions.add(item.civFieldPosition);
             }
 
             for (int i = 0; i < civilization.size(); i++) {
@@ -105,81 +114,99 @@ public class Simulation implements Runnable {
                 civilization.get(i).civExpand();
                 civilization.get(i).updatePopulationCount();
                 this.cityPositions.set(i, civilization.get(i).citiesPositions());
-                if (civilization.get(i).getMobileUnitsAmount() > 0) {
-                    if (civilization.get(i).getMilitaryUnitsAmount() > 0){
-                        civilization.get(i).militaryUnit.updatePostion();
-                        militaryUnits.add(new ArrayList<>());
-                        militaryUnits.get(i).add(civilization.get(i).militaryUnit);
-                        militaryUnitPosition.set(i, civilization.get(i).militaryUnit.getUnitPosition());
+                if(civilization.get(i).getMobileUnitsAmount() > 0){
+                    if (civilization.get(i).getMilitaryUnitsAmount() > 0) {
+                        if(civilization.get(i).militaryUnit!= null) {
+                            civilization.get(i).militaryUnit.updatePosition();
+                            militaryUnits.get(i).add(civilization.get(i).militaryUnit);
+                            militaryUnitPosition.set(i, civilization.get(i).militaryUnit.getUnitPosition());
+                        }
                     }
-                    if (civilization.get(i).getTraderUnitsAmount() > 0){
-                        civilization.get(i).traderUnit.updatePostion();
-                        traderUnits.add(new ArrayList<>());
-                        traderUnits.get(i).add(civilization.get(i).traderUnit);
+                    if (civilization.get(i).getTraderUnitsAmount() > 0) {
+                        civilization.get(i).traderUnit.updatePosition();
+                        if(traderUnits.get(i).size()==0){
+                            traderUnits.get(i).add(civilization.get(i).traderUnit);
+                        }else{
+                            traderUnits.get(i).set(0, civilization.get(i).traderUnit);
+                        }
                         traderUnitPosition.set(i, civilization.get(i).traderUnit.getUnitPosition());
-                    }
-                }
-
-
+                    }}
             }
-            civUnits.updateCivUnits(traderUnits,militaryUnits);
+            civUnits.updateCivUnits(traderUnits, militaryUnits);
             civUnits.combat();
-            militaryUnits = civUnits.getMilitaryUnits();
 
-                for (int i = 0; i < civilization.size(); i++) {
-                    if (civilization.get(i).getMilitaryUnitsAmount() > 0 )
-                    {
-                        if(militaryUnits.get(i).get(0).getHealth()<=0)
-                        {
+
+
+            militaryUnits = civUnits.getMilitaryUnits();
+            traderUnits = civUnits.getTraderUnits();
+            for (int i = 0; i < civilization.size(); i++) {
+                if (civilization.get(i).getMilitaryUnitsAmount() > 0) {
+                    if(civilization.get(i).militaryUnit!= null){
+                        if (militaryUnits.get(i).get(0).getHealth() <= 0) {
                             civilization.get(i).unitKiller();
-                            militaryUnitPosition.set(i,null);
-                            militaryUnits.get(i).set(0,null);
+                            militaryUnitPosition.set(i, null);
+                            militaryUnits.get(i).set(0, null);
                         }
                     }
                 }
+            }
             ArrayList<ArrayList<MilitaryUnit>> swap = new ArrayList<>();
             for (int i = 0; i < civilization.size(); i++) {
                 swap.add(new ArrayList<>());
                 if (civilization.get(i).getMilitaryUnitsAmount() > 0) {
-                if(militaryUnits.get(i).get(0)!=null) {
-                    swap.get(i).add(militaryUnits.get(i).get(0));
-                }}
+                    if (militaryUnits.get(i).get(0) != null) {
+                        swap.get(i).add(militaryUnits.get(i).get(0));
+                    }
+                }
             }
             militaryUnits = swap;
-
             try {
-                simulationMap.updateMap(civPosition, cityPositions, militaryUnitPosition, randomEvents, militaryUnitPosition, traderUnitPosition);
+                simulationMap.updateMap(civPosition, cityPositions, militaryUnitPosition, randomEvents, traderUnitPosition);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
-            for(int i=0;i<civAmount;i++) {
+            for (int i = 0; i < civAmount; i++) {
                 if (civilization.get(i).getMobileUnitsAmount() > 0) {
-                    for(int o=0;o<militaryUnits.get(i).size();o++) {
-                        if(militaryUnits.get(i).size() > 0 && militaryUnits.get(i).get(o)!=null ){
-                            printWriter.println("Unit Owner: ("+militaryUnits.get(i).get(0).getUnitColor().getRed()+", "+militaryUnits.get(i).get(0).getUnitColor().getGreen()+", "+militaryUnits.get(i).get(0).getUnitColor().getBlue()+") "+"Unit Position: ["+militaryUnits.get(i).get(o).getUnitPosition().getX()+", "+militaryUnits.get(i).get(o).getUnitPosition().getY()+"] Health: "+militaryUnits.get(i).get(o).getHealth());
-
+                    for (int o = 0; o < militaryUnits.get(i).size(); o++) {
+                        if (militaryUnits.get(i).size() > 0 && militaryUnits.get(i).get(o) != null) {
+                            printWriter.println("Military Unit Owner: (" + militaryUnits.get(i).get(o).getUnitColor().getRed() + ", " + militaryUnits.get(i).get(o).getUnitColor().getGreen() + ", " + militaryUnits.get(i).get(o).getUnitColor().getBlue() + ") " + "Unit Position: [" + militaryUnits.get(i).get(o).getUnitPosition().getX() + ", " + militaryUnits.get(i).get(o).getUnitPosition().getY() + "]");
+                            printWriter.println("Health: " + militaryUnits.get(i).get(o).getHealth());
                         }
                     }
-                }}
+                }
+                printWriter1.println("Civilization Population: "+civilization.get(i).getPopulationCount());
+            }
+            for (int i = 0; i < civAmount; i++) {
+                if (civilization.get(i).getMobileUnitsAmount() > 0) {
+                    if (traderUnits.get(i).size() > 0 && traderUnits.get(i).get(0) != null) {
+                        printWriter.println("Trader Unit Owner: (" + traderUnits.get(i).get(0).getUnitColor().getRed() + ", " + traderUnits.get(i).get(0).getUnitColor().getGreen() + ", " + traderUnits.get(i).get(0).getUnitColor().getBlue() + ") " + "Unit Position: [" + traderUnits.get(i).get(0).getUnitPosition().getX() + ", " + traderUnits.get(i).get(0).getUnitPosition().getY() + "]");
+                    }
+                }
+            }
             counter++;
             printWriter.println(" ");
+            printWriter1.println(" ");
             printWriter.println(" ");
+            printWriter1.println(" ");
             printWriter.close();
+            printWriter1.close();
+            maxedMap = new ArrayList<>();
+            for (Civilization value : civilization) {
+                maxedMap.add(value.getCivSize());
+            }
+            try {
+                TimeUnit.MILLISECONDS.sleep((1000-(System.currentTimeMillis()-timeStartRound)));
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
+
         try {
             openInfoMenu();
         } catch (IOException | FontFormatException e) {
             throw new RuntimeException(e);
         }
     }
-
-
-
-      /*  try {
-            openInfoMenu();
-        } catch (IOException | FontFormatException e) {
-            throw new RuntimeException(e);
-        }*/
 
         public void createPositionsFile() throws IOException {
                 File positionsFile = new File("./CivSim/src/main/resources/com/civsim/Pliki/positions.txt");
@@ -205,7 +232,6 @@ public class Simulation implements Runnable {
         }
     public void createDataSheet() throws IOException {
         File positionsFile = new File("./CivSim/src/main/resources/com/civsim/Pliki/data_sheet.txt");
-        ArrayList<String> text = new ArrayList<>();
         if(positionsFile.createNewFile()){
             System.out.println("File Created");
         }else{
@@ -216,8 +242,16 @@ public class Simulation implements Runnable {
             }
         }
     }
-
-
-
-
+    public void createPopulationSheet() throws IOException {
+        File positionsFile = new File("./CivSim/src/main/resources/com/civsim/Pliki/population_sheet.txt");
+        if(positionsFile.createNewFile()){
+            System.out.println("File Created");
+        }else{
+            if(positionsFile.delete()){
+                if(positionsFile.createNewFile()){
+                    System.out.println("File Created");
+                }
+            }
+        }
     }
+}

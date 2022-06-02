@@ -5,8 +5,7 @@ import java.awt.*;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 
 public class ControlPanel extends JPanel {
 
@@ -23,11 +22,10 @@ public class ControlPanel extends JPanel {
     public JFrame panel;
     public ControlPanel() throws IOException, FontFormatException
     {
-
-                                                                                //dodanie nowej czcionki do programu TWÓRCA: pix3m
-        Font pix3mFont = Font.createFont(Font.TRUETYPE_FONT, new File("./CivSim/src/main/resources/com/civsim/Pliki/Font/bitmap_font_romulus_by_pix3m-d6aokem.ttf"));
+        InputStream is = (new FileInputStream("./CivSim/src/main/resources/com/civsim/Pliki/Font/bitmap_font_romulus_by_pix3m-d6aokem.ttf"));//dodanie nowej czcionki do programu TWÓRCA: pix3m
+        Font pix3mFont = Font.createFont(Font.TRUETYPE_FONT, is);
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("./CivSim/src/main/resources/com/civsim/Pliki/Font/bitmap_font_romulus_by_pix3m-d6aokem.ttf")));
+        ge.registerFont(pix3mFont);
 
                                                                                 //stworzenie panelu(okna) które będzie się wyświetlało
         panel = new JFrame();
@@ -159,13 +157,14 @@ public class ControlPanel extends JPanel {
         );
         panel.add(creditsButton);
 
-        panel.setLocationRelativeTo(null);                                              //Okno aplikacji już nie pojawia się w lewym górnym rogu
         panel.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);                           //Po zamknięciu panelu cała aplikacja zostaje wyłączona.
         panel.setSize(366,539);                                             //Ustawienie wielkości okna
         panel.setLayout(null);                                                          //Wyłączenie domyslnego ustawienia obiektów w oknie aplikacji
         panel.setTitle("Symulacja Cywilizacji");                                        //Ustawienie tytułu aplikacji
         panel.setResizable(false);                                                      //Wyłączenie możliwości zmiany wielkości okna apliakcji
         panel.setVisible(true);                                                         //Włączenie widoczności okna
+        panel.setLocationRelativeTo(null);                                              //Okno aplikacji już nie pojawia się w lewym górnym rogu
+
     }
 
     public void runSimulation() throws IOException {

@@ -38,7 +38,7 @@ public class CivilizationUnits
         public int drawDmg()
         {
                 Random random = new Random();
-                return random.nextInt(4);
+                return random.nextInt(4)+3;
         }
         public void combat()
         {
@@ -101,8 +101,28 @@ public class CivilizationUnits
                                 }
                         }
                 }
+
+        }
+        public ArrayList<Integer[]> trade(ArrayList<ArrayList<Position>> civlilizationsPositions) {
+                ArrayList<Integer[]> civilizationsToTrade = new ArrayList<>();
+                Integer[] component = new Integer[2];
+                for (int i = 0; i < civlilizationsPositions.size(); i++) {
+                        civilizationsToTrade.add(new Integer[2]);
+                        for(int o=0;o<civlilizationsPositions.get(i).size();o++)
+                          if(traderUnitsPositions != null) {
+                                  if (traderUnitsPositions.get(i).get(0).getPosition() == civlilizationsPositions.get(i).get(o).getPosition()) {
+                                          component[0] = i;
+                                          component[1] = o;
+                                          civilizationsToTrade.set(i, component);
+                                  }
+                          }
+                }
+                return civilizationsToTrade;
         }
         public ArrayList<ArrayList<MilitaryUnit>> getMilitaryUnits(){
                 return this.militaryUnits;
+        }
+        public ArrayList<ArrayList<TraderUnit>> getTraderUnits() {
+                return this.traderUnits;
         }
 }

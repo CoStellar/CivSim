@@ -13,23 +13,26 @@ public class Civilization extends JPanel
     private Integer civSize;
     private Integer villageCount=0;
 
-
-
     private Integer cityCount;
+
+    public Integer getPopulationCount() {
+        return populationCount;
+    }
+
     private Integer populationCount=0;
     private Integer mobileUnitsAmount=0;
-    private Integer traderUnitsAmount =0;
+    private Integer traderUnitsAmount = 0;
     private Integer militaryUnitsAmount =0;
     private final ArrayList<Village> villages = new ArrayList<>();
     private final ArrayList<City> cities = new ArrayList<>();
     public Resources resourcesAmount = new Resources();
     public Color civColor;
-    MapSize mapSize;
+    private final MapSize mapSize;
 
-    public MilitaryUnit militaryUnit;
-
-    public TraderUnit traderUnit;
+    public MilitaryUnit militaryUnit = null;
+    public TraderUnit traderUnit = null;
     public ArrayList<Position> civFieldPosition = new ArrayList<>();
+    private Boolean hasAlly = false;
     public Civilization(MapSize mapSize) throws IOException
     {
         this.civColor = new Color((int)(Math.random() * 0x1000000));
@@ -62,52 +65,113 @@ public class Civilization extends JPanel
     {
         Random random = new Random();
         int number;
-        if(resourcesAmount.resourcesCompareVillage(resourcesAmount))
+        Boolean[] city =resourcesAmount.resourcesCompareCity(resourcesAmount, hasAlly);
+        Boolean[] village =resourcesAmount.resourcesCompareVillage(resourcesAmount, hasAlly);
+        int i = 0;
+        if(village[0])
         {
-            if(villageCount/(cityCount+1) <= 4)
+            if(villageCount/(cityCount+1) < 5)
             {
                 this.civFieldPosition.add(drawRandomPositionAround(civFieldPosition));
                 this.villages.add(new Village(civFieldPosition.get(civSize)));
                 this.civSize++;
                 this.villageCount++;
-                this.resourcesAmount.setWood(resourcesAmount.getWood()-5);
-                this.resourcesAmount.setWheat(resourcesAmount.getWheat()-4);
-                this.resourcesAmount.setAnimals(resourcesAmount.getAnimals()-4);
-            }else if(resourcesAmount.resourcesCompareCity(resourcesAmount) && villageCount>0)
+                if(hasAlly) {
+                    if(village[1]) {
+                        this.resourcesAmount.setWood(resourcesAmount.getWood() - 4);
+                        this.resourcesAmount.setWheat(resourcesAmount.getWheat() - 2);
+                        this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 2);
+                    }else
+                        this.resourcesAmount.setWood(resourcesAmount.getWood() - 7);
+
+                }else{
+                    if(village[1]) {
+                        this.resourcesAmount.setWood(resourcesAmount.getWood() - 7);
+                        this.resourcesAmount.setWheat(resourcesAmount.getWheat() - 5);
+                        this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 6);
+                    }else
+                        this.resourcesAmount.setWood(resourcesAmount.getWood() - 10);
+
+                }
+            }else if(city[0] && villageCount>0)
             {
                 number=random.nextInt(villageCount);
                 this.cities.add(new City(civFieldPosition.get(number)));
                 this.villages.remove(number);
                 this.villageCount--;
                 this.cityCount++;
-                this.resourcesAmount.setAnimals(resourcesAmount.getAnimals()-4);
-                this.resourcesAmount.setStone(resourcesAmount.getStone()-7);
-                this.resourcesAmount.setIron(resourcesAmount.getIron()-4);
-            }
+                if(hasAlly) {
+                    if(city[1]){
+                        this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 4);
+                        this.resourcesAmount.setStone(resourcesAmount.getStone() - 3);
+                        this.resourcesAmount.setIron(resourcesAmount.getIron() - 3);
+                        this.resourcesAmount.setWater(resourcesAmount.getWater() - 3);
+                    }else
+                        this.resourcesAmount.setStone(resourcesAmount.getStone() - 10);
+                }else{
+                    if(city[1]){
+                        this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 7);
+                        this.resourcesAmount.setStone(resourcesAmount.getStone() - 4);
+                        this.resourcesAmount.setIron(resourcesAmount.getIron() - 4);
+                        this.resourcesAmount.setWater(resourcesAmount.getWater() - 4);
+                    } else
+                        this.resourcesAmount.setStone(resourcesAmount.getStone() - 12);
+                }
 
         }
-        else if(resourcesAmount.resourcesCompareCity(resourcesAmount) && villageCount>0)
+        }
+        else if(city[0] && villageCount>0)
         {
             number  = random.nextInt(villageCount);
             this.cities.add(new City(civFieldPosition.get(number)));
             this.villages.remove(number);
             this.villageCount--;
             this.cityCount++;
-            this.resourcesAmount.setAnimals(resourcesAmount.getAnimals()-4);
-            this.resourcesAmount.setStone(resourcesAmount.getStone()-7);
-            this.resourcesAmount.setIron(resourcesAmount.getIron()-4);
+            if(hasAlly) {
+                if(city[1]){
+                    this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 4);
+                    this.resourcesAmount.setStone(resourcesAmount.getStone() - 3);
+                    this.resourcesAmount.setIron(resourcesAmount.getIron() - 3);
+                    this.resourcesAmount.setWater(resourcesAmount.getWater() - 3);
+                }else
+                    this.resourcesAmount.setStone(resourcesAmount.getStone() - 10);
+            }else{
+                if(city[1]){
+                this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 7);
+                this.resourcesAmount.setStone(resourcesAmount.getStone() - 4);
+                this.resourcesAmount.setIron(resourcesAmount.getIron() - 4);
+                this.resourcesAmount.setWater(resourcesAmount.getWater() - 4);
+                } else
+                    this.resourcesAmount.setStone(resourcesAmount.getStone() - 12);
+            }
         }
-        if(resourcesAmount.resourcesCompareMobileUnit(resourcesAmount) && cityCount > 0 && mobileUnitsAmount==0)
+        if(resourcesAmount.resourcesCompareMobileUnit(resourcesAmount, hasAlly) && cityCount > 0)
         {
-            this.resourcesAmount.setAnimals(resourcesAmount.getAnimals()-15);
-            this.resourcesAmount.setStone(resourcesAmount.getStone()-15);
-            this.resourcesAmount.setIron(resourcesAmount.getIron()-15);
-            this.militaryUnit = new MilitaryUnit(citiesPositions().get(random.nextInt(cityCount)),this.civColor,this.mapSize);
-            this.traderUnit = new TraderUnit(citiesPositions().get(random.nextInt(cityCount)),this.civColor,this.mapSize);
-            this.mobileUnitsAmount++;
-            this.mobileUnitsAmount++;
-            this.militaryUnitsAmount++;
-            this.traderUnitsAmount++;
+            if(random.nextInt(2)==1){
+                if(this.militaryUnit == null) {
+                    if(hasAlly) {
+                        this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 7);
+                        this.resourcesAmount.setStone(resourcesAmount.getStone() - 7);
+                        this.resourcesAmount.setIron(resourcesAmount.getIron() - 7);
+                    }else{
+                        this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 10);
+                        this.resourcesAmount.setStone(resourcesAmount.getStone() - 10);
+                        this.resourcesAmount.setIron(resourcesAmount.getIron() - 10);
+                    }
+                    this.militaryUnit = new MilitaryUnit(citiesPositions().get(random.nextInt(cityCount)), this.civColor, this.mapSize);
+                    this.mobileUnitsAmount++;
+                    this.militaryUnitsAmount++;
+                }
+            }else{
+                if(this.militaryUnit == null) {
+                this.resourcesAmount.setAnimals(resourcesAmount.getAnimals()-15);
+                this.resourcesAmount.setStone(resourcesAmount.getStone()-15);
+                this.resourcesAmount.setIron(resourcesAmount.getIron()-15);
+                this.traderUnit = new TraderUnit(citiesPositions().get(random.nextInt(cityCount)),this.civColor,this.mapSize);
+                this.mobileUnitsAmount++;
+                this.traderUnitsAmount++;}
+            }
+
         }
 
     }
@@ -246,6 +310,14 @@ public class Civilization extends JPanel
     public Integer getCityCount()
     {
         return cityCount;
+    }
+
+    public Boolean getHasAlly() {
+        return hasAlly;
+    }
+
+    public void setHasAlly(Boolean hasAlly) {
+        this.hasAlly = hasAlly;
     }
 }
 
