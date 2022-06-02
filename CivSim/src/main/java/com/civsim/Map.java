@@ -20,7 +20,6 @@ public class Map extends JFrame {
     private final Color[][] colorPosition;
     public ArrayList<ArrayList<Position>> civPosition;
     public ArrayList<ArrayList<Position>> cityPosition;
-    public ArrayList<Position> mobileUnitPosition;
     public ArrayList<Position> militaryUnitPosition;
     public  ArrayList <Position> traderUnitPosition;
     public Map(ArrayList<ArrayList<Position>> civPosition, MapSize mapSize, Integer civAmount, Color[] civColor, ArrayList<ArrayList<Position>> cityPosition) throws IOException
@@ -90,7 +89,7 @@ public class Map extends JFrame {
             add(appPanel);
             setVisible(true);
     }
-    public void updateMap(ArrayList<ArrayList<Position>> civPosition, ArrayList<ArrayList<Position>> cityPosition,ArrayList<Position> mobileUnitPosition, RandomEvents randomEvents,ArrayList<Position> militaryUnitPosition, ArrayList<Position> traderUnitPosition) throws IOException
+    public void updateMap(ArrayList<ArrayList<Position>> civPosition, ArrayList<ArrayList<Position>> cityPosition,ArrayList<Position> militaryUnitPosition, RandomEvents randomEvents, ArrayList<Position> traderUnitPosition) throws IOException
     {
         for (int x = 0; x < this.mapSize.getMapSize(); x++)
         {
@@ -102,7 +101,6 @@ public class Map extends JFrame {
         }
         this.civPosition = civPosition;
         this.cityPosition = cityPosition;
-        this.mobileUnitPosition = mobileUnitPosition;
         ArrayList<ArrayList<Position>> randomEventPosition = randomEvents.getRandomEventPosition();
         ArrayList<String> randomEventNames = randomEvents.getEventName();
         this.militaryUnitPosition = militaryUnitPosition;
@@ -146,13 +144,13 @@ public class Map extends JFrame {
         {
             for (int y = 0; y < this.mapSize.getMapSize(); y++)
             {
-                for (int i=0; i < this.mobileUnitPosition.size() ;i++)
+                for (int i=0; i < this.militaryUnitPosition.size() ;i++)
                 {
-                    if(mobileUnitPosition.get(i)!=null)
+                    if(militaryUnitPosition.get(i)!=null)
                     {
-                        if(!mobileUnitPosition.get(i).equals(new Position(true)))
+                        if(!militaryUnitPosition.get(i).equals(new Position(true)))
                         {
-                            if (mobileUnitPosition.get(i).getX() == x && mobileUnitPosition.get(i).getY() == y)
+                            if (militaryUnitPosition.get(i).getX() == x && militaryUnitPosition.get(i).getY() == y)
                             {
                                 file = new File("./CivSim/src/main/resources/com/civsim/Pliki/mobile_units/military_unit_transparent.png");
                                 this.img[x][y] = ImageIO.read(file);

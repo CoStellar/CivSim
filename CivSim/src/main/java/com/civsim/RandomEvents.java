@@ -38,7 +38,7 @@ public class RandomEvents {
         }
         int x, z = randomEventGlobalCounter;
 
-        if(simRoundCount%5==0){
+        if(simRoundCount%3==0){
             x = random.nextInt(8)+1;
             if(x == 1)
             {

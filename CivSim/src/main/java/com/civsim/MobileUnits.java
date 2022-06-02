@@ -4,7 +4,7 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class MobileUnits {
+public abstract class MobileUnits {
 
     private Position unitPosition;
     private int unitHealth;
@@ -20,7 +20,7 @@ public class MobileUnits {
         this.border = mapSize;
     }
 
-    public void updatePostion()
+    public void updatePosition()
     {
         Random random = new Random();
         int[][] tab1 = new int[4][2];

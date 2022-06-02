@@ -122,28 +122,84 @@ public class Resources
         }
         else return null;
     }
-    public boolean resourcesCompareVillage(Resources resources)
+    public Boolean[] resourcesCompareVillage(Resources resources, Boolean ally)
     {
-        if(resources.wood >= 5 && resources.wheat >= 3 && resources.animals >= 2)
-        {
-            return true;
+        Boolean[] good = new Boolean[2];
+        if(ally) {
+            if (resources.wood >= 3 && resources.wheat >= 2 && resources.animals >= 2) {
+                good[0] = true;
+                good[1] = false;
+                return good;
+            }
+            if(resources.wood >= 7){
+                good[0] = true;
+                good[1] = true;
+                return good;
+            }else{
+                good[0] = false;
+                good[1] = false;
+                return good;
+            }
+
+        } else{
+            if (resources.wood >= 6 && resources.wheat >= 4 && resources.animals >= 4) {
+                good[0] = true;
+                good[1] = false;
+                return good;
+            }
+            if(resources.wood >= 10){
+                good[0] = true;
+                good[1] = true;
+                return good;
+            }else{
+                good[0] = false;
+                good[1] = false;
+                return good;
+            }
         }
-        return resources.wood >= 10 || resources.wheat >= 10 || resources.animals >= 10;
     }
-    public boolean resourcesCompareCity(Resources resources)
+    public Boolean[] resourcesCompareCity(Resources resources, Boolean ally)
     {
-        if(resources.stone >= 5 && resources.animals >= 2 && resources.iron >= 2)
-        {
-        return true;
+        Boolean[] good = new Boolean[2];
+        if(ally) {
+            if (resources.stone >= 4 && resources.animals >= 2 && resources.iron >= 2 && resources.water>=2) {
+                good[0] = true;
+                good[1] = false;
+                return good;
+            }
+            if(resources.stone >= 10){
+                good[0] = true;
+                good[1] = true;
+                return good;
+            }else{
+                good[0] = false;
+                good[1] = false;
+                return good;
+            }
         }
-        return resources.stone >= 10 || resources.animals >= 10 || resources.iron >= 10;
-
+        else{
+        if (resources.stone >= 7 && resources.animals >= 4 && resources.iron >= 4 && resources.water>=4) {
+            good[0] = true;
+            good[1] = false;
+            return good;
+        }
+        if(resources.stone >= 12){
+            good[0] = true;
+            good[1] = true;
+            return good;
+        }else{
+            good[0] = false;
+            good[1] = false;
+            return good;
+        }
     }
-    public boolean resourcesCompareMobileUnit(Resources resources)
+    }
+    public boolean resourcesCompareMobileUnit(Resources resources, Boolean ally)
     {
-
-        return resources.stone >= 10 && resources.animals >= 10 && resources.iron >= 10;
-
+        if(ally) {
+            return resources.stone >= 7 && resources.animals >= 7 && resources.iron >= 7;
+        }else
+            return resources.stone >= 10 && resources.animals >= 10 && resources.iron >= 10;
     }
 
     public String getResourceName() {
