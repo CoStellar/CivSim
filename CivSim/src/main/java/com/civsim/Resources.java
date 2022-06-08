@@ -134,11 +134,9 @@ public class Resources
             if(resources.wood >= 7){
                 good[0] = true;
                 good[1] = true;
-                return good;
             }else{
                 good[0] = false;
                 good[1] = false;
-                return good;
             }
 
         } else{
@@ -150,13 +148,12 @@ public class Resources
             if(resources.wood >= 10){
                 good[0] = true;
                 good[1] = true;
-                return good;
             }else{
                 good[0] = false;
                 good[1] = false;
-                return good;
             }
         }
+        return good;
     }
     public Boolean[] resourcesCompareCity(Resources resources, Boolean ally)
     {
@@ -170,11 +167,9 @@ public class Resources
             if(resources.stone >= 10){
                 good[0] = true;
                 good[1] = true;
-                return good;
             }else{
                 good[0] = false;
                 good[1] = false;
-                return good;
             }
         }
         else{
@@ -186,13 +181,12 @@ public class Resources
         if(resources.stone >= 12){
             good[0] = true;
             good[1] = true;
-            return good;
         }else{
             good[0] = false;
             good[1] = false;
-            return good;
         }
-    }
+        }
+        return good;
     }
     public boolean resourcesCompareMobileUnit(Resources resources, Boolean ally)
     {

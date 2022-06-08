@@ -16,8 +16,8 @@ public class TraderUnit extends MobileUnits{
         return unitColor;
     }
 
-    private Color unitColor;
-    private MapSize border;
+    private final Color unitColor;
+    private final MapSize border;
     public TraderUnit(Position unitPosition, Color unitColor, MapSize mapSize)
     {
         super(unitPosition, unitColor, mapSize);

@@ -43,7 +43,7 @@ public class Simulation implements Runnable {
             militaryUnits.add(new ArrayList<>());
             traderUnits.add(new ArrayList<>());
         }
-        randomEvents = new RandomEvents(simRoundAmount, mapSize);
+        randomEvents = new RandomEvents(mapSize);
 
         simulationMap = new Map(civPosition, this.mapSize, this.civAmount, civColor, this.cityPositions);
         createDataSheet();
@@ -61,7 +61,6 @@ public class Simulation implements Runnable {
     @Override
     public void run() {
         ArrayList<Integer[]> trade;
-        ArrayList<ArrayList<Position>> civilizationsPositions = new ArrayList<>();
         FileWriter fileWriter, fileWriter1;
         PrintWriter printWriter, printWriter1;
         int counter = 1;
@@ -115,21 +114,21 @@ public class Simulation implements Runnable {
 
                 for(int i=0;i<civilization.size();i++){
                     if(trade.get(i)[0] != null){
-                    for (int o=0;o<trade.size();o++) {
-                        if (trade.get(o)[0] == i && !civilization.get(i).getHasAlly()) {
-                            civilization.get(i).setHasAlly(true);
-                        }
-                        if (trade.get(o)[1] == i && !civilization.get(i).getHasAlly()) {
-                            civilization.get(i).setHasAlly(true);
-                        }
-                    }
-                    }
-                    else if(trade.get(i)[1] != null){
-                        for (int o=0;o<trade.size();o++) {
-                            if (trade.get(o)[0] == i && !civilization.get(i).getHasAlly()) {
+                        for (Integer[] integers : trade) {
+                            if (integers[0] == i && !civilization.get(i).getHasAlly()) {
                                 civilization.get(i).setHasAlly(true);
                             }
-                            if (trade.get(o)[1] == i && !civilization.get(i).getHasAlly()) {
+                            if (integers[1] == i && !civilization.get(i).getHasAlly()) {
+                                civilization.get(i).setHasAlly(true);
+                            }
+                        }
+                    }
+                    else if(trade.get(i)[1] != null){
+                        for (Integer[] integers : trade) {
+                            if (integers[0] == i && !civilization.get(i).getHasAlly()) {
+                                civilization.get(i).setHasAlly(true);
+                            }
+                            if (integers[1] == i && !civilization.get(i).getHasAlly()) {
                                 civilization.get(i).setHasAlly(true);
                             }
                         }
@@ -137,7 +136,7 @@ public class Simulation implements Runnable {
                 }
 
             for (int i = 0; i < civilization.size(); i++) {
-                civilization.get(i).getResources(simulationMap.getResources(), randomEvents);
+                civilization.get(i).getResources(simulationMap.getResources());
                 civilization.get(i).civExpand();
                 civilization.get(i).updatePopulationCount();
                 this.cityPositions.set(i, civilization.get(i).citiesPositions());

@@ -1,300 +1,6000 @@
 Current Turn: 1
  
 Time: 0.0 s
+Civilization Population: 8
+Civilization Population: 8
+Civilization Population: 0
+Civilization Population: 1
+Civilization Population: 5
 Civilization Population: 4
 Civilization Population: 5
-Civilization Population: 5
-Civilization Population: 2
-Civilization Population: 8
-Civilization Population: 4
 Civilization Population: 8
 Civilization Population: 2
 Civilization Population: 8
-Civilization Population: 6
  
  
 Current Turn: 2
  
-Time: 1.001 s
+Time: 1.005 s
+Civilization Population: 8
+Civilization Population: 8
+Civilization Population: 0
+Civilization Population: 1
+Civilization Population: 5
 Civilization Population: 4
 Civilization Population: 5
-Civilization Population: 5
-Civilization Population: 2
-Civilization Population: 8
-Civilization Population: 4
 Civilization Population: 8
 Civilization Population: 2
 Civilization Population: 8
-Civilization Population: 6
  
  
 Current Turn: 3
  
-Time: 2.004 s
+Time: 2.006 s
+Civilization Population: 8
+Civilization Population: 8
+Civilization Population: 0
+Civilization Population: 1
+Civilization Population: 5
 Civilization Population: 4
 Civilization Population: 5
-Civilization Population: 5
-Civilization Population: 2
-Civilization Population: 8
-Civilization Population: 4
 Civilization Population: 8
 Civilization Population: 2
 Civilization Population: 8
-Civilization Population: 6
  
  
 Current Turn: 4
  
-Time: 3.005 s
+Time: 3.006 s
+Civilization Population: 8
+Civilization Population: 8
+Civilization Population: 0
+Civilization Population: 1
+Civilization Population: 34
 Civilization Population: 4
 Civilization Population: 5
-Civilization Population: 5
-Civilization Population: 2
 Civilization Population: 8
-Civilization Population: 4
+Civilization Population: 7
 Civilization Population: 8
-Civilization Population: 2
-Civilization Population: 8
-Civilization Population: 6
  
  
 Current Turn: 5
  
-Time: 4.006 s
+Time: 4.007 s
+Civilization Population: 17
+Civilization Population: 8
+Civilization Population: 0
+Civilization Population: 1
+Civilization Population: 34
 Civilization Population: 4
-Civilization Population: 7
 Civilization Population: 5
-Civilization Population: 2
 Civilization Population: 8
-Civilization Population: 4
+Civilization Population: 14
 Civilization Population: 8
-Civilization Population: 10
-Civilization Population: 8
-Civilization Population: 6
  
  
 Current Turn: 6
  
-Time: 5.006 s
+Time: 5.01 s
+Civilization Population: 17
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 34
 Civilization Population: 4
-Civilization Population: 7
-Civilization Population: 28
-Civilization Population: 11
+Civilization Population: 5
+Civilization Population: 8
 Civilization Population: 14
-Civilization Population: 4
-Civilization Population: 8
-Civilization Population: 10
-Civilization Population: 8
-Civilization Population: 33
+Civilization Population: 12
  
  
 Current Turn: 7
  
-Time: 6.008 s
-Civilization Population: 4
-Civilization Population: 7
-Civilization Population: 28
-Civilization Population: 11
-Civilization Population: 14
-Civilization Population: 4
+Time: 6.012 s
+Civilization Population: 17
 Civilization Population: 8
-Civilization Population: 10
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 34
+Civilization Population: 4
+Civilization Population: 5
 Civilization Population: 8
-Civilization Population: 33
+Civilization Population: 21
+Civilization Population: 12
  
  
 Current Turn: 8
  
-Time: 7.01 s
-Civilization Population: 4
-Civilization Population: 7
-Civilization Population: 28
-Civilization Population: 11
-Civilization Population: 14
-Civilization Population: 4
+Time: 7.015 s
+Civilization Population: 17
 Civilization Population: 8
-Civilization Population: 14
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 34
+Civilization Population: 4
+Civilization Population: 5
 Civilization Population: 8
-Civilization Population: 33
+Civilization Population: 27
+Civilization Population: 12
  
  
 Current Turn: 9
  
-Time: 8.011 s
-Civilization Population: 4
-Civilization Population: 14
-Civilization Population: 28
-Civilization Population: 11
-Civilization Population: 14
-Civilization Population: 4
+Time: 8.016 s
+Civilization Population: 25
 Civilization Population: 8
-Civilization Population: 14
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 34
+Civilization Population: 4
+Civilization Population: 5
 Civilization Population: 8
-Civilization Population: 33
+Civilization Population: 27
+Civilization Population: 12
  
  
 Current Turn: 10
  
-Time: 9.024 s
-Civilization Population: 4
-Civilization Population: 14
-Civilization Population: 28
-Civilization Population: 11
-Civilization Population: 14
-Civilization Population: 4
-Civilization Population: 14
-Civilization Population: 20
+Time: 9.017 s
+Civilization Population: 25
 Civilization Population: 8
-Civilization Population: 41
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 43
+Civilization Population: 4
+Civilization Population: 8
+Civilization Population: 8
+Civilization Population: 27
+Civilization Population: 12
  
  
 Current Turn: 11
  
-Time: 10.025 s
-Civilization Population: 4
-Civilization Population: 14
-Civilization Population: 28
-Civilization Population: 17
-Civilization Population: 14
-Civilization Population: 4
-Civilization Population: 14
-Civilization Population: 48
+Time: 10.021 s
+Civilization Population: 25
 Civilization Population: 8
-Civilization Population: 65
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 71
+Civilization Population: 4
+Civilization Population: 8
+Civilization Population: 8
+Civilization Population: 27
+Civilization Population: 18
  
  
 Current Turn: 12
  
-Time: 11.025 s
-Civilization Population: 25
-Civilization Population: 15
-Civilization Population: 28
-Civilization Population: 43
-Civilization Population: 14
-Civilization Population: 4
-Civilization Population: 38
-Civilization Population: 49
+Time: 11.022 s
+Civilization Population: 51
 Civilization Population: 8
-Civilization Population: 65
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 71
+Civilization Population: 28
+Civilization Population: 8
+Civilization Population: 35
+Civilization Population: 27
+Civilization Population: 32
  
  
 Current Turn: 13
  
-Time: 12.031 s
-Civilization Population: 25
-Civilization Population: 15
-Civilization Population: 28
-Civilization Population: 43
-Civilization Population: 14
-Civilization Population: 4
-Civilization Population: 38
-Civilization Population: 79
+Time: 12.035 s
+Civilization Population: 51
 Civilization Population: 8
-Civilization Population: 65
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 71
+Civilization Population: 28
+Civilization Population: 14
+Civilization Population: 35
+Civilization Population: 60
+Civilization Population: 32
  
  
 Current Turn: 14
  
-Time: 13.037 s
-Civilization Population: 25
-Civilization Population: 15
-Civilization Population: 28
-Civilization Population: 43
-Civilization Population: 14
-Civilization Population: 4
-Civilization Population: 38
-Civilization Population: 109
+Time: 13.048 s
+Civilization Population: 60
 Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 71
+Civilization Population: 28
+Civilization Population: 14
+Civilization Population: 35
 Civilization Population: 65
+Civilization Population: 32
  
  
 Current Turn: 15
  
-Time: 14.038 s
-Civilization Population: 25
-Civilization Population: 15
-Civilization Population: 28
-Civilization Population: 43
-Civilization Population: 14
-Civilization Population: 4
-Civilization Population: 45
-Civilization Population: 111
+Time: 14.049 s
+Civilization Population: 60
 Civilization Population: 8
-Civilization Population: 65
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 71
+Civilization Population: 28
+Civilization Population: 14
+Civilization Population: 35
+Civilization Population: 69
+Civilization Population: 32
  
  
 Current Turn: 16
  
-Time: 15.04 s
-Civilization Population: 25
-Civilization Population: 16
-Civilization Population: 28
-Civilization Population: 67
-Civilization Population: 15
-Civilization Population: 4
-Civilization Population: 62
-Civilization Population: 130
+Time: 15.049 s
+Civilization Population: 69
 Civilization Population: 8
-Civilization Population: 65
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 71
+Civilization Population: 28
+Civilization Population: 14
+Civilization Population: 35
+Civilization Population: 75
+Civilization Population: 34
  
  
 Current Turn: 17
  
-Time: 16.041 s
-Civilization Population: 25
-Civilization Population: 40
-Civilization Population: 28
-Civilization Population: 67
-Civilization Population: 15
-Civilization Population: 4
-Civilization Population: 79
-Civilization Population: 149
+Time: 16.06 s
+Civilization Population: 98
 Civilization Population: 8
-Civilization Population: 74
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 77
+Civilization Population: 28
+Civilization Population: 14
+Civilization Population: 35
+Civilization Population: 80
+Civilization Population: 34
  
  
 Current Turn: 18
  
-Time: 17.041 s
-Civilization Population: 25
-Civilization Population: 40
-Civilization Population: 28
-Civilization Population: 67
-Civilization Population: 15
-Civilization Population: 4
-Civilization Population: 83
-Civilization Population: 152
+Time: 17.061 s
+Civilization Population: 107
 Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 105
+Civilization Population: 28
+Civilization Population: 14
+Civilization Population: 35
 Civilization Population: 86
+Civilization Population: 55
  
  
 Current Turn: 19
  
-Time: 18.044 s
-Civilization Population: 25
-Civilization Population: 40
-Civilization Population: 28
-Civilization Population: 67
-Civilization Population: 15
-Civilization Population: 4
-Civilization Population: 106
-Civilization Population: 176
+Time: 18.076 s
+Civilization Population: 138
 Civilization Population: 8
-Civilization Population: 86
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 105
+Civilization Population: 28
+Civilization Population: 14
+Civilization Population: 35
+Civilization Population: 88
+Civilization Population: 55
  
  
 Current Turn: 20
  
-Time: 19.046 s
-Civilization Population: 25
-Civilization Population: 40
-Civilization Population: 28
-Civilization Population: 72
-Civilization Population: 15
-Civilization Population: 4
-Civilization Population: 106
-Civilization Population: 202
+Time: 19.079 s
+Civilization Population: 166
 Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 105
+Civilization Population: 28
+Civilization Population: 14
+Civilization Population: 35
+Civilization Population: 102
+Civilization Population: 55
+ 
+ 
+Current Turn: 21
+ 
+Time: 20.079 s
+Civilization Population: 170
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 105
+Civilization Population: 28
+Civilization Population: 14
+Civilization Population: 35
+Civilization Population: 102
+Civilization Population: 58
+ 
+ 
+Current Turn: 22
+ 
+Time: 21.08 s
+Civilization Population: 198
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 105
+Civilization Population: 28
+Civilization Population: 14
+Civilization Population: 35
+Civilization Population: 108
+Civilization Population: 80
+ 
+ 
+Current Turn: 23
+ 
+Time: 22.081 s
+Civilization Population: 200
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 105
+Civilization Population: 28
+Civilization Population: 18
+Civilization Population: 35
+Civilization Population: 115
+Civilization Population: 80
+ 
+ 
+Current Turn: 24
+ 
+Time: 23.081 s
+Civilization Population: 218
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 114
+Civilization Population: 28
+Civilization Population: 18
+Civilization Population: 35
+Civilization Population: 116
+Civilization Population: 80
+ 
+ 
+Current Turn: 25
+ 
+Time: 24.084 s
+Civilization Population: 224
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 143
+Civilization Population: 28
+Civilization Population: 18
+Civilization Population: 35
+Civilization Population: 125
+Civilization Population: 80
+ 
+ 
+Current Turn: 26
+ 
+Time: 25.086 s
+Civilization Population: 239
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 143
+Civilization Population: 28
+Civilization Population: 18
+Civilization Population: 35
+Civilization Population: 132
 Civilization Population: 86
+ 
+ 
+Current Turn: 27
+ 
+Time: 26.087 s
+Civilization Population: 239
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 143
+Civilization Population: 28
+Civilization Population: 18
+Civilization Population: 35
+Civilization Population: 163
+Civilization Population: 122
+ 
+ 
+Current Turn: 28
+ 
+Time: 27.091 s
+Civilization Population: 244
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 147
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 164
+Civilization Population: 122
+ 
+ 
+Current Turn: 29
+ 
+Time: 28.095 s
+Civilization Population: 276
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 165
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 169
+Civilization Population: 142
+ 
+ 
+Current Turn: 30
+ 
+Time: 29.098 s
+Civilization Population: 276
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 171
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 169
+Civilization Population: 142
+ 
+ 
+Current Turn: 31
+ 
+Time: 30.1 s
+Civilization Population: 283
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 200
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 171
+Civilization Population: 146
+ 
+ 
+Current Turn: 32
+ 
+Time: 31.105 s
+Civilization Population: 302
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 200
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 176
+Civilization Population: 167
+ 
+ 
+Current Turn: 33
+ 
+Time: 32.108 s
+Civilization Population: 306
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 208
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 181
+Civilization Population: 167
+ 
+ 
+Current Turn: 34
+ 
+Time: 33.12 s
+Civilization Population: 310
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 221
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 203
+Civilization Population: 167
+ 
+ 
+Current Turn: 35
+ 
+Time: 34.12 s
+Civilization Population: 330
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 225
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 212
+Civilization Population: 195
+ 
+ 
+Current Turn: 36
+ 
+Time: 35.122 s
+Civilization Population: 333
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 230
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 213
+Civilization Population: 200
+ 
+ 
+Current Turn: 37
+ 
+Time: 36.122 s
+Civilization Population: 333
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 256
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 221
+Civilization Population: 200
+ 
+ 
+Current Turn: 38
+ 
+Time: 37.137 s
+Civilization Population: 340
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 265
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 224
+Civilization Population: 224
+ 
+ 
+Current Turn: 39
+ 
+Time: 38.138 s
+Civilization Population: 362
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 284
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 229
+Civilization Population: 224
+ 
+ 
+Current Turn: 40
+ 
+Time: 39.138 s
+Civilization Population: 366
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 292
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 231
+Civilization Population: 224
+ 
+ 
+Current Turn: 41
+ 
+Time: 40.14 s
+Civilization Population: 372
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 312
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 258
+Civilization Population: 229
+ 
+ 
+Current Turn: 42
+ 
+Time: 41.14 s
+Civilization Population: 403
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 316
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 259
+Civilization Population: 262
+ 
+ 
+Current Turn: 43
+ 
+Time: 42.142 s
+Civilization Population: 410
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 333
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 266
+Civilization Population: 262
+ 
+ 
+Current Turn: 44
+ 
+Time: 43.143 s
+Civilization Population: 417
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 341
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 274
+Civilization Population: 262
+ 
+ 
+Current Turn: 45
+ 
+Time: 44.144 s
+Civilization Population: 418
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 341
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 278
+Civilization Population: 262
+ 
+ 
+Current Turn: 46
+ 
+Time: 45.145 s
+Civilization Population: 425
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 364
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 285
+Civilization Population: 263
+ 
+ 
+Current Turn: 47
+ 
+Time: 46.145 s
+Civilization Population: 425
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 369
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 287
+Civilization Population: 286
+ 
+ 
+Current Turn: 48
+ 
+Time: 47.148 s
+Civilization Population: 442
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 388
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 301
+Civilization Population: 286
+ 
+ 
+Current Turn: 49
+ 
+Time: 48.148 s
+Civilization Population: 443
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 390
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 309
+Civilization Population: 286
+ 
+ 
+Current Turn: 50
+ 
+Time: 49.151 s
+Civilization Population: 444
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 415
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 318
+Civilization Population: 286
+ 
+ 
+Current Turn: 51
+ 
+Time: 50.152 s
+Civilization Population: 453
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 415
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 319
+Civilization Population: 294
+ 
+ 
+Current Turn: 52
+ 
+Time: 51.152 s
+Civilization Population: 456
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 417
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 326
+Civilization Population: 310
+ 
+ 
+Current Turn: 53
+ 
+Time: 52.155 s
+Civilization Population: 465
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 443
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 334
+Civilization Population: 310
+ 
+ 
+Current Turn: 54
+ 
+Time: 53.156 s
+Civilization Population: 473
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 451
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 343
+Civilization Population: 310
+ 
+ 
+Current Turn: 55
+ 
+Time: 54.156 s
+Civilization Population: 499
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 467
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 375
+Civilization Population: 310
+ 
+ 
+Current Turn: 56
+ 
+Time: 55.157 s
+Civilization Population: 500
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 471
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 382
+Civilization Population: 310
+ 
+ 
+Current Turn: 57
+ 
+Time: 56.159 s
+Civilization Population: 507
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 479
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 384
+Civilization Population: 333
+ 
+ 
+Current Turn: 58
+ 
+Time: 57.16 s
+Civilization Population: 507
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 487
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 392
+Civilization Population: 333
+ 
+ 
+Current Turn: 59
+ 
+Time: 58.16 s
+Civilization Population: 515
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 518
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 393
+Civilization Population: 333
+ 
+ 
+Current Turn: 60
+ 
+Time: 59.163 s
+Civilization Population: 518
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 524
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 401
+Civilization Population: 333
+ 
+ 
+Current Turn: 61
+ 
+Time: 60.166 s
+Civilization Population: 521
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 530
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 401
+Civilization Population: 336
+ 
+ 
+Current Turn: 62
+ 
+Time: 61.167 s
+Civilization Population: 544
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 531
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 426
+Civilization Population: 368
+ 
+ 
+Current Turn: 63
+ 
+Time: 62.17 s
+Civilization Population: 550
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 537
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 429
+Civilization Population: 368
+ 
+ 
+Current Turn: 64
+ 
+Time: 63.171 s
+Civilization Population: 558
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 544
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 430
+Civilization Population: 368
+ 
+ 
+Current Turn: 65
+ 
+Time: 64.172 s
+Civilization Population: 559
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 550
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 437
+Civilization Population: 368
+ 
+ 
+Current Turn: 66
+ 
+Time: 65.176 s
+Civilization Population: 561
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 559
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 444
+Civilization Population: 368
+ 
+ 
+Current Turn: 67
+ 
+Time: 66.18 s
+Civilization Population: 568
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 559
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 446
+Civilization Population: 407
+ 
+ 
+Current Turn: 68
+ 
+Time: 67.181 s
+Civilization Population: 576
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 559
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 452
+Civilization Population: 407
+ 
+ 
+Current Turn: 69
+ 
+Time: 68.184 s
+Civilization Population: 576
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 562
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 486
+Civilization Population: 407
+ 
+ 
+Current Turn: 70
+ 
+Time: 69.185 s
+Civilization Population: 584
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 563
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 494
+Civilization Population: 407
+ 
+ 
+Current Turn: 71
+ 
+Time: 70.187 s
+Civilization Population: 588
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 566
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 499
+Civilization Population: 413
+ 
+ 
+Current Turn: 72
+ 
+Time: 71.19 s
+Civilization Population: 597
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 571
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 502
+Civilization Population: 437
+ 
+ 
+Current Turn: 73
+ 
+Time: 72.193 s
+Civilization Population: 606
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 573
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 509
+Civilization Population: 437
+ 
+ 
+Current Turn: 74
+ 
+Time: 73.196 s
+Civilization Population: 608
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 573
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 510
+Civilization Population: 437
+ 
+ 
+Current Turn: 75
+ 
+Time: 74.203 s
+Civilization Population: 611
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 580
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 514
+Civilization Population: 437
+ 
+ 
+Current Turn: 76
+ 
+Time: 75.206 s
+Civilization Population: 619
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 580
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 534
+Civilization Population: 442
+ 
+ 
+Current Turn: 77
+ 
+Time: 76.208 s
+Civilization Population: 627
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 582
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 540
+Civilization Population: 462
+ 
+ 
+Current Turn: 78
+ 
+Time: 77.21 s
+Civilization Population: 631
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 588
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 541
+Civilization Population: 462
+ 
+ 
+Current Turn: 79
+ 
+Time: 78.211 s
+Civilization Population: 634
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 593
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 544
+Civilization Population: 462
+ 
+ 
+Current Turn: 80
+ 
+Time: 79.214 s
+Civilization Population: 642
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 597
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 548
+Civilization Population: 462
+ 
+ 
+Current Turn: 81
+ 
+Time: 80.218 s
+Civilization Population: 650
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 600
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 555
+Civilization Population: 462
+ 
+ 
+Current Turn: 82
+ 
+Time: 81.218 s
+Civilization Population: 658
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 608
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 559
+Civilization Population: 485
+ 
+ 
+Current Turn: 83
+ 
+Time: 82.223 s
+Civilization Population: 663
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 615
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 589
+Civilization Population: 485
+ 
+ 
+Current Turn: 84
+ 
+Time: 83.226 s
+Civilization Population: 667
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 621
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 592
+Civilization Population: 485
+ 
+ 
+Current Turn: 85
+ 
+Time: 84.227 s
+Civilization Population: 672
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 624
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 599
+Civilization Population: 485
+ 
+ 
+Current Turn: 86
+ 
+Time: 85.23 s
+Civilization Population: 681
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 626
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 604
+Civilization Population: 493
+ 
+ 
+Current Turn: 87
+ 
+Time: 86.23 s
+Civilization Population: 685
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 630
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 608
+Civilization Population: 507
+ 
+ 
+Current Turn: 88
+ 
+Time: 87.231 s
+Civilization Population: 693
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 639
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 615
+Civilization Population: 507
+ 
+ 
+Current Turn: 89
+ 
+Time: 88.232 s
+Civilization Population: 694
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 647
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 619
+Civilization Population: 507
+ 
+ 
+Current Turn: 90
+ 
+Time: 89.233 s
+Civilization Population: 701
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 654
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 642
+Civilization Population: 510
+ 
+ 
+Current Turn: 91
+ 
+Time: 90.236 s
+Civilization Population: 710
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 655
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 651
+Civilization Population: 528
+ 
+ 
+Current Turn: 92
+ 
+Time: 91.24 s
+Civilization Population: 711
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 658
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 652
+Civilization Population: 528
+ 
+ 
+Current Turn: 93
+ 
+Time: 92.24 s
+Civilization Population: 713
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 666
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 659
+Civilization Population: 529
+ 
+ 
+Current Turn: 94
+ 
+Time: 93.24 s
+Civilization Population: 721
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 675
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 661
+Civilization Population: 550
+ 
+ 
+Current Turn: 95
+ 
+Time: 94.241 s
+Civilization Population: 726
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 683
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 662
+Civilization Population: 550
+ 
+ 
+Current Turn: 96
+ 
+Time: 95.241 s
+Civilization Population: 726
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 688
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 668
+Civilization Population: 558
+ 
+ 
+Current Turn: 97
+ 
+Time: 96.242 s
+Civilization Population: 731
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 695
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 691
+Civilization Population: 582
+ 
+ 
+Current Turn: 98
+ 
+Time: 97.243 s
+Civilization Population: 734
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 696
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 697
+Civilization Population: 582
+ 
+ 
+Current Turn: 99
+ 
+Time: 98.246 s
+Civilization Population: 737
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 696
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 701
+Civilization Population: 582
+ 
+ 
+Current Turn: 100
+ 
+Time: 99.248 s
+Civilization Population: 741
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 701
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 709
+Civilization Population: 583
+ 
+ 
+Current Turn: 101
+ 
+Time: 100.249 s
+Civilization Population: 745
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 710
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 709
+Civilization Population: 619
+ 
+ 
+Current Turn: 102
+ 
+Time: 101.249 s
+Civilization Population: 749
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 712
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 710
+Civilization Population: 619
+ 
+ 
+Current Turn: 103
+ 
+Time: 102.25 s
+Civilization Population: 751
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 714
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 710
+Civilization Population: 622
+ 
+ 
+Current Turn: 104
+ 
+Time: 103.257 s
+Civilization Population: 755
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 723
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 727
+Civilization Population: 641
+ 
+ 
+Current Turn: 105
+ 
+Time: 104.258 s
+Civilization Population: 759
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 728
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 730
+Civilization Population: 641
+ 
+ 
+Current Turn: 106
+ 
+Time: 105.261 s
+Civilization Population: 760
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 730
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 735
+Civilization Population: 650
+ 
+ 
+Current Turn: 107
+ 
+Time: 106.262 s
+Civilization Population: 761
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 739
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 743
+Civilization Population: 677
+ 
+ 
+Current Turn: 108
+ 
+Time: 107.266 s
+Civilization Population: 769
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 742
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 747
+Civilization Population: 677
+ 
+ 
+Current Turn: 109
+ 
+Time: 108.267 s
+Civilization Population: 769
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 751
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 749
+Civilization Population: 677
+ 
+ 
+Current Turn: 110
+ 
+Time: 109.27 s
+Civilization Population: 774
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 756
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 751
+Civilization Population: 683
+ 
+ 
+Current Turn: 111
+ 
+Time: 110.273 s
+Civilization Population: 775
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 765
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 780
+Civilization Population: 701
+ 
+ 
+Current Turn: 112
+ 
+Time: 111.276 s
+Civilization Population: 783
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 767
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 784
+Civilization Population: 709
+ 
+ 
+Current Turn: 113
+ 
+Time: 112.277 s
+Civilization Population: 786
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 767
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 784
+Civilization Population: 721
+ 
+ 
+Current Turn: 114
+ 
+Time: 113.281 s
+Civilization Population: 787
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 771
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 789
+Civilization Population: 721
+ 
+ 
+Current Turn: 115
+ 
+Time: 114.282 s
+Civilization Population: 795
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 771
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 792
+Civilization Population: 725
+ 
+ 
+Current Turn: 116
+ 
+Time: 115.283 s
+Civilization Population: 797
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 772
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 794
+Civilization Population: 747
+ 
+ 
+Current Turn: 117
+ 
+Time: 116.284 s
+Civilization Population: 798
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 780
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 800
+Civilization Population: 754
+ 
+ 
+Current Turn: 118
+ 
+Time: 117.29 s
+Civilization Population: 801
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 781
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 814
+Civilization Population: 778
+ 
+ 
+Current Turn: 119
+ 
+Time: 118.303 s
+Civilization Population: 802
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 785
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 819
+Civilization Population: 778
+ 
+ 
+Current Turn: 120
+ 
+Time: 119.304 s
+Civilization Population: 821
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 794
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 819
+Civilization Population: 784
+ 
+ 
+Current Turn: 121
+ 
+Time: 120.304 s
+Civilization Population: 825
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 795
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 827
+Civilization Population: 805
+ 
+ 
+Current Turn: 122
+ 
+Time: 121.307 s
+Civilization Population: 825
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 802
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 831
+Civilization Population: 809
+ 
+ 
+Current Turn: 123
+ 
+Time: 122.308 s
+Civilization Population: 830
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 810
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 831
+Civilization Population: 829
+ 
+ 
+Current Turn: 124
+ 
+Time: 123.311 s
+Civilization Population: 836
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 817
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 840
+Civilization Population: 829
+ 
+ 
+Current Turn: 125
+ 
+Time: 124.315 s
+Civilization Population: 842
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 818
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 858
+Civilization Population: 834
+ 
+ 
+Current Turn: 126
+ 
+Time: 125.316 s
+Civilization Population: 842
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 821
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 864
+Civilization Population: 858
+ 
+ 
+Current Turn: 127
+ 
+Time: 126.32 s
+Civilization Population: 865
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 830
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 869
+Civilization Population: 866
+ 
+ 
+Current Turn: 128
+ 
+Time: 127.327 s
+Civilization Population: 874
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 831
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 871
+Civilization Population: 892
+ 
+ 
+Current Turn: 129
+ 
+Time: 128.336 s
+Civilization Population: 879
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 838
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 875
+Civilization Population: 892
+ 
+ 
+Current Turn: 130
+ 
+Time: 129.338 s
+Civilization Population: 879
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 842
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 880
+Civilization Population: 894
+ 
+ 
+Current Turn: 131
+ 
+Time: 130.339 s
+Civilization Population: 888
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 850
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 884
+Civilization Population: 931
+ 
+ 
+Current Turn: 132
+ 
+Time: 131.34 s
+Civilization Population: 893
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 851
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 917
+Civilization Population: 935
+ 
+ 
+Current Turn: 133
+ 
+Time: 132.343 s
+Civilization Population: 897
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 857
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 926
+Civilization Population: 960
+ 
+ 
+Current Turn: 134
+ 
+Time: 133.346 s
+Civilization Population: 927
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 858
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 926
+Civilization Population: 960
+ 
+ 
+Current Turn: 135
+ 
+Time: 134.348 s
+Civilization Population: 936
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 861
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 934
+Civilization Population: 967
+ 
+ 
+Current Turn: 136
+ 
+Time: 135.349 s
+Civilization Population: 945
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 864
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 940
+Civilization Population: 997
+ 
+ 
+Current Turn: 137
+ 
+Time: 136.35 s
+Civilization Population: 948
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 870
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 943
+Civilization Population: 999
+ 
+ 
+Current Turn: 138
+ 
+Time: 137.35 s
+Civilization Population: 956
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 879
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 951
+Civilization Population: 1033
+ 
+ 
+Current Turn: 139
+ 
+Time: 138.351 s
+Civilization Population: 958
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 884
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 966
+Civilization Population: 1040
+ 
+ 
+Current Turn: 140
+ 
+Time: 139.351 s
+Civilization Population: 960
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 889
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 969
+Civilization Population: 1053
+ 
+ 
+Current Turn: 141
+ 
+Time: 140.352 s
+Civilization Population: 985
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 897
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 970
+Civilization Population: 1053
+ 
+ 
+Current Turn: 142
+ 
+Time: 141.353 s
+Civilization Population: 987
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 901
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 976
+Civilization Population: 1078
+ 
+ 
+Current Turn: 143
+ 
+Time: 142.353 s
+Civilization Population: 992
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 901
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 979
+Civilization Population: 1086
+ 
+ 
+Current Turn: 144
+ 
+Time: 143.356 s
+Civilization Population: 1000
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 902
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 982
+Civilization Population: 1109
+ 
+ 
+Current Turn: 145
+ 
+Time: 144.359 s
+Civilization Population: 1000
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 924
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 988
+Civilization Population: 1110
+ 
+ 
+Current Turn: 146
+ 
+Time: 145.365 s
+Civilization Population: 1005
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 931
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1015
+Civilization Population: 1145
+ 
+ 
+Current Turn: 147
+ 
+Time: 146.365 s
+Civilization Population: 1014
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 938
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1016
+Civilization Population: 1147
+ 
+ 
+Current Turn: 148
+ 
+Time: 147.367 s
+Civilization Population: 1032
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 938
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1019
+Civilization Population: 1180
+ 
+ 
+Current Turn: 149
+ 
+Time: 148.368 s
+Civilization Population: 1035
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 944
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1024
+Civilization Population: 1182
+ 
+ 
+Current Turn: 150
+ 
+Time: 149.384 s
+Civilization Population: 1044
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 945
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1024
+Civilization Population: 1215
+ 
+ 
+Current Turn: 151
+ 
+Time: 150.385 s
+Civilization Population: 1050
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 948
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1026
+Civilization Population: 1224
+ 
+ 
+Current Turn: 152
+ 
+Time: 151.386 s
+Civilization Population: 1059
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 982
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1032
+Civilization Population: 1244
+ 
+ 
+Current Turn: 153
+ 
+Time: 152.387 s
+Civilization Population: 1068
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 987
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1054
+Civilization Population: 1248
+ 
+ 
+Current Turn: 154
+ 
+Time: 153.389 s
+Civilization Population: 1068
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 994
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1058
+Civilization Population: 1249
+ 
+ 
+Current Turn: 155
+ 
+Time: 154.392 s
+Civilization Population: 1088
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1002
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1064
+Civilization Population: 1282
+ 
+ 
+Current Turn: 156
+ 
+Time: 155.393 s
+Civilization Population: 1097
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1011
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1071
+Civilization Population: 1290
+ 
+ 
+Current Turn: 157
+ 
+Time: 156.396 s
+Civilization Population: 1104
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1017
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1072
+Civilization Population: 1311
+ 
+ 
+Current Turn: 158
+ 
+Time: 157.397 s
+Civilization Population: 1110
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1017
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1073
+Civilization Population: 1317
+ 
+ 
+Current Turn: 159
+ 
+Time: 158.4 s
+Civilization Population: 1113
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1036
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1075
+Civilization Population: 1320
+ 
+ 
+Current Turn: 160
+ 
+Time: 159.401 s
+Civilization Population: 1119
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1036
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1088
+Civilization Population: 1335
+ 
+ 
+Current Turn: 161
+ 
+Time: 160.401 s
+Civilization Population: 1121
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1039
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1093
+Civilization Population: 1339
+ 
+ 
+Current Turn: 162
+ 
+Time: 161.402 s
+Civilization Population: 1138
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1047
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1095
+Civilization Population: 1366
+ 
+ 
+Current Turn: 163
+ 
+Time: 162.406 s
+Civilization Population: 1138
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1051
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1101
+Civilization Population: 1372
+ 
+ 
+Current Turn: 164
+ 
+Time: 163.418 s
+Civilization Population: 1144
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1060
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1102
+Civilization Population: 1392
+ 
+ 
+Current Turn: 165
+ 
+Time: 164.419 s
+Civilization Population: 1150
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1062
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1109
+Civilization Population: 1393
+ 
+ 
+Current Turn: 166
+ 
+Time: 165.434 s
+Civilization Population: 1156
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1080
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1113
+Civilization Population: 1423
+ 
+ 
+Current Turn: 167
+ 
+Time: 166.436 s
+Civilization Population: 1161
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1089
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1135
+Civilization Population: 1432
+ 
+ 
+Current Turn: 168
+ 
+Time: 167.44 s
+Civilization Population: 1170
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1090
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1137
+Civilization Population: 1449
+ 
+ 
+Current Turn: 169
+ 
+Time: 168.442 s
+Civilization Population: 1200
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1093
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1145
+Civilization Population: 1453
+ 
+ 
+Current Turn: 170
+ 
+Time: 169.444 s
+Civilization Population: 1201
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1094
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1145
+Civilization Population: 1477
+ 
+ 
+Current Turn: 171
+ 
+Time: 170.445 s
+Civilization Population: 1207
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1094
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1154
+Civilization Population: 1486
+ 
+ 
+Current Turn: 172
+ 
+Time: 171.446 s
+Civilization Population: 1207
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1100
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1156
+Civilization Population: 1490
+ 
+ 
+Current Turn: 173
+ 
+Time: 172.447 s
+Civilization Population: 1210
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1126
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1165
+Civilization Population: 1508
+ 
+ 
+Current Turn: 174
+ 
+Time: 173.451 s
+Civilization Population: 1215
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1133
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1189
+Civilization Population: 1513
+ 
+ 
+Current Turn: 175
+ 
+Time: 174.454 s
+Civilization Population: 1224
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1142
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1198
+Civilization Population: 1524
+ 
+ 
+Current Turn: 176
+ 
+Time: 175.455 s
+Civilization Population: 1245
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1150
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1199
+Civilization Population: 1531
+ 
+ 
+Current Turn: 177
+ 
+Time: 176.466 s
+Civilization Population: 1248
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1158
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1205
+Civilization Population: 1532
+ 
+ 
+Current Turn: 178
+ 
+Time: 177.467 s
+Civilization Population: 1253
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1164
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1213
+Civilization Population: 1562
+ 
+ 
+Current Turn: 179
+ 
+Time: 178.467 s
+Civilization Population: 1262
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1173
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1218
+Civilization Population: 1567
+ 
+ 
+Current Turn: 180
+ 
+Time: 179.468 s
+Civilization Population: 1264
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1212
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1222
+Civilization Population: 1569
+ 
+ 
+Current Turn: 181
+ 
+Time: 180.47 s
+Civilization Population: 1268
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1217
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1250
+Civilization Population: 1594
+ 
+ 
+Current Turn: 182
+ 
+Time: 181.47 s
+Civilization Population: 1272
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1218
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1258
+Civilization Population: 1595
+ 
+ 
+Current Turn: 183
+ 
+Time: 182.473 s
+Civilization Population: 1285
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1219
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1260
+Civilization Population: 1596
+ 
+ 
+Current Turn: 184
+ 
+Time: 183.475 s
+Civilization Population: 1286
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1227
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1267
+Civilization Population: 1615
+ 
+ 
+Current Turn: 185
+ 
+Time: 184.477 s
+Civilization Population: 1290
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1233
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1271
+Civilization Population: 1619
+ 
+ 
+Current Turn: 186
+ 
+Time: 185.478 s
+Civilization Population: 1295
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1238
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1271
+Civilization Population: 1628
+ 
+ 
+Current Turn: 187
+ 
+Time: 186.48 s
+Civilization Population: 1300
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1271
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1274
+Civilization Population: 1650
+ 
+ 
+Current Turn: 188
+ 
+Time: 187.481 s
+Civilization Population: 1304
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1276
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1300
+Civilization Population: 1651
+ 
+ 
+Current Turn: 189
+ 
+Time: 188.49 s
+Civilization Population: 1311
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1281
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1306
+Civilization Population: 1657
+ 
+ 
+Current Turn: 190
+ 
+Time: 189.494 s
+Civilization Population: 1339
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1290
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1310
+Civilization Population: 1659
+ 
+ 
+Current Turn: 191
+ 
+Time: 190.496 s
+Civilization Population: 1345
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1291
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1312
+Civilization Population: 1685
+ 
+ 
+Current Turn: 192
+ 
+Time: 191.499 s
+Civilization Population: 1351
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1300
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1317
+Civilization Population: 1694
+ 
+ 
+Current Turn: 193
+ 
+Time: 192.502 s
+Civilization Population: 1360
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1309
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1321
+Civilization Population: 1698
+ 
+ 
+Current Turn: 194
+ 
+Time: 193.503 s
+Civilization Population: 1360
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1335
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1326
+Civilization Population: 1730
+ 
+ 
+Current Turn: 195
+ 
+Time: 194.504 s
+Civilization Population: 1367
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1336
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1346
+Civilization Population: 1738
+ 
+ 
+Current Turn: 196
+ 
+Time: 195.506 s
+Civilization Population: 1372
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1337
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1347
+Civilization Population: 1745
+ 
+ 
+Current Turn: 197
+ 
+Time: 196.506 s
+Civilization Population: 1395
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1341
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1354
+Civilization Population: 1771
+ 
+ 
+Current Turn: 198
+ 
+Time: 197.508 s
+Civilization Population: 1395
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1350
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1356
+Civilization Population: 1780
+ 
+ 
+Current Turn: 199
+ 
+Time: 198.511 s
+Civilization Population: 1396
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1355
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1365
+Civilization Population: 1784
+ 
+ 
+Current Turn: 200
+ 
+Time: 199.514 s
+Civilization Population: 1402
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1359
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1369
+Civilization Population: 1787
+ 
+ 
+Current Turn: 201
+ 
+Time: 200.516 s
+Civilization Population: 1409
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1371
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1377
+Civilization Population: 1788
+ 
+ 
+Current Turn: 202
+ 
+Time: 201.517 s
+Civilization Population: 1409
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1375
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1396
+Civilization Population: 1822
+ 
+ 
+Current Turn: 203
+ 
+Time: 202.517 s
+Civilization Population: 1417
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1379
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1404
+Civilization Population: 1829
+ 
+ 
+Current Turn: 204
+ 
+Time: 203.518 s
+Civilization Population: 1439
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1380
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1404
+Civilization Population: 1830
+ 
+ 
+Current Turn: 205
+ 
+Time: 204.519 s
+Civilization Population: 1440
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1384
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1407
+Civilization Population: 1836
+ 
+ 
+Current Turn: 206
+ 
+Time: 205.519 s
+Civilization Population: 1444
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1390
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1414
+Civilization Population: 1838
+ 
+ 
+Current Turn: 207
+ 
+Time: 206.523 s
+Civilization Population: 1446
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1397
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1417
+Civilization Population: 1838
+ 
+ 
+Current Turn: 208
+ 
+Time: 207.526 s
+Civilization Population: 1454
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1418
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1424
+Civilization Population: 1847
+ 
+ 
+Current Turn: 209
+ 
+Time: 208.529 s
+Civilization Population: 1463
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1422
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1444
+Civilization Population: 1850
+ 
+ 
+Current Turn: 210
+ 
+Time: 209.531 s
+Civilization Population: 1472
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1423
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1444
+Civilization Population: 1852
+ 
+ 
+Current Turn: 211
+ 
+Time: 210.532 s
+Civilization Population: 1507
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1432
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1450
+Civilization Population: 1860
+ 
+ 
+Current Turn: 212
+ 
+Time: 211.533 s
+Civilization Population: 1516
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1438
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1455
+Civilization Population: 1862
+ 
+ 
+Current Turn: 213
+ 
+Time: 212.535 s
+Civilization Population: 1524
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1442
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1455
+Civilization Population: 1863
+ 
+ 
+Current Turn: 214
+ 
+Time: 213.536 s
+Civilization Population: 1529
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1450
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1455
+Civilization Population: 1872
+ 
+ 
+Current Turn: 215
+ 
+Time: 214.537 s
+Civilization Population: 1538
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1463
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1458
+Civilization Population: 1879
+ 
+ 
+Current Turn: 216
+ 
+Time: 215.543 s
+Civilization Population: 1543
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1463
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1479
+Civilization Population: 1883
+ 
+ 
+Current Turn: 217
+ 
+Time: 216.545 s
+Civilization Population: 1545
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1463
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1484
+Civilization Population: 1885
+ 
+ 
+Current Turn: 218
+ 
+Time: 217.546 s
+Civilization Population: 1579
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1467
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1487
+Civilization Population: 1890
+ 
+ 
+Current Turn: 219
+ 
+Time: 218.547 s
+Civilization Population: 1583
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1469
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1495
+Civilization Population: 1894
+ 
+ 
+Current Turn: 220
+ 
+Time: 219.549 s
+Civilization Population: 1590
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1474
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1500
+Civilization Population: 1899
+ 
+ 
+Current Turn: 221
+ 
+Time: 220.55 s
+Civilization Population: 1591
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1474
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1501
+Civilization Population: 1906
+ 
+ 
+Current Turn: 222
+ 
+Time: 221.55 s
+Civilization Population: 1600
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1502
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1505
+Civilization Population: 1906
+ 
+ 
+Current Turn: 223
+ 
+Time: 222.551 s
+Civilization Population: 1602
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1508
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1532
+Civilization Population: 1907
+ 
+ 
+Current Turn: 224
+ 
+Time: 223.554 s
+Civilization Population: 1603
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1508
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1538
+Civilization Population: 1913
+ 
+ 
+Current Turn: 225
+ 
+Time: 224.555 s
+Civilization Population: 1623
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1515
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1545
+Civilization Population: 1919
+ 
+ 
+Current Turn: 226
+ 
+Time: 225.558 s
+Civilization Population: 1625
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1523
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1554
+Civilization Population: 1926
+ 
+ 
+Current Turn: 227
+ 
+Time: 226.563 s
+Civilization Population: 1632
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1530
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1563
+Civilization Population: 1931
+ 
+ 
+Current Turn: 228
+ 
+Time: 227.564 s
+Civilization Population: 1640
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1535
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1570
+Civilization Population: 1939
+ 
+ 
+Current Turn: 229
+ 
+Time: 228.565 s
+Civilization Population: 1642
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1567
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1572
+Civilization Population: 1947
+ 
+ 
+Current Turn: 230
+ 
+Time: 229.567 s
+Civilization Population: 1647
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1571
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1592
+Civilization Population: 1950
+ 
+ 
+Current Turn: 231
+ 
+Time: 230.567 s
+Civilization Population: 1656
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1575
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1595
+Civilization Population: 1951
+ 
+ 
+Current Turn: 232
+ 
+Time: 231.57 s
+Civilization Population: 1682
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1576
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1604
+Civilization Population: 1960
+ 
+ 
+Current Turn: 233
+ 
+Time: 232.572 s
+Civilization Population: 1689
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1579
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1608
+Civilization Population: 1962
+ 
+ 
+Current Turn: 234
+ 
+Time: 233.587 s
+Civilization Population: 1691
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1581
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1613
+Civilization Population: 1971
+ 
+ 
+Current Turn: 235
+ 
+Time: 234.591 s
+Civilization Population: 1698
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1585
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1617
+Civilization Population: 1975
+ 
+ 
+Current Turn: 236
+ 
+Time: 235.591 s
+Civilization Population: 1700
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1607
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1621
+Civilization Population: 1979
+ 
+ 
+Current Turn: 237
+ 
+Time: 236.591 s
+Civilization Population: 1702
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1608
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1641
+Civilization Population: 1980
+ 
+ 
+Current Turn: 238
+ 
+Time: 237.595 s
+Civilization Population: 1704
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1617
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1644
+Civilization Population: 1986
+ 
+ 
+Current Turn: 239
+ 
+Time: 238.596 s
+Civilization Population: 1727
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1618
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1651
+Civilization Population: 1989
+ 
+ 
+Current Turn: 240
+ 
+Time: 239.596 s
+Civilization Population: 1735
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1620
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1656
+Civilization Population: 1995
+ 
+ 
+Current Turn: 241
+ 
+Time: 240.598 s
+Civilization Population: 1739
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1623
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1656
+Civilization Population: 1995
+ 
+ 
+Current Turn: 242
+ 
+Time: 241.6 s
+Civilization Population: 1741
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1628
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1662
+Civilization Population: 2003
+ 
+ 
+Current Turn: 243
+ 
+Time: 242.602 s
+Civilization Population: 1749
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1656
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1669
+Civilization Population: 2010
+ 
+ 
+Current Turn: 244
+ 
+Time: 243.604 s
+Civilization Population: 1755
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1662
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1692
+Civilization Population: 2019
+ 
+ 
+Current Turn: 245
+ 
+Time: 244.606 s
+Civilization Population: 1758
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1662
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1697
+Civilization Population: 2024
+ 
+ 
+Current Turn: 246
+ 
+Time: 245.606 s
+Civilization Population: 1781
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1667
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1705
+Civilization Population: 2026
+ 
+ 
+Current Turn: 247
+ 
+Time: 246.61 s
+Civilization Population: 1785
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1673
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1710
+Civilization Population: 2035
+ 
+ 
+Current Turn: 248
+ 
+Time: 247.616 s
+Civilization Population: 1789
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1673
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1710
+Civilization Population: 2044
+ 
+ 
+Current Turn: 249
+ 
+Time: 248.619 s
+Civilization Population: 1798
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1679
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1711
+Civilization Population: 2047
+ 
+ 
+Current Turn: 250
+ 
+Time: 249.62 s
+Civilization Population: 1803
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1712
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1713
+Civilization Population: 2049
+ 
+ 
+Current Turn: 251
+ 
+Time: 250.621 s
+Civilization Population: 1811
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1721
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1730
+Civilization Population: 2049
+ 
+ 
+Current Turn: 252
+ 
+Time: 251.624 s
+Civilization Population: 1816
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1723
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1737
+Civilization Population: 2049
+ 
+ 
+Current Turn: 253
+ 
+Time: 252.628 s
+Civilization Population: 1834
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1725
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1742
+Civilization Population: 2058
+ 
+ 
+Current Turn: 254
+ 
+Time: 253.629 s
+Civilization Population: 1841
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1731
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1742
+Civilization Population: 2058
+ 
+ 
+Current Turn: 255
+ 
+Time: 254.631 s
+Civilization Population: 1846
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1738
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1749
+Civilization Population: 2066
+ 
+ 
+Current Turn: 256
+ 
+Time: 255.632 s
+Civilization Population: 1853
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1745
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1756
+Civilization Population: 2069
+ 
+ 
+Current Turn: 257
+ 
+Time: 256.636 s
+Civilization Population: 1857
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1772
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1757
+Civilization Population: 2078
+ 
+ 
+Current Turn: 258
+ 
+Time: 257.64 s
+Civilization Population: 1859
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1773
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1777
+Civilization Population: 2087
+ 
+ 
+Current Turn: 259
+ 
+Time: 258.64 s
+Civilization Population: 1860
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1782
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1782
+Civilization Population: 2087
+ 
+ 
+Current Turn: 260
+ 
+Time: 259.641 s
+Civilization Population: 1890
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1788
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1786
+Civilization Population: 2092
+ 
+ 
+Current Turn: 261
+ 
+Time: 260.643 s
+Civilization Population: 1896
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1791
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1787
+Civilization Population: 2093
+ 
+ 
+Current Turn: 262
+ 
+Time: 261.644 s
+Civilization Population: 1896
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1798
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1791
+Civilization Population: 2099
+ 
+ 
+Current Turn: 263
+ 
+Time: 262.646 s
+Civilization Population: 1902
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1800
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1797
+Civilization Population: 2105
+ 
+ 
+Current Turn: 264
+ 
+Time: 263.648 s
+Civilization Population: 1907
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1815
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1803
+Civilization Population: 2108
+ 
+ 
+Current Turn: 265
+ 
+Time: 264.649 s
+Civilization Population: 1916
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1824
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1821
+Civilization Population: 2116
+ 
+ 
+Current Turn: 266
+ 
+Time: 265.65 s
+Civilization Population: 1923
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1832
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1825
+Civilization Population: 2122
+ 
+ 
+Current Turn: 267
+ 
+Time: 266.651 s
+Civilization Population: 1938
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1832
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1826
+Civilization Population: 2122
+ 
+ 
+Current Turn: 268
+ 
+Time: 267.651 s
+Civilization Population: 1938
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1833
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1832
+Civilization Population: 2126
+ 
+ 
+Current Turn: 269
+ 
+Time: 268.652 s
+Civilization Population: 1939
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1837
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1837
+Civilization Population: 2126
+ 
+ 
+Current Turn: 270
+ 
+Time: 269.653 s
+Civilization Population: 1943
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1841
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1841
+Civilization Population: 2132
+ 
+ 
+Current Turn: 271
+ 
+Time: 270.654 s
+Civilization Population: 1946
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1865
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1846
+Civilization Population: 2137
+ 
+ 
+Current Turn: 272
+ 
+Time: 271.656 s
+Civilization Population: 1955
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1872
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1876
+Civilization Population: 2137
+ 
+ 
+Current Turn: 273
+ 
+Time: 272.66 s
+Civilization Population: 1963
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1876
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1878
+Civilization Population: 2144
+ 
+ 
+Current Turn: 274
+ 
+Time: 273.661 s
+Civilization Population: 1987
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1882
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1884
+Civilization Population: 2151
+ 
+ 
+Current Turn: 275
+ 
+Time: 274.663 s
+Civilization Population: 1987
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1888
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1890
+Civilization Population: 2157
+ 
+ 
+Current Turn: 276
+ 
+Time: 275.666 s
+Civilization Population: 1991
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1893
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1896
+Civilization Population: 2159
+ 
+ 
+Current Turn: 277
+ 
+Time: 276.667 s
+Civilization Population: 1996
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1901
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1903
+Civilization Population: 2162
+ 
+ 
+Current Turn: 278
+ 
+Time: 277.669 s
+Civilization Population: 1997
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1924
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1911
+Civilization Population: 2162
+ 
+ 
+Current Turn: 279
+ 
+Time: 278.672 s
+Civilization Population: 1999
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1928
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1929
+Civilization Population: 2164
+ 
+ 
+Current Turn: 280
+ 
+Time: 279.676 s
+Civilization Population: 2007
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1929
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1934
+Civilization Population: 2172
+ 
+ 
+Current Turn: 281
+ 
+Time: 280.677 s
+Civilization Population: 2039
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1932
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1942
+Civilization Population: 2180
+ 
+ 
+Current Turn: 282
+ 
+Time: 281.678 s
+Civilization Population: 2039
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1937
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1947
+Civilization Population: 2184
+ 
+ 
+Current Turn: 283
+ 
+Time: 282.682 s
+Civilization Population: 2047
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1940
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1952
+Civilization Population: 2185
+ 
+ 
+Current Turn: 284
+ 
+Time: 283.683 s
+Civilization Population: 2051
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1948
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1959
+Civilization Population: 2194
+ 
+ 
+Current Turn: 285
+ 
+Time: 284.686 s
+Civilization Population: 2060
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1967
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1959
+Civilization Population: 2197
+ 
+ 
+Current Turn: 286
+ 
+Time: 285.687 s
+Civilization Population: 2066
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1973
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1986
+Civilization Population: 2198
+ 
+ 
+Current Turn: 287
+ 
+Time: 286.689 s
+Civilization Population: 2068
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1973
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1989
+Civilization Population: 2200
+ 
+ 
+Current Turn: 288
+ 
+Time: 287.69 s
+Civilization Population: 2095
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1974
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 1998
+Civilization Population: 2206
+ 
+ 
+Current Turn: 289
+ 
+Time: 288.693 s
+Civilization Population: 2101
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1976
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2006
+Civilization Population: 2212
+ 
+ 
+Current Turn: 290
+ 
+Time: 289.696 s
+Civilization Population: 2103
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1977
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2014
+Civilization Population: 2219
+ 
+ 
+Current Turn: 291
+ 
+Time: 290.697 s
+Civilization Population: 2106
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1983
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2022
+Civilization Population: 2224
+ 
+ 
+Current Turn: 292
+ 
+Time: 291.697 s
+Civilization Population: 2112
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 1998
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2024
+Civilization Population: 2226
+ 
+ 
+Current Turn: 293
+ 
+Time: 292.701 s
+Civilization Population: 2112
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2007
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2052
+Civilization Population: 2232
+ 
+ 
+Current Turn: 294
+ 
+Time: 293.702 s
+Civilization Population: 2116
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2016
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2061
+Civilization Population: 2234
+ 
+ 
+Current Turn: 295
+ 
+Time: 294.702 s
+Civilization Population: 2150
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2018
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2069
+Civilization Population: 2242
+ 
+ 
+Current Turn: 296
+ 
+Time: 295.706 s
+Civilization Population: 2151
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2024
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2078
+Civilization Population: 2244
+ 
+ 
+Current Turn: 297
+ 
+Time: 296.71 s
+Civilization Population: 2158
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2024
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2085
+Civilization Population: 2245
+ 
+ 
+Current Turn: 298
+ 
+Time: 297.713 s
+Civilization Population: 2162
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2031
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2093
+Civilization Population: 2252
+ 
+ 
+Current Turn: 299
+ 
+Time: 298.714 s
+Civilization Population: 2166
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2052
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2099
+Civilization Population: 2261
+ 
+ 
+Current Turn: 300
+ 
+Time: 299.717 s
+Civilization Population: 2169
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2053
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2121
+Civilization Population: 2268
+ 
+ 
+Current Turn: 301
+ 
+Time: 300.717 s
+Civilization Population: 2176
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2058
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2130
+Civilization Population: 2275
+ 
+ 
+Current Turn: 302
+ 
+Time: 301.722 s
+Civilization Population: 2209
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2064
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2131
+Civilization Population: 2282
+ 
+ 
+Current Turn: 303
+ 
+Time: 302.723 s
+Civilization Population: 2218
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2071
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2135
+Civilization Population: 2286
+ 
+ 
+Current Turn: 304
+ 
+Time: 303.725 s
+Civilization Population: 2222
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2078
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2141
+Civilization Population: 2286
+ 
+ 
+Current Turn: 305
+ 
+Time: 304.726 s
+Civilization Population: 2227
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2087
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2146
+Civilization Population: 2287
+ 
+ 
+Current Turn: 306
+ 
+Time: 305.73 s
+Civilization Population: 2229
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2119
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2153
+Civilization Population: 2296
+ 
+ 
+Current Turn: 307
+ 
+Time: 306.734 s
+Civilization Population: 2235
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2128
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2177
+Civilization Population: 2303
+ 
+ 
+Current Turn: 308
+ 
+Time: 307.738 s
+Civilization Population: 2236
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2137
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2181
+Civilization Population: 2305
+ 
+ 
+Current Turn: 309
+ 
+Time: 308.741 s
+Civilization Population: 2267
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2144
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2189
+Civilization Population: 2312
+ 
+ 
+Current Turn: 310
+ 
+Time: 309.742 s
+Civilization Population: 2272
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2147
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2194
+Civilization Population: 2315
+ 
+ 
+Current Turn: 311
+ 
+Time: 310.743 s
+Civilization Population: 2281
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2147
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2198
+Civilization Population: 2324
+ 
+ 
+Current Turn: 312
+ 
+Time: 311.745 s
+Civilization Population: 2288
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2151
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2202
+Civilization Population: 2330
+ 
+ 
+Current Turn: 313
+ 
+Time: 312.746 s
+Civilization Population: 2292
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2180
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2207
+Civilization Population: 2330
+ 
+ 
+Current Turn: 314
+ 
+Time: 313.758 s
+Civilization Population: 2294
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2180
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2238
+Civilization Population: 2333
+ 
+ 
+Current Turn: 315
+ 
+Time: 314.759 s
+Civilization Population: 2302
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2184
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2240
+Civilization Population: 2338
+ 
+ 
+Current Turn: 316
+ 
+Time: 315.759 s
+Civilization Population: 2327
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2186
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2240
+Civilization Population: 2341
+ 
+ 
+Current Turn: 317
+ 
+Time: 316.764 s
+Civilization Population: 2333
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2190
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2240
+Civilization Population: 2341
+ 
+ 
+Current Turn: 318
+ 
+Time: 317.765 s
+Civilization Population: 2333
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2195
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2244
+Civilization Population: 2350
+ 
+ 
+Current Turn: 319
+ 
+Time: 318.771 s
+Civilization Population: 2338
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2196
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2245
+Civilization Population: 2357
+ 
+ 
+Current Turn: 320
+ 
+Time: 319.772 s
+Civilization Population: 2342
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2221
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2253
+Civilization Population: 2358
+ 
+ 
+Current Turn: 321
+ 
+Time: 320.773 s
+Civilization Population: 2342
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2226
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2266
+Civilization Population: 2360
+ 
+ 
+Current Turn: 322
+ 
+Time: 321.775 s
+Civilization Population: 2347
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2234
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2271
+Civilization Population: 2369
+ 
+ 
+Current Turn: 323
+ 
+Time: 322.777 s
+Civilization Population: 2371
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2236
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2277
+Civilization Population: 2369
+ 
+ 
+Current Turn: 324
+ 
+Time: 323.779 s
+Civilization Population: 2374
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2237
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2277
+Civilization Population: 2375
+ 
+ 
+Current Turn: 325
+ 
+Time: 324.78 s
+Civilization Population: 2375
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2237
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2285
+Civilization Population: 2384
+ 
+ 
+Current Turn: 326
+ 
+Time: 325.781 s
+Civilization Population: 2378
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2238
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2287
+Civilization Population: 2392
+ 
+ 
+Current Turn: 327
+ 
+Time: 326.782 s
+Civilization Population: 2387
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2260
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2288
+Civilization Population: 2395
+ 
+ 
+Current Turn: 328
+ 
+Time: 327.783 s
+Civilization Population: 2388
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2266
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2307
+Civilization Population: 2402
+ 
+ 
+Current Turn: 329
+ 
+Time: 328.786 s
+Civilization Population: 2389
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2272
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2308
+Civilization Population: 2405
+ 
+ 
+Current Turn: 330
+ 
+Time: 329.787 s
+Civilization Population: 2412
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2280
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2314
+Civilization Population: 2410
+ 
+ 
+Current Turn: 331
+ 
+Time: 330.788 s
+Civilization Population: 2416
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2283
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2322
+Civilization Population: 2413
+ 
+ 
+Current Turn: 332
+ 
+Time: 331.79 s
+Civilization Population: 2419
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2288
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2330
+Civilization Population: 2416
+ 
+ 
+Current Turn: 333
+ 
+Time: 332.791 s
+Civilization Population: 2424
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2288
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2331
+Civilization Population: 2425
+ 
+ 
+Current Turn: 334
+ 
+Time: 333.794 s
+Civilization Population: 2427
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2317
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2332
+Civilization Population: 2429
+ 
+ 
+Current Turn: 335
+ 
+Time: 334.795 s
+Civilization Population: 2436
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2318
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2357
+Civilization Population: 2431
+ 
+ 
+Current Turn: 336
+ 
+Time: 335.797 s
+Civilization Population: 2442
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2322
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2364
+Civilization Population: 2436
+ 
+ 
+Current Turn: 337
+ 
+Time: 336.798 s
+Civilization Population: 2468
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2324
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2369
+Civilization Population: 2439
+ 
+ 
+Current Turn: 338
+ 
+Time: 337.801 s
+Civilization Population: 2472
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2331
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2378
+Civilization Population: 2440
+ 
+ 
+Current Turn: 339
+ 
+Time: 338.803 s
+Civilization Population: 2472
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2334
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2383
+Civilization Population: 2440
+ 
+ 
+Current Turn: 340
+ 
+Time: 339.804 s
+Civilization Population: 2478
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2339
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2383
+Civilization Population: 2445
+ 
+ 
+Current Turn: 341
+ 
+Time: 340.805 s
+Civilization Population: 2486
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2369
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2387
+Civilization Population: 2446
+ 
+ 
+Current Turn: 342
+ 
+Time: 341.806 s
+Civilization Population: 2489
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2369
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2424
+Civilization Population: 2455
+ 
+ 
+Current Turn: 343
+ 
+Time: 342.807 s
+Civilization Population: 2494
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2372
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2427
+Civilization Population: 2458
+ 
+ 
+Current Turn: 344
+ 
+Time: 343.809 s
+Civilization Population: 2515
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2375
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2427
+Civilization Population: 2463
+ 
+ 
+Current Turn: 345
+ 
+Time: 344.82 s
+Civilization Population: 2518
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2377
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2435
+Civilization Population: 2463
+ 
+ 
+Current Turn: 346
+ 
+Time: 345.82 s
+Civilization Population: 2523
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2379
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2436
+Civilization Population: 2467
+ 
+ 
+Current Turn: 347
+ 
+Time: 346.823 s
+Civilization Population: 2529
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2388
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2445
+Civilization Population: 2471
+ 
+ 
+Current Turn: 348
+ 
+Time: 347.826 s
+Civilization Population: 2538
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2405
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2447
+Civilization Population: 2477
+ 
+ 
+Current Turn: 349
+ 
+Time: 348.83 s
+Civilization Population: 2538
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2409
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2479
+Civilization Population: 2481
+ 
+ 
+Current Turn: 350
+ 
+Time: 349.83 s
+Civilization Population: 2545
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2417
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2481
+Civilization Population: 2488
+ 
+ 
+Current Turn: 351
+ 
+Time: 350.836 s
+Civilization Population: 2561
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2420
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2487
+Civilization Population: 2492
+ 
+ 
+Current Turn: 352
+ 
+Time: 351.842 s
+Civilization Population: 2562
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2420
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2494
+Civilization Population: 2501
+ 
+ 
+Current Turn: 353
+ 
+Time: 352.853 s
+Civilization Population: 2570
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2420
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2500
+Civilization Population: 2508
+ 
+ 
+Current Turn: 354
+ 
+Time: 353.857 s
+Civilization Population: 2579
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2429
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2502
+Civilization Population: 2514
+ 
+ 
+Current Turn: 355
+ 
+Time: 354.857 s
+Civilization Population: 2584
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2458
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2504
+Civilization Population: 2517
+ 
+ 
+Current Turn: 356
+ 
+Time: 355.858 s
+Civilization Population: 2591
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2460
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2534
+Civilization Population: 2524
+ 
+ 
+Current Turn: 357
+ 
+Time: 356.861 s
+Civilization Population: 2593
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2462
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2542
+Civilization Population: 2531
+ 
+ 
+Current Turn: 358
+ 
+Time: 357.862 s
+Civilization Population: 2623
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2466
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2549
+Civilization Population: 2539
+ 
+ 
+Current Turn: 359
+ 
+Time: 358.863 s
+Civilization Population: 2629
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2471
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2553
+Civilization Population: 2545
+ 
+ 
+Current Turn: 360
+ 
+Time: 359.864 s
+Civilization Population: 2630
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2474
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2557
+Civilization Population: 2551
+ 
+ 
+Current Turn: 361
+ 
+Time: 360.868 s
+Civilization Population: 2632
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2482
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2561
+Civilization Population: 2554
+ 
+ 
+Current Turn: 362
+ 
+Time: 361.869 s
+Civilization Population: 2637
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2510
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2565
+Civilization Population: 2562
+ 
+ 
+Current Turn: 363
+ 
+Time: 362.87 s
+Civilization Population: 2639
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2518
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2590
+Civilization Population: 2570
+ 
+ 
+Current Turn: 364
+ 
+Time: 363.877 s
+Civilization Population: 2647
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2525
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2590
+Civilization Population: 2572
+ 
+ 
+Current Turn: 365
+ 
+Time: 364.88 s
+Civilization Population: 2663
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2528
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2595
+Civilization Population: 2575
+ 
+ 
+Current Turn: 366
+ 
+Time: 365.882 s
+Civilization Population: 2671
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2529
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2601
+Civilization Population: 2580
+ 
+ 
+Current Turn: 367
+ 
+Time: 366.885 s
+Civilization Population: 2674
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2534
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2607
+Civilization Population: 2581
+ 
+ 
+Current Turn: 368
+ 
+Time: 367.889 s
+Civilization Population: 2678
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2540
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2607
+Civilization Population: 2590
+ 
+ 
+Current Turn: 369
+ 
+Time: 368.892 s
+Civilization Population: 2687
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2563
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2609
+Civilization Population: 2597
+ 
+ 
+Current Turn: 370
+ 
+Time: 369.895 s
+Civilization Population: 2693
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2566
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2636
+Civilization Population: 2598
+ 
+ 
+Current Turn: 371
+ 
+Time: 370.899 s
+Civilization Population: 2699
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2569
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2645
+Civilization Population: 2603
+ 
+ 
+Current Turn: 372
+ 
+Time: 371.905 s
+Civilization Population: 2728
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2575
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2651
+Civilization Population: 2610
+ 
+ 
+Current Turn: 373
+ 
+Time: 372.906 s
+Civilization Population: 2731
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2581
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2658
+Civilization Population: 2615
+ 
+ 
+Current Turn: 374
+ 
+Time: 373.908 s
+Civilization Population: 2736
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2589
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2667
+Civilization Population: 2621
+ 
+ 
+Current Turn: 375
+ 
+Time: 374.909 s
+Civilization Population: 2739
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2589
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2667
+Civilization Population: 2625
+ 
+ 
+Current Turn: 376
+ 
+Time: 375.91 s
+Civilization Population: 2741
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2608
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2674
+Civilization Population: 2634
+ 
+ 
+Current Turn: 377
+ 
+Time: 376.91 s
+Civilization Population: 2749
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2609
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2699
+Civilization Population: 2638
+ 
+ 
+Current Turn: 378
+ 
+Time: 377.912 s
+Civilization Population: 2757
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2614
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2699
+Civilization Population: 2639
+ 
+ 
+Current Turn: 379
+ 
+Time: 378.914 s
+Civilization Population: 2781
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2617
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2708
+Civilization Population: 2645
+ 
+ 
+Current Turn: 380
+ 
+Time: 379.915 s
+Civilization Population: 2787
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2621
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2716
+Civilization Population: 2649
+ 
+ 
+Current Turn: 381
+ 
+Time: 380.919 s
+Civilization Population: 2789
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2625
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2720
+Civilization Population: 2656
+ 
+ 
+Current Turn: 382
+ 
+Time: 381.921 s
+Civilization Population: 2790
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2625
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2721
+Civilization Population: 2658
+ 
+ 
+Current Turn: 383
+ 
+Time: 382.924 s
+Civilization Population: 2792
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2651
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2721
+Civilization Population: 2667
+ 
+ 
+Current Turn: 384
+ 
+Time: 383.927 s
+Civilization Population: 2795
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2651
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2756
+Civilization Population: 2669
+ 
+ 
+Current Turn: 385
+ 
+Time: 384.932 s
+Civilization Population: 2796
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2653
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2760
+Civilization Population: 2677
+ 
+ 
+Current Turn: 386
+ 
+Time: 385.932 s
+Civilization Population: 2815
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2662
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2764
+Civilization Population: 2678
+ 
+ 
+Current Turn: 387
+ 
+Time: 386.933 s
+Civilization Population: 2821
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2671
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2765
+Civilization Population: 2678
+ 
+ 
+Current Turn: 388
+ 
+Time: 387.934 s
+Civilization Population: 2827
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2680
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2767
+Civilization Population: 2678
+ 
+ 
+Current Turn: 389
+ 
+Time: 388.937 s
+Civilization Population: 2829
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2689
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2768
+Civilization Population: 2682
+ 
+ 
+Current Turn: 390
+ 
+Time: 389.938 s
+Civilization Population: 2837
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2709
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2772
+Civilization Population: 2688
+ 
+ 
+Current Turn: 391
+ 
+Time: 390.94 s
+Civilization Population: 2844
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2712
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2798
+Civilization Population: 2692
+ 
+ 
+Current Turn: 392
+ 
+Time: 391.953 s
+Civilization Population: 2853
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2713
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2801
+Civilization Population: 2692
+ 
+ 
+Current Turn: 393
+ 
+Time: 392.956 s
+Civilization Population: 2875
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2714
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2803
+Civilization Population: 2698
+ 
+ 
+Current Turn: 394
+ 
+Time: 393.961 s
+Civilization Population: 2876
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2722
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2811
+Civilization Population: 2707
+ 
+ 
+Current Turn: 395
+ 
+Time: 394.962 s
+Civilization Population: 2877
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2726
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2817
+Civilization Population: 2716
+ 
+ 
+Current Turn: 396
+ 
+Time: 395.963 s
+Civilization Population: 2881
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2727
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2822
+Civilization Population: 2724
+ 
+ 
+Current Turn: 397
+ 
+Time: 396.963 s
+Civilization Population: 2882
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2756
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2825
+Civilization Population: 2732
+ 
+ 
+Current Turn: 398
+ 
+Time: 397.964 s
+Civilization Population: 2890
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2760
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2850
+Civilization Population: 2738
+ 
+ 
+Current Turn: 399
+ 
+Time: 398.965 s
+Civilization Population: 2897
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2764
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2854
+Civilization Population: 2744
+ 
+ 
+Current Turn: 400
+ 
+Time: 399.968 s
+Civilization Population: 2928
+Civilization Population: 8
+Civilization Population: 38
+Civilization Population: 29
+Civilization Population: 2766
+Civilization Population: 28
+Civilization Population: 27
+Civilization Population: 35
+Civilization Population: 2861
+Civilization Population: 2749
  
  

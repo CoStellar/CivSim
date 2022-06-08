@@ -67,7 +67,6 @@ public class Civilization extends JPanel
         int number;
         Boolean[] city =resourcesAmount.resourcesCompareCity(resourcesAmount, hasAlly);
         Boolean[] village =resourcesAmount.resourcesCompareVillage(resourcesAmount, hasAlly);
-        int i = 0;
         if(village[0])
         {
             if(villageCount/(cityCount+1) < 5)
@@ -219,11 +218,6 @@ public class Civilization extends JPanel
         drawnPosition = checkPosition.get(number);
         return drawnPosition;
     }
-
-    public ArrayList<Position> passCivPosition(){
-        return this.civFieldPosition;
-    }
-
     public Integer getCivSize()
     {
         return civSize;
@@ -237,7 +231,7 @@ public class Civilization extends JPanel
         }
         return positionsToReturn;
     }
-    public void getResources(Resources[][] getResources, RandomEvents randomEvents)
+    public void getResources(Resources[][] getResources)
     {
         ArrayList<Position> cityPositions = new ArrayList<>();
         for (City city : cities)
@@ -309,11 +303,6 @@ public class Civilization extends JPanel
         this.mobileUnitsAmount--;
         this.militaryUnitsAmount--;
     }
-    public Integer getCityCount()
-    {
-        return cityCount;
-    }
-
     public Boolean getHasAlly() {
         return hasAlly;
     }

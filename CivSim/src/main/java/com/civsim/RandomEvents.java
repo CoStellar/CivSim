@@ -19,13 +19,12 @@ public class RandomEvents {
     private final ArrayList<Boolean> randomEventActive = new ArrayList<>();
     private final ArrayList<Integer> randomEventFinishTime = new ArrayList<>();
     public Integer randomEventGlobalCounter=0;
-    private int simRoundAmount;
+
     private Position position;
-    private Random random = new Random();
+    private final Random random = new Random();
     private final MapSize mapSize;
-    public RandomEvents(int simRoundAmount, MapSize mapSize)
+    public RandomEvents( MapSize mapSize)
     {
-            this.simRoundAmount = simRoundAmount;
             this.mapSize = mapSize;
     }
 
