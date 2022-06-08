@@ -1,6 +1,6 @@
 Current Turn: 1
  
-Time: 0.001 s
+Time: 0.0 s
  
 Current Events:  
  
@@ -16,9 +16,9 @@ Current Events:
  
 Current Turn: 3
  
-Time: 2.005 s
+Time: 2.004 s
  
-Current Events: fire,  
+Current Events: meteor shower,  
  
  
  
@@ -26,7 +26,7 @@ Current Turn: 4
  
 Time: 3.005 s
  
-Current Events: fire,  
+Current Events: meteor shower,  
  
  
  
@@ -34,627 +34,127 @@ Current Turn: 5
  
 Time: 4.006 s
  
-Current Events: fire,  
+Current Events: meteor shower,  
  
  
  
 Current Turn: 6
  
-Time: 5.009 s
+Time: 5.006 s
+ 
+Current Events: meteor shower, fire,  
+ 
+ 
+ 
+Current Turn: 7
+ 
+Time: 6.008 s
+ 
+Current Events: fire,  
+ 
+ 
+ 
+Current Turn: 8
+ 
+Time: 7.01 s
+ 
+Current Events: fire,  
+ 
+ 
+ 
+Current Turn: 9
+ 
+Time: 8.011 s
  
 Current Events: fire, monsoon,  
  
  
  
-Current Turn: 7
- 
-Time: 6.01 s
- 
-Current Events: monsoon,  
- 
- 
- 
-Current Turn: 8
- 
-Time: 7.011 s
- 
-Current Events: monsoon,  
- 
- 
- 
-Current Turn: 9
- 
-Time: 8.012 s
- 
-Current Events: monsoon, tornado,  
- 
- 
- 
 Current Turn: 10
  
-Time: 9.013 s
+Time: 9.024 s
  
-Current Events: monsoon, tornado,  
+Current Events: monsoon,  
  
  
  
 Current Turn: 11
  
-Time: 10.016 s
+Time: 10.025 s
  
-Current Events: tornado,  
+Current Events: monsoon,  
  
  
  
 Current Turn: 12
  
-Time: 11.019 s
+Time: 11.025 s
  
-Current Events: tornado, tornado,  
+Current Events: monsoon, flood,  
  
  
  
 Current Turn: 13
  
-Time: 12.023 s
+Time: 12.031 s
  
-Current Events: tornado,  
+Current Events: monsoon, flood,  
  
  
  
 Current Turn: 14
  
-Time: 13.025 s
+Time: 13.037 s
  
-Current Events: tornado,  
+Current Events: flood,  
  
  
  
 Current Turn: 15
  
-Time: 14.028 s
+Time: 14.038 s
  
-Current Events: tornado, disease,  
+Current Events: flood, disease,  
  
  
  
 Current Turn: 16
  
-Time: 15.03 s
+Time: 15.04 s
  
-Current Events: disease,  
+Current Events: flood, disease,  
  
  
  
 Current Turn: 17
  
-Time: 16.031 s
+Time: 16.041 s
  
-Current Events: disease,  
+Current Events: flood, disease,  
  
  
  
 Current Turn: 18
  
-Time: 17.032 s
+Time: 17.041 s
  
-Current Events: disease, disease,  
+Current Events: flood, disease, tornado,  
  
  
  
 Current Turn: 19
  
-Time: 18.034 s
+Time: 18.044 s
  
-Current Events: disease, disease,  
+Current Events: flood, disease, tornado,  
  
  
  
 Current Turn: 20
  
-Time: 19.038 s
+Time: 19.046 s
  
-Current Events: disease, disease,  
+Current Events: disease, tornado,  
  
- 
- 
-Current Turn: 1
- 
-Time: 0.0 s
- 
-Current Events:  
- 
- 
- 
-Current Turn: 2
- 
-Time: 1.0 s
- 
-Current Events:  
- 
- 
- 
-Current Turn: 3
- 
-Time: 2.002 s
- 
-Current Events: flood,  
- 
- 
- 
-Current Turn: 4
- 
-Time: 3.003 s
- 
-Current Events: flood,  
- 
- 
- 
-Current Turn: 5
- 
-Time: 4.003 s
- 
-Current Events: flood,  
- 
- 
- 
-Current Turn: 6
- 
-Time: 5.004 s
- 
-Current Events: flood, tornado,  
- 
- 
- 
-Current Turn: 7
- 
-Time: 6.005 s
- 
-Current Events: flood, tornado,  
- 
- 
- 
-Current Turn: 8
- 
-Time: 7.006 s
- 
-Current Events: flood, tornado,  
- 
- 
- 
-Current Turn: 9
- 
-Time: 8.009 s
- 
-Current Events: flood, tornado, drought,  
- 
- 
- 
-Current Turn: 10
- 
-Time: 9.014 s
- 
-Current Events: flood, drought,  
- 
- 
- 
-Current Turn: 11
- 
-Time: 10.016 s
- 
-Current Events: drought,  
- 
- 
- 
-Current Turn: 12
- 
-Time: 11.017 s
- 
-Current Events: drought, disease,  
- 
- 
- 
-Current Turn: 13
- 
-Time: 12.018 s
- 
-Current Events: drought, disease,  
- 
-Trader Unit Owner: (40, 99, 76) Unit Position: [8, 14]
- 
- 
-Current Turn: 14
- 
-Time: 13.02 s
- 
-Current Events: drought, disease,  
- 
-Trader Unit Owner: (40, 99, 76) Unit Position: [8, 13]
- 
- 
-Current Turn: 15
- 
-Time: 14.022 s
- 
-Current Events: drought, disease, disease,  
- 
-Trader Unit Owner: (40, 99, 76) Unit Position: [8, 14]
- 
- 
-Current Turn: 16
- 
-Time: 15.023 s
- 
-Current Events: drought, disease, disease,  
- 
-Trader Unit Owner: (40, 99, 76) Unit Position: [8, 15]
- 
- 
-Current Turn: 17
- 
-Time: 16.024 s
- 
-Current Events: drought, disease, disease,  
- 
-Trader Unit Owner: (40, 99, 76) Unit Position: [9, 15]
- 
- 
-Current Turn: 18
- 
-Time: 17.025 s
- 
-Current Events: drought, disease, disease, monsoon,  
- 
-Trader Unit Owner: (40, 99, 76) Unit Position: [9, 14]
- 
- 
-Current Turn: 19
- 
-Time: 18.026 s
- 
-Current Events: disease, disease, monsoon,  
- 
-Trader Unit Owner: (40, 99, 76) Unit Position: [9, 13]
- 
- 
-Current Turn: 20
- 
-Time: 19.026 s
- 
-Current Events: disease, monsoon,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [7, 13]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [9, 12]
- 
- 
-Current Turn: 21
- 
-Time: 20.027 s
- 
-Current Events: disease, monsoon, tornado,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [7, 12]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [10, 12]
- 
- 
-Current Turn: 22
- 
-Time: 21.03 s
- 
-Current Events: disease, monsoon, tornado,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [7, 13]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [10, 11]
- 
- 
-Current Turn: 23
- 
-Time: 22.031 s
- 
-Current Events: tornado,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [7, 12]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [10, 12]
- 
- 
-Current Turn: 24
- 
-Time: 23.032 s
- 
-Current Events: tornado, monsoon,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [7, 11]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [10, 13]
- 
- 
-Current Turn: 25
- 
-Time: 24.036 s
- 
-Current Events: monsoon,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [8, 11]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [9, 13]
- 
- 
-Current Turn: 26
- 
-Time: 25.037 s
- 
-Current Events: monsoon,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [8, 12]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [8, 13]
- 
- 
-Current Turn: 27
- 
-Time: 26.039 s
- 
-Current Events: monsoon,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [7, 12]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [8, 14]
- 
- 
-Current Turn: 28
- 
-Time: 27.04 s
- 
-Current Events: monsoon,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [7, 11]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [7, 14]
- 
- 
-Current Turn: 29
- 
-Time: 28.04 s
- 
-Current Events:  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [8, 11]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [6, 14]
- 
- 
-Current Turn: 30
- 
-Time: 29.043 s
- 
-Current Events:  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [9, 11]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [5, 14]
- 
- 
-Current Turn: 31
- 
-Time: 30.044 s
- 
-Current Events:  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [9, 12]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [5, 15]
- 
- 
-Current Turn: 32
- 
-Time: 31.046 s
- 
-Current Events:  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [9, 11]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [5, 14]
- 
- 
-Current Turn: 33
- 
-Time: 32.049 s
- 
-Current Events: fire,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [9, 10]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [4, 14]
- 
- 
-Current Turn: 34
- 
-Time: 33.05 s
- 
-Current Events: fire,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [8, 10]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [3, 14]
- 
- 
-Current Turn: 35
- 
-Time: 34.055 s
- 
-Current Events: fire,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [9, 10]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [3, 13]
- 
- 
-Current Turn: 36
- 
-Time: 35.056 s
- 
-Current Events: fire, fire,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [8, 10]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [4, 13]
- 
- 
-Current Turn: 37
- 
-Time: 36.06 s
- 
-Current Events: fire,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [8, 9]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [4, 14]
- 
- 
-Current Turn: 38
- 
-Time: 37.061 s
- 
-Current Events: fire,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [7, 9]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [3, 14]
- 
- 
-Current Turn: 39
- 
-Time: 38.065 s
- 
-Current Events: fire, meteor shower,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [7, 10]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [3, 15]
- 
- 
-Current Turn: 40
- 
-Time: 39.081 s
- 
-Current Events: meteor shower,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [8, 10]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [3, 14]
- 
- 
-Current Turn: 41
- 
-Time: 40.085 s
- 
-Current Events: meteor shower,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [8, 9]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [3, 13]
- 
- 
-Current Turn: 42
- 
-Time: 41.087 s
- 
-Current Events: meteor shower, disease,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [7, 9]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [3, 14]
- 
- 
-Current Turn: 43
- 
-Time: 42.092 s
- 
-Current Events: disease,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [7, 8]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [3, 15]
- 
- 
-Current Turn: 44
- 
-Time: 43.093 s
- 
-Current Events: disease,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [6, 8]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [4, 15]
- 
- 
-Current Turn: 45
- 
-Time: 44.099 s
- 
-Current Events: disease, drought,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [6, 7]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [4, 16]
- 
- 
-Current Turn: 46
- 
-Time: 45.1 s
- 
-Current Events: disease, drought,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [7, 7]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [4, 15]
- 
- 
-Current Turn: 47
- 
-Time: 46.102 s
- 
-Current Events: disease, drought,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [8, 7]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [3, 15]
- 
- 
-Current Turn: 48
- 
-Time: 47.103 s
- 
-Current Events: disease, drought, flood,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [7, 7]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [3, 16]
- 
- 
-Current Turn: 49
- 
-Time: 48.105 s
- 
-Current Events: disease, drought, flood,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [6, 7]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [3, 17]
- 
- 
-Current Turn: 50
- 
-Time: 49.107 s
- 
-Current Events: drought, flood,  
- 
-Military Unit Owner: (40, 99, 76) Unit Position: [5, 7]
-Health: 15
-Trader Unit Owner: (40, 99, 76) Unit Position: [3, 16]
  
  

@@ -25,6 +25,7 @@ public class TraderUnit extends MobileUnits{
         this.unitColor = unitColor;
         this.border = mapSize;
     }
+    @Override
     public void updatePosition()
     {
         Random random = new Random();

@@ -43,15 +43,7 @@ public class CivilizationUnits
         public void combat()
         {
                 ArrayList<ArrayList<Position>> positionsAround = new ArrayList<>();
-                traderUnitsPositions = new ArrayList<>();
-                for(int i = 0; i<traderUnits.size(); i++)
-                {
-                        traderUnitsPositions.add(new ArrayList<>());
-                        for(int o = 0; o<traderUnits.get(i).size(); o++)
-                        {
-                                traderUnitsPositions.get(i).add(this.traderUnits.get(i).get(o).getUnitPosition());
-                        }
-                }
+
                 militaryUnitsPositions = new ArrayList<>();
                 for(int i = 0; i<militaryUnits.size(); i++)
                 {
@@ -104,18 +96,28 @@ public class CivilizationUnits
 
         }
         public ArrayList<Integer[]> trade(ArrayList<ArrayList<Position>> civlilizationsPositions) {
+                traderUnitsPositions = new ArrayList<>();
+                for(int i = 0; i<traderUnits.size(); i++)
+                {
+                        traderUnitsPositions.add(new ArrayList<>());
+                        for(int o = 0; o<traderUnits.get(i).size(); o++)
+                        {
+                                traderUnitsPositions.get(i).add(this.traderUnits.get(i).get(o).getUnitPosition());
+                        }
+                }
                 ArrayList<Integer[]> civilizationsToTrade = new ArrayList<>();
                 Integer[] component = new Integer[2];
                 for (int i = 0; i < civlilizationsPositions.size(); i++) {
                         civilizationsToTrade.add(new Integer[2]);
-                        for(int o=0;o<civlilizationsPositions.get(i).size();o++)
-                          if(traderUnitsPositions != null) {
-                                  if (traderUnitsPositions.get(i).get(0).getPosition() == civlilizationsPositions.get(i).get(o).getPosition()) {
-                                          component[0] = i;
-                                          component[1] = o;
-                                          civilizationsToTrade.set(i, component);
+                        for(int o=0;o<civlilizationsPositions.get(i).size();o++){
+                                  if(traderUnitsPositions.get(i).size() > 0 ) {
+                                          if (traderUnitsPositions.get(i).get(0).getPosition() == civlilizationsPositions.get(i).get(o).getPosition()) {
+                                                  component[0] = i;
+                                                  component[1] = o;
+                                                  civilizationsToTrade.set(i, component);
+                                          }
                                   }
-                          }
+                        }
                 }
                 return civilizationsToTrade;
         }

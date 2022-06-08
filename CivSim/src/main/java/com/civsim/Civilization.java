@@ -289,14 +289,16 @@ public class Civilization extends JPanel
     }
     public void updatePopulationCount()
     {
+        int x = 0;
         for (Village village : villages)
         {
-            populationCount += village.getVillagersCount();
+            x += village.getVillagersCount();
         }
         for (City cities : cities)
         {
-            populationCount += cities.getCitizensCount();
+            x += cities.getCitizensCount();
         }
+        populationCount = x;
     }
     public Integer getMobileUnitsAmount() {
         return mobileUnitsAmount;

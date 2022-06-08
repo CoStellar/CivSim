@@ -8,6 +8,6 @@ public class Main extends JFrame
 {
     public static void  main(String[] args) throws IOException, FontFormatException
     {
-         new ControlPanel();                                        //inicjalizacja klasy ControlPanel
+         new ControlPanel();                                            //inicjalizacja klasy ControlPanel
     }
 }

@@ -105,9 +105,36 @@ public class Simulation implements Runnable {
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
+
+            civUnits.updateCivUnits(traderUnits, militaryUnits);
+            civUnits.combat();
+            trade = civUnits.trade(civPosition);
             for (Civilization item : civilization) {
-                civilizationsPositions.add(item.civFieldPosition);
+                item.setHasAlly(false);
             }
+
+                for(int i=0;i<civilization.size();i++){
+                    if(trade.get(i)[0] != null){
+                    for (int o=0;o<trade.size();o++) {
+                        if (trade.get(o)[0] == i && !civilization.get(i).getHasAlly()) {
+                            civilization.get(i).setHasAlly(true);
+                        }
+                        if (trade.get(o)[1] == i && !civilization.get(i).getHasAlly()) {
+                            civilization.get(i).setHasAlly(true);
+                        }
+                    }
+                    }
+                    else if(trade.get(i)[1] != null){
+                        for (int o=0;o<trade.size();o++) {
+                            if (trade.get(o)[0] == i && !civilization.get(i).getHasAlly()) {
+                                civilization.get(i).setHasAlly(true);
+                            }
+                            if (trade.get(o)[1] == i && !civilization.get(i).getHasAlly()) {
+                                civilization.get(i).setHasAlly(true);
+                            }
+                        }
+                    }
+                }
 
             for (int i = 0; i < civilization.size(); i++) {
                 civilization.get(i).getResources(simulationMap.getResources(), randomEvents);
@@ -132,8 +159,6 @@ public class Simulation implements Runnable {
                         traderUnitPosition.set(i, civilization.get(i).traderUnit.getUnitPosition());
                     }}
             }
-            civUnits.updateCivUnits(traderUnits, militaryUnits);
-            civUnits.combat();
 
 
 
@@ -203,6 +228,36 @@ public class Simulation implements Runnable {
 
         try {
             openInfoMenu();
+        } catch (IOException | FontFormatException e) {
+            throw new RuntimeException(e);
+        }
+        String[] strings = new String[civilization.size()];
+        int[] civilizationPopulation = new int[civilization.size()];
+        for(int i = 0;i<civilization.size();i++){
+            civilizationPopulation[i] = civilization.get(i).getPopulationCount();
+            strings[i] = ". place civilization: ["+civilization.get(i).civColor.getRed()+", "+civilization.get(i).civColor.getGreen()+", "+civilization.get(i).civColor.getBlue()+"] Population: " +civilization.get(i).getPopulationCount()+"\n";
+        }
+
+        for(int i = 0; i<civilization.size();i++){
+            for(int j = i+1; j<civilization.size(); j++){
+                int temp;
+                String temps;
+                if(civilizationPopulation[j]>civilizationPopulation[i]){
+                    temp = civilizationPopulation[i];
+                    civilizationPopulation[i] = civilizationPopulation[j];
+                    civilizationPopulation[j]= temp;
+                    temps = strings[i];
+                    strings[i] = strings[j];
+                    strings[j] = temps;
+                }
+            }
+        }
+        for(int i = 0;i<civilization.size();i++){
+            civilizationPopulation[i] = civilization.get(i).getPopulationCount();
+            strings[i] = (i+1)+strings[i];
+        }
+        try {
+            new Winner(strings);
         } catch (IOException | FontFormatException e) {
             throw new RuntimeException(e);
         }
