@@ -39,15 +39,15 @@ public class Civilization extends JPanel
         this.mapSize = mapSize;
         this.civSize = 1;
         this.civFieldPosition.add(new Position());
-        villages.add(new Village(civFieldPosition.get(villageCount)));
+        villages.add(new Village());
         this.villageCount++;
         this.cityCount = 0;
-        this.resourcesAmount.setWood(0);
-        this.resourcesAmount.setWheat(0);
-        this.resourcesAmount.setAnimals(0);
-        this.resourcesAmount.setWater(0);
-        this.resourcesAmount.setStone(0);
-        this.resourcesAmount.setIron(0);
+        this.resourcesAmount.wood = 0;
+        this.resourcesAmount.wheat = 0;
+        this.resourcesAmount.animals = 0;
+        this.resourcesAmount.water = 0;
+        this.resourcesAmount.stone = 0;
+        this.resourcesAmount.iron = 0;
         updatePopulationCount();
     }
 
@@ -72,24 +72,24 @@ public class Civilization extends JPanel
             if(villageCount/(cityCount+1) < 5)
             {
                 this.civFieldPosition.add(drawRandomPositionAround(civFieldPosition));
-                this.villages.add(new Village(civFieldPosition.get(civSize)));
+                this.villages.add(new Village());
                 this.civSize++;
                 this.villageCount++;
                 if(hasAlly) {
                     if(village[1]) {
-                        this.resourcesAmount.setWood(resourcesAmount.getWood() - 4);
-                        this.resourcesAmount.setWheat(resourcesAmount.getWheat() - 2);
-                        this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 2);
+                        this.resourcesAmount.wood-=4;
+                        this.resourcesAmount.wheat-=2;
+                        this.resourcesAmount.animals-=2;
                     }else
-                        this.resourcesAmount.setWood(resourcesAmount.getWood() - 7);
+                        this.resourcesAmount.wood-=7;
 
                 }else{
                     if(village[1]) {
-                        this.resourcesAmount.setWood(resourcesAmount.getWood() - 7);
-                        this.resourcesAmount.setWheat(resourcesAmount.getWheat() - 5);
-                        this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 6);
+                        this.resourcesAmount.wood-=7;
+                        this.resourcesAmount.wheat-=5;
+                        this.resourcesAmount.animals-=6;
                     }else
-                        this.resourcesAmount.setWood(resourcesAmount.getWood() - 10);
+                        this.resourcesAmount.wood-=10;
 
                 }
             }else if(city[0] && villageCount>0)
@@ -101,20 +101,20 @@ public class Civilization extends JPanel
                 this.cityCount++;
                 if(hasAlly) {
                     if(city[1]){
-                        this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 4);
-                        this.resourcesAmount.setStone(resourcesAmount.getStone() - 3);
-                        this.resourcesAmount.setIron(resourcesAmount.getIron() - 3);
-                        this.resourcesAmount.setWater(resourcesAmount.getWater() - 3);
+                        this.resourcesAmount.animals-=4;
+                        this.resourcesAmount.stone-=4;
+                        this.resourcesAmount.iron-=3;
+                        this.resourcesAmount.water-=3;
                     }else
-                        this.resourcesAmount.setStone(resourcesAmount.getStone() - 10);
+                        this.resourcesAmount.stone-=10;
                 }else{
                     if(city[1]){
-                        this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 7);
-                        this.resourcesAmount.setStone(resourcesAmount.getStone() - 4);
-                        this.resourcesAmount.setIron(resourcesAmount.getIron() - 4);
-                        this.resourcesAmount.setWater(resourcesAmount.getWater() - 4);
+                        this.resourcesAmount.animals-=7;
+                        this.resourcesAmount.stone-=4;
+                        this.resourcesAmount.iron-=4;
+                        this.resourcesAmount.water-=4;
                     } else
-                        this.resourcesAmount.setStone(resourcesAmount.getStone() - 12);
+                        this.resourcesAmount.stone-=12;
                 }
 
         }
@@ -128,20 +128,20 @@ public class Civilization extends JPanel
             this.cityCount++;
             if(hasAlly) {
                 if(city[1]){
-                    this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 4);
-                    this.resourcesAmount.setStone(resourcesAmount.getStone() - 3);
-                    this.resourcesAmount.setIron(resourcesAmount.getIron() - 3);
-                    this.resourcesAmount.setWater(resourcesAmount.getWater() - 3);
+                    this.resourcesAmount.animals-=4;
+                    this.resourcesAmount.stone-=3;
+                    this.resourcesAmount.iron-=3;
+                    this.resourcesAmount.water-=3;
                 }else
-                    this.resourcesAmount.setStone(resourcesAmount.getStone() - 10);
+                    this.resourcesAmount.stone-=10;
             }else{
                 if(city[1]){
-                this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 7);
-                this.resourcesAmount.setStone(resourcesAmount.getStone() - 4);
-                this.resourcesAmount.setIron(resourcesAmount.getIron() - 4);
-                this.resourcesAmount.setWater(resourcesAmount.getWater() - 4);
+                this.resourcesAmount.animals-=7;
+                this.resourcesAmount.stone-=4;
+                this.resourcesAmount.iron-=4;
+                this.resourcesAmount.water-=4;
                 } else
-                    this.resourcesAmount.setStone(resourcesAmount.getStone() - 12);
+                    this.resourcesAmount.stone-=12;
             }
         }
         if(resourcesAmount.resourcesCompareMobileUnit(resourcesAmount, hasAlly) && cityCount > 0)
@@ -149,13 +149,13 @@ public class Civilization extends JPanel
             if(random.nextInt(2)==1){
                 if(this.militaryUnit == null) {
                     if(hasAlly) {
-                        this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 7);
-                        this.resourcesAmount.setStone(resourcesAmount.getStone() - 7);
-                        this.resourcesAmount.setIron(resourcesAmount.getIron() - 7);
+                        this.resourcesAmount.animals-=7;
+                        this.resourcesAmount.stone-=7;
+                        this.resourcesAmount.iron-=7;
                     }else{
-                        this.resourcesAmount.setAnimals(resourcesAmount.getAnimals() - 10);
-                        this.resourcesAmount.setStone(resourcesAmount.getStone() - 10);
-                        this.resourcesAmount.setIron(resourcesAmount.getIron() - 10);
+                        this.resourcesAmount.animals-=10;
+                        this.resourcesAmount.stone-=10;
+                        this.resourcesAmount.iron-=10;
                     }
                     this.militaryUnit = new MilitaryUnit(citiesPositions().get(random.nextInt(cityCount)), this.civColor, this.mapSize);
                     this.mobileUnitsAmount++;
@@ -163,9 +163,9 @@ public class Civilization extends JPanel
                 }
             }else{
                 if(this.militaryUnit == null) {
-                this.resourcesAmount.setAnimals(resourcesAmount.getAnimals()-15);
-                this.resourcesAmount.setStone(resourcesAmount.getStone()-15);
-                this.resourcesAmount.setIron(resourcesAmount.getIron()-15);
+                this.resourcesAmount.animals-=15;
+                this.resourcesAmount.stone-=15;
+                this.resourcesAmount.iron-=15;
                 this.traderUnit = new TraderUnit(citiesPositions().get(random.nextInt(cityCount)),this.civColor,this.mapSize);
                 this.mobileUnitsAmount++;
                 this.traderUnitsAmount++;}

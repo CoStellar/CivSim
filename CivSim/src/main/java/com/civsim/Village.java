@@ -4,7 +4,7 @@ public class Village {
 
     private final int villagersCount;
 
-    public Village(Position villagePosition)
+    public Village()
     {
         this.villagersCount = (int) (Math.random() * 10);
         Boolean villageStatus = true;

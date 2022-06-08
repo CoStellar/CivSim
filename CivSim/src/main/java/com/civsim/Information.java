@@ -9,7 +9,8 @@ public class Information extends JPanel
 {
     Information() throws IOException, FontFormatException
     {
-        InputStream is = (new FileInputStream("./CivSim/src/main/resources/com/civsim/Pliki/Font/bitmap_font_romulus_by_pix3m-d6aokem.ttf"));//dodanie nowej czcionki do programu TWÓRCA: pix3m
+        //dodanie nowej czcionki do programu TWÓRCA: pix3m
+        InputStream is = (new FileInputStream("./CivSim/src/main/resources/com/civsim/Pliki/Font/bitmap_font_romulus_by_pix3m-d6aokem.ttf"));
         Font pix3mFont = Font.createFont(Font.TRUETYPE_FONT, is);
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         ge.registerFont(pix3mFont);
@@ -23,11 +24,13 @@ public class Information extends JPanel
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
         textArea.setText(string);
+        textArea.setBackground(new Color(173, 118, 55));
         frame.add(scroll);
         File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/control_panel/icon.png");
         ImageIcon image = new ImageIcon(String.valueOf(file));
         frame.setIconImage(image.getImage());
         frame.setVisible(true);
         frame.setLocationRelativeTo(null);
+        frame.setResizable(false);
         }
 }

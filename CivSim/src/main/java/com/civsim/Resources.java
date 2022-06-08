@@ -10,12 +10,12 @@ import java.util.Objects;
 public class Resources
 {
     private String resourceName;
-    private Integer wood = 0;
-    private Integer iron = 0;
-    private Integer wheat = 0;
-    private Integer animals = 0;
-    private Integer stone = 0;
-    private Integer water = 0;
+    public Integer wood = 0;
+    public Integer iron = 0;
+    public Integer wheat = 0;
+    public Integer animals = 0;
+    public Integer stone = 0;
+    public Integer water = 0;
 
     public Resources(){
         this.resourceName = drawResources();
@@ -200,61 +200,14 @@ public class Resources
         return resourceName;
     }
 
-    public Integer getWood() {
-        return wood;
-    }
-
-    public Integer getIron() {
-        return iron;
-    }
-
-    public Integer getWheat() {
-        return wheat;
-    }
-
-    public Integer getAnimals() {
-        return animals;
-    }
-
-    public Integer getStone() {
-        return stone;
-    }
-
-    public Integer getWater() {
-        return water;
-    }
-
-    public void setWood(Integer wood) {
-        this.wood = wood;
-    }
-
-    public void setIron(Integer iron) {
-        this.iron = iron;
-    }
-
-    public void setWheat(Integer wheat) {
-        this.wheat = wheat;
-    }
-
-    public void setAnimals(Integer animals) {
-        this.animals = animals;
-    }
-
-    public void setStone(Integer stone) {
-        this.stone = stone;
-    }
-
-    public void setWater(Integer water) {
-        this.water = water;
-    }
 
     public void udpateResources(Resources resources){
-        setIron(this.getIron()+resources.getIron());
-        setWood(this.getWood()+resources.getWood());
-        setStone(this.getStone()+resources.getStone());
-        setWater(this.getWater()+resources.getWater());
-        setAnimals(this.getAnimals()+resources.getAnimals());
-        setWheat(this.getWheat()+resources.getWheat());
+        this.iron+=resources.iron;
+        this.wood+=resources.wood;
+        this.stone+=resources.stone;
+        this.water+=resources.water;
+        this.animals+=resources.animals;
+        this.wheat+=resources.wheat;
     }
 
 }

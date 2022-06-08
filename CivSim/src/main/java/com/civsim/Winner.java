@@ -23,6 +23,7 @@ public class Winner {
         textArea.setFont(pix3mFont.deriveFont(24f));
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
+        textArea.setBackground(new Color(212, 145, 68));
         for (String s : string) {
             textArea.append(s);
         }
@@ -31,6 +32,7 @@ public class Winner {
         ImageIcon image = new ImageIcon(String.valueOf(file));
         frame.setIconImage(image.getImage());
         frame.setVisible(true);
+        frame.setResizable(false);
     }
 
 }

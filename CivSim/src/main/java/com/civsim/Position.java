@@ -7,7 +7,7 @@ public class Position
     private Integer x;
     private Integer y;
 
-    Position() throws IOException
+    public Position() throws IOException
     {
         Scanner scanner = new Scanner(new File("./CivSim/src/main/resources/com/civsim/Pliki/positions.txt"));
         ArrayList<String> line = new ArrayList<>();
@@ -47,17 +47,17 @@ public class Position
         }
         printWriter.close();
     }
-    Position(MapSize mapSize)
+    public Position(MapSize mapSize)
     {
         this.x = drawRandomPosition(mapSize);
         this.y = drawRandomPosition(mapSize);
     }
-    Position(int x, int y)
+    public Position(int x, int y)
     {
         this.x = x;
         this.y = y;
     }
-    Position(boolean empty) {
+    public Position(boolean empty) {
     }
     public Integer drawRandomPosition(MapSize mapSize)
     {
