@@ -38,9 +38,9 @@ public class Map extends JFrame {
         {
             for (int y = 0; y < this.mapSize.getMapSize(); y++)
             {
-                resources[x][y] = new Resources();
-                this.img[x][y] = resources[x][y].getImg();
-                this.colorPosition[x][y] = new Color(57, 99, 37);
+                resources[x][y] = new Resources(); // tworzy się nowy zasób na danej pozycji
+                this.img[x][y] = resources[x][y].getImg(); // pobierane jest jego zdjęcie
+                this.colorPosition[x][y] = new Color(57, 99, 37); // ustawiany jest kolor tła całej mapy
             }
         }
         paintVillages();
