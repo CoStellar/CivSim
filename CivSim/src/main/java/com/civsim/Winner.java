@@ -2,35 +2,37 @@ package com.civsim;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.*;
-import java.util.Scanner;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
-public class Information extends JPanel
-{
-    Information() throws IOException, FontFormatException
+public class Winner {
+
+    Winner(String[] string) throws IOException, FontFormatException
     {
-        //dodanie nowej czcionki do programu TWÓRCA: pix3m
-        InputStream is = (new FileInputStream("./CivSim/src/main/resources/com/civsim/Pliki/Font/bitmap_font_romulus_by_pix3m-d6aokem.ttf"));
+        InputStream is = (new FileInputStream("./CivSim/src/main/resources/com/civsim/Pliki/Font/bitmap_font_romulus_by_pix3m-d6aokem.ttf"));//dodanie nowej czcionki do programu TWÓRCA: pix3m
         Font pix3mFont = Font.createFont(Font.TRUETYPE_FONT, is);
         GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         ge.registerFont(pix3mFont);
-        String string = new Scanner(new File("./CivSim/src/main/resources/com/civsim/Pliki/data_sheet.txt")).useDelimiter("\\A").next();
         JFrame frame = new JFrame();
-        frame.setSize(500,600);
+        frame.setSize(550,400);
         frame.setTitle("Results");
         final JTextArea textArea = new JTextArea(10, 20);
         JScrollPane scroll = new JScrollPane(textArea, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
-        textArea.setFont(pix3mFont.deriveFont(20f));
+        textArea.setFont(pix3mFont.deriveFont(24f));
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
-        textArea.setText(string);
-        textArea.setBackground(new Color(173, 118, 55));
+        textArea.setBackground(new Color(212, 145, 68));
+        for (String s : string) {
+            textArea.append(s);
+        }
         frame.add(scroll);
         File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/control_panel/icon.png");
         ImageIcon image = new ImageIcon(String.valueOf(file));
         frame.setIconImage(image.getImage());
         frame.setVisible(true);
-        frame.setLocationRelativeTo(null);
         frame.setResizable(false);
-        }
+    }
+
 }

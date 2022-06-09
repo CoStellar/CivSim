@@ -38,169 +38,37 @@ public class Map extends JFrame {
         {
             for (int y = 0; y < this.mapSize.getMapSize(); y++)
             {
-                resources[x][y] = new Resources();
-                this.img[x][y] = resources[x][y].getImg();
-                this.colorPosition[x][y] = new Color(57, 99, 37);
+                resources[x][y] = new Resources(); // tworzy się nowy zasób na danej pozycji
+                this.img[x][y] = resources[x][y].getImg(); // pobierane jest jego zdjęcie
+                this.colorPosition[x][y] = new Color(57, 99, 37); // ustawiany jest kolor tła całej mapy
             }
         }
-        for (int x = 0; x < this.mapSize.getMapSize(); x++)
-        {
-            for (int y = 0; y < this.mapSize.getMapSize(); y++)
-            {
-                for (int i = 0; i < civAmount; i++)
-                {
-                    for(int o=0; o<civPosition.get(i).size(); o++)
-                    {
-                        if (civPosition.get(i).get(o).getX() == x && civPosition.get(i).get(o).getY() == y)
-                        {
-                            this.img[x][y] = setImg(resources[x][y].getResourceName());
-                            this.colorPosition[x][y] = civColor[i];
-                        }
-                    }
-                }
-            }
-        }
-            for (int x = 0; x < this.mapSize.getMapSize(); x++)
-            {
-                for (int y = 0; y < this.mapSize.getMapSize(); y++)
-                {
-                    for (int i = 0; i < civAmount; i++)
-                    {
-                        for (int o = 0; o < cityPosition.get(i).size(); o++)
-                        {
-                            if (cityPosition.get(i).get(o).getX() == x && cityPosition.get(i).get(o).getY() == y)
-                            {
-                                file = new File("./CivSim/src/main/resources/com/civsim/Pliki/map_visuals/city_template.png");
-                                this.img[x][y] = ImageIO.read(file);
-                            }
-                        }
-                    }
-                }
-            }
-            int screenWidth = (mapSize.getMapSize() * fieldSize) + (mapSize.getMapSize() + 31);
-            int screenHeight = (mapSize.getMapSize() * fieldSize) + (mapSize.getMapSize() + 54);
-            setSize(screenWidth, screenHeight);
-            getContentPane().setBackground(Color.black);
-            setResizable(false);
-            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/control_panel/icon.png");
-            ImageIcon image = new ImageIcon(String.valueOf(file));
-            setIconImage(image.getImage());
-            appPanel = new ApplicationPanel(img, img2, this.mapSize, colorPosition);
-            add(appPanel);
-            setVisible(true);
+        paintVillages();
+        paintCities();
+        int screenWidth = (mapSize.getMapSize() * fieldSize) + (mapSize.getMapSize() + 31);
+        int screenHeight = (mapSize.getMapSize() * fieldSize) + (mapSize.getMapSize() + 54);
+        setSize(screenWidth, screenHeight);
+        getContentPane().setBackground(Color.black);
+        setResizable(false);
+        file = new File("./CivSim/src/main/resources/com/civsim/Pliki/control_panel/icon.png");
+        ImageIcon image = new ImageIcon(String.valueOf(file));
+        setIconImage(image.getImage());
+        appPanel = new ApplicationPanel(img, img2, this.mapSize, colorPosition);
+        add(appPanel);
+        setVisible(true);
     }
     public void updateMap(ArrayList<ArrayList<Position>> civPosition, ArrayList<ArrayList<Position>> cityPosition,ArrayList<Position> militaryUnitPosition, RandomEvents randomEvents, ArrayList<Position> traderUnitPosition) throws IOException
     {
-        for (int x = 0; x < this.mapSize.getMapSize(); x++)
-        {
-            for (int y = 0; y < this.mapSize.getMapSize(); y++)
-            {
-                this.img[x][y] = resources[x][y].getImg();
-                this.colorPosition[x][y] = new Color(57, 99, 37);
-            }
-        }
+        paintBackGround();
         this.civPosition = civPosition;
         this.cityPosition = cityPosition;
-        ArrayList<ArrayList<Position>> randomEventPosition = randomEvents.getRandomEventPosition();
-        ArrayList<String> randomEventNames = randomEvents.getEventName();
         this.militaryUnitPosition = militaryUnitPosition;
         this.traderUnitPosition = traderUnitPosition;
-        for (int x = 0; x < this.mapSize.getMapSize(); x++)
-        {
-            for (int y = 0; y < this.mapSize.getMapSize(); y++)
-            {
-                for (int i = 0; i < civAmount; i++)
-                {
-                    for(int o=0; o<civPosition.get(i).size(); o++)
-                    {
-                        if (civPosition.get(i).get(o).getX() == x && civPosition.get(i).get(o).getY() == y)
-                        {
-                            this.img[x][y] = setImg(resources[x][y].getResourceName());
-                            this.colorPosition[x][y] = civColor[i];
-
-                        }
-                    }
-                }
-            }
-        }
-        for (int x = 0; x < this.mapSize.getMapSize(); x++)
-        {
-            for (int y = 0; y < this.mapSize.getMapSize(); y++)
-            {
-                for (int i = 0; i < civAmount; i++)
-                {
-                    for (int o = 0; o < cityPosition.get(i).size(); o++)
-                    {
-                        if (cityPosition.get(i).get(o).getX() == x && cityPosition.get(i).get(o).getY() == y)
-                        {
-                            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/map_visuals/city_template_2.png");
-                            this.img[x][y] = ImageIO.read(file);
-                        }
-                    }
-                }
-            }
-        }
-        for (int x = 0; x < this.mapSize.getMapSize(); x++)
-        {
-            for (int y = 0; y < this.mapSize.getMapSize(); y++)
-            {
-                for (int i=0; i < this.militaryUnitPosition.size() ;i++)
-                {
-                    if(militaryUnitPosition.get(i)!=null)
-                    {
-                        if(!militaryUnitPosition.get(i).equals(new Position(true)))
-                        {
-                            if (militaryUnitPosition.get(i).getX() == x && militaryUnitPosition.get(i).getY() == y)
-                            {
-                                file = new File("./CivSim/src/main/resources/com/civsim/Pliki/mobile_units/military_unit_transparent.png");
-                                this.img[x][y] = ImageIO.read(file);
-                                this.colorPosition[x][y] = civColor[i];
-
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        for (int x = 0; x < this.mapSize.getMapSize(); x++)
-        {
-            for (int y = 0; y < this.mapSize.getMapSize(); y++)
-            {
-                for (int i = 0; i < randomEventPosition.size(); i++)
-                {
-                    for(int o = 0; o< randomEventPosition.get(i).size(); o++)
-                    {
-                        if (randomEventPosition.get(i).get(o).getX() == x && randomEventPosition.get(i).get(o).getY() == y)
-                        {
-                            if(randomEvents.getRandomEventActive().get(i))
-                                this.img2[x][y] = setEvent(randomEventNames.get(i));
-                            if(!randomEvents.getRandomEventActive().get(i))
-                                this.img2[x][y] = null;
-                        }
-                    }
-                }
-            }
-        }
-        for (int x = 0; x < this.mapSize.getMapSize(); x++)
-        {
-            for (int y = 0; y < this.mapSize.getMapSize(); y++)
-            {
-                for (int i = 0; i < this.traderUnitPosition.size() ; i++)
-                {
-                    if(traderUnitPosition.get(i)!=null){
-                        if(!traderUnitPosition.get(i).equals(new Position(true)))
-                        {
-                            if (traderUnitPosition.get(i).getX() == x && traderUnitPosition.get(i).getY() == y)
-                            {
-                                file = new File("./CivSim/src/main/resources/com/civsim/Pliki/mobile_units/trader_unit_transparent.png");
-                                this.img[x][y] = ImageIO.read(file);
-                                this.colorPosition[x][y] = civColor[i];
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        paintVillages();
+        paintCities();
+        paintMilitaryUnits();
+        paintRandomEvents(randomEvents);
+        paintTraderUnits();
         appPanel.repaint();
     }
 
@@ -283,5 +151,122 @@ public class Map extends JFrame {
     }
     public Resources[][] getResources() {
         return resources;
+    }
+    private void paintBackGround(){
+        for (int x = 0; x < this.mapSize.getMapSize(); x++)
+        {
+            for (int y = 0; y < this.mapSize.getMapSize(); y++)
+            {
+                this.img[x][y] = resources[x][y].getImg();
+                this.colorPosition[x][y] = new Color(57, 99, 37);
+            }
+        }
+    }
+    private void paintVillages() throws IOException {
+        for (int x = 0; x < this.mapSize.getMapSize(); x++)
+        {
+            for (int y = 0; y < this.mapSize.getMapSize(); y++)
+            {
+                for (int i = 0; i < civAmount; i++)
+                {
+                    for(int o=0; o<civPosition.get(i).size(); o++)
+                    {
+                        if (civPosition.get(i).get(o).getX() == x && civPosition.get(i).get(o).getY() == y)
+                        {
+                            this.img[x][y] = setImg(resources[x][y].getResourceName());
+                            this.colorPosition[x][y] = civColor[i];
+                        }
+                    }
+                }
+            }
+        }
+    }
+    private void paintCities() throws IOException {
+        for (int x = 0; x < this.mapSize.getMapSize(); x++)
+        {
+            for (int y = 0; y < this.mapSize.getMapSize(); y++)
+            {
+                for (int i = 0; i < civAmount; i++)
+                {
+                    for (int o = 0; o < cityPosition.get(i).size(); o++)
+                    {
+                        if (cityPosition.get(i).get(o).getX() == x && cityPosition.get(i).get(o).getY() == y)
+                        {
+                            file = new File("./CivSim/src/main/resources/com/civsim/Pliki/map_visuals/city_template_2.png");
+                            this.img[x][y] = ImageIO.read(file);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    private void paintMilitaryUnits() throws IOException {
+        for (int x = 0; x < this.mapSize.getMapSize(); x++)
+        {
+            for (int y = 0; y < this.mapSize.getMapSize(); y++)
+            {
+                for (int i=0; i < this.militaryUnitPosition.size() ;i++)
+                {
+                    if(militaryUnitPosition.get(i)!=null)
+                    {
+                        if(!militaryUnitPosition.get(i).equals(new Position(true)))
+                        {
+                            if (militaryUnitPosition.get(i).getX() == x && militaryUnitPosition.get(i).getY() == y)
+                            {
+                                file = new File("./CivSim/src/main/resources/com/civsim/Pliki/mobile_units/military_unit_transparent.png");
+                                this.img[x][y] = ImageIO.read(file);
+                                this.colorPosition[x][y] = civColor[i];
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    private void paintRandomEvents(RandomEvents randomEvents) throws IOException {
+        ArrayList<ArrayList<Position>> randomEventPosition = randomEvents.getRandomEventPosition();
+        ArrayList<String> randomEventNames = randomEvents.getEventName();
+        for (int x = 0; x < this.mapSize.getMapSize(); x++)
+        {
+            for (int y = 0; y < this.mapSize.getMapSize(); y++)
+            {
+                for (int i = 0; i < randomEventPosition.size(); i++)
+                {
+                    for(int o = 0; o< randomEventPosition.get(i).size(); o++)
+                    {
+                        if (randomEventPosition.get(i).get(o).getX() == x && randomEventPosition.get(i).get(o).getY() == y)
+                        {
+                            if(randomEvents.getRandomEventActive().get(i))
+                                this.img2[x][y] = setEvent(randomEventNames.get(i));
+                            if(!randomEvents.getRandomEventActive().get(i))
+                                this.img2[x][y] = null;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    private void paintTraderUnits() throws IOException {
+        for (int x = 0; x < this.mapSize.getMapSize(); x++)
+        {
+            for (int y = 0; y < this.mapSize.getMapSize(); y++)
+            {
+                for (int i = 0; i < this.traderUnitPosition.size() ; i++)
+                {
+                    if(traderUnitPosition.get(i)!=null){
+                        if(!traderUnitPosition.get(i).equals(new Position(true)))
+                        {
+                            if (traderUnitPosition.get(i).getX() == x && traderUnitPosition.get(i).getY() == y)
+                            {
+                                file = new File("./CivSim/src/main/resources/com/civsim/Pliki/mobile_units/trader_unit_transparent.png");
+                                this.img[x][y] = ImageIO.read(file);
+                                this.colorPosition[x][y] = civColor[i];
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
