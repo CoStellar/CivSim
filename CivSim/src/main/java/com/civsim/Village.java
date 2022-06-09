@@ -6,7 +6,7 @@ public class Village {
 
     public Village()
     {
-        this.villagersCount = (int) (Math.random() * 10);
+        this.villagersCount = (int) (Math.random() * 9)+1;
         Boolean villageStatus = true;
     }
     public int getVillagersCount() {

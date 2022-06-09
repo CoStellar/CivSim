@@ -25,6 +25,7 @@ public class Information extends JPanel
         textArea.setWrapStyleWord(true);
         textArea.setText(string);
         textArea.setBackground(new Color(173, 118, 55));
+        textArea.setEditable(false);
         frame.add(scroll);
         File file = new File("./CivSim/src/main/resources/com/civsim/Pliki/control_panel/icon.png");
         ImageIcon image = new ImageIcon(String.valueOf(file));
