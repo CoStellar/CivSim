@@ -87,7 +87,7 @@ public class Resources
         return null;
     }
 
-    String drawResources(){
+    private String drawResources(){
         int random;
         random = (int) (Math.random() * 6);
         if(random == 0)

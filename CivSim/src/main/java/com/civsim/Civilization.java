@@ -12,13 +12,7 @@ public class Civilization extends JPanel
 {
     private Integer civSize;
     private Integer villageCount=0;
-
     private Integer cityCount;
-
-    public Integer getPopulationCount() {
-        return populationCount;
-    }
-
     private Integer populationCount=0;
     private Integer mobileUnitsAmount=0;
     private Integer traderUnitsAmount = 0;
@@ -28,11 +22,10 @@ public class Civilization extends JPanel
     public Resources resourcesAmount = new Resources();
     public Color civColor;
     private final MapSize mapSize;
-
     public MilitaryUnit militaryUnit = null;
     public TraderUnit traderUnit = null;
     public ArrayList<Position> civFieldPosition = new ArrayList<>();
-    private Boolean hasAlly = false;
+    public Boolean hasAlly = false;
     public Civilization(MapSize mapSize) throws IOException
     {
         this.civColor = new Color((int)(Math.random() * 0x1000000));
@@ -307,8 +300,8 @@ public class Civilization extends JPanel
         return hasAlly;
     }
 
-    public void setHasAlly(Boolean hasAlly) {
-        this.hasAlly = hasAlly;
+    public Integer getPopulationCount() {
+        return populationCount;
     }
 }
 

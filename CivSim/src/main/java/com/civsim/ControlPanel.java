@@ -130,12 +130,12 @@ public class ControlPanel extends JPanel {
                     civCount = Integer.parseInt(secondText.getText());                      //----||---- civCount -------||--------
                     turnAmount = Integer.parseInt(thirdText.getText());                     //----||---- turnAmount -----||--------
                     if(mapSize.getMapSize() == 0){
-                        JOptionPane.showMessageDialog(null, "Wielkość mapy niedozwolona. Ustawiono wartość "+1);
+                        JOptionPane.showMessageDialog(null, "Wielkość mapy niedozwolona. Ustawiono wartość "+1,"Uwaga",1);
                         mapSize = new MapSize(1);
                     }
                     if(civCount>(mapSize.getMapSize()*mapSize.getMapSize()/2)){
                         civCount = mapSize.getMapSize()*mapSize.getMapSize()/2+1;
-                        JOptionPane.showMessageDialog(null, "Maksymalna ilość cywilizacji została przekroczona. Ustawiono maksymalną wartość "+(mapSize.getMapSize()*mapSize.getMapSize()/2+1));
+                        JOptionPane.showMessageDialog(null, "Maksymalna ilość cywilizacji została przekroczona. Ustawiono maksymalną wartość "+(mapSize.getMapSize()*mapSize.getMapSize()/2+1),"Uwaga",1);
                     }
                     try {
                         runSimulation();                                                        //Po ustawieniu wartości uruchomiona zostaje metoda runSimulation()

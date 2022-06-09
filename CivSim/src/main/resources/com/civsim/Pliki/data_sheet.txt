@@ -6,3 +6,169 @@ Current Events:
  
  
  
+Current Turn: 2
+ 
+Time: 1.003 s
+ 
+Current Events:  
+ 
+ 
+ 
+Current Turn: 3
+ 
+Time: 2.006 s
+ 
+Current Events: flood,  
+ 
+ 
+ 
+Current Turn: 4
+ 
+Time: 3.007 s
+ 
+Current Events: flood,  
+ 
+ 
+ 
+Current Turn: 5
+ 
+Time: 4.012 s
+ 
+Current Events: flood,  
+ 
+ 
+ 
+Current Turn: 6
+ 
+Time: 5.013 s
+ 
+Current Events: flood, fire,  
+ 
+ 
+ 
+Current Turn: 7
+ 
+Time: 6.016 s
+ 
+Current Events: flood, fire,  
+ 
+ 
+ 
+Current Turn: 8
+ 
+Time: 7.019 s
+ 
+Current Events: flood, fire,  
+ 
+ 
+ 
+Current Turn: 9
+ 
+Time: 8.021 s
+ 
+Current Events: flood, fire, flood,  
+ 
+ 
+ 
+Current Turn: 10
+ 
+Time: 9.022 s
+ 
+Current Events: flood, flood,  
+ 
+ 
+ 
+Current Turn: 11
+ 
+Time: 10.025 s
+ 
+Current Events: flood,  
+ 
+ 
+ 
+Current Turn: 12
+ 
+Time: 11.026 s
+ 
+Current Events: flood, tornado,  
+ 
+ 
+ 
+Current Turn: 13
+ 
+Time: 12.029 s
+ 
+Current Events: flood, tornado,  
+ 
+ 
+ 
+Current Turn: 14
+ 
+Time: 13.03 s
+ 
+Current Events: flood, tornado,  
+ 
+Military Unit Owner: (121, 191, 204) Unit Position: [11, 24]
+Health: 15
+ 
+ 
+Current Turn: 15
+ 
+Time: 14.033 s
+ 
+Current Events: flood, tornado, tornado,  
+ 
+Military Unit Owner: (121, 191, 204) Unit Position: [10, 24]
+Health: 15
+ 
+ 
+Current Turn: 16
+ 
+Time: 15.035 s
+ 
+Current Events: flood, tornado,  
+ 
+Military Unit Owner: (121, 191, 204) Unit Position: [11, 24]
+Health: 15
+ 
+ 
+Current Turn: 17
+ 
+Time: 16.037 s
+ 
+Current Events: tornado,  
+ 
+Military Unit Owner: (121, 191, 204) Unit Position: [10, 24]
+Health: 15
+ 
+ 
+Current Turn: 18
+ 
+Time: 17.038 s
+ 
+Current Events: tornado, fire,  
+ 
+Military Unit Owner: (121, 191, 204) Unit Position: [9, 24]
+Health: 15
+ 
+ 
+Current Turn: 19
+ 
+Time: 18.04 s
+ 
+Current Events: fire,  
+ 
+Military Unit Owner: (121, 191, 204) Unit Position: [8, 24]
+Health: 15
+ 
+ 
+Current Turn: 20
+ 
+Time: 19.044 s
+ 
+Current Events: fire,  
+ 
+Military Unit Owner: (121, 191, 204) Unit Position: [8, 23]
+Health: 15
+ 
+ 

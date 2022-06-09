@@ -253,26 +253,26 @@ public class Simulation implements Runnable {
         ArrayList<Integer[]> trade;
         trade = civUnits.trade(civPosition);
         for (Civilization item : civilization) {
-            item.setHasAlly(false);
+            item.hasAlly = false;
         }
 
         for (int i = 0; i < civilization.size(); i++) {
             if (trade.get(i)[0] != null) {
                 for (Integer[] integers : trade) {
                     if (integers[0] == i && !civilization.get(i).getHasAlly()) {
-                        civilization.get(i).setHasAlly(true);
+                        civilization.get(i).hasAlly = true;
                     }
                     if (integers[1] == i && !civilization.get(i).getHasAlly()) {
-                        civilization.get(i).setHasAlly(true);
+                        civilization.get(i).hasAlly = true;
                     }
                 }
             } else if (trade.get(i)[1] != null) {
                 for (Integer[] integers : trade) {
                     if (integers[0] == i && !civilization.get(i).getHasAlly()) {
-                        civilization.get(i).setHasAlly(true);
+                        civilization.get(i).hasAlly = true;
                     }
                     if (integers[1] == i && !civilization.get(i).getHasAlly()) {
-                        civilization.get(i).setHasAlly(true);
+                        civilization.get(i).hasAlly = true;
                     }
                 }
             }

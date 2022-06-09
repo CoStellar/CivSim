@@ -21,6 +21,7 @@ public class Winner {
         final JTextArea textArea = new JTextArea(10, 20);
         JScrollPane scroll = new JScrollPane(textArea, JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED, JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
         textArea.setFont(pix3mFont.deriveFont(24f));
+        textArea.setEditable(false);
         textArea.setLineWrap(true);
         textArea.setWrapStyleWord(true);
         textArea.setBackground(new Color(212, 145, 68));
